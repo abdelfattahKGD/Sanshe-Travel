@@ -1,0 +1,213 @@
+# Topic 1 - Greetings & Basics
+# words:     group|level|english|pos|arabic|example (3-7 words)
+# sentences: group|level|english (5-12 words)|arabic
+@group g1|التحية والترحيب|Greetings & Welcome
+@group g2|التعارف|Introductions
+@group g3|عبارات المجاملة|Polite Expressions
+@group g4|السؤال والإجابة|Asking & Answering
+@group g5|نعم ولا والموافقة|Yes, No & Agreement
+@group g6|بدء الكلام ومتابعته|Starting & Continuing Talk
+@group g7|الضمائر والإشارة|Pronouns & Pointing
+@group g8|التوديع والتمنيات|Farewells & Wishes
+@words
+g1|A1|hello|interj|مرحبًا|Hello, everyone, welcome back!
+g1|A1|hi|interj|أهلًا|Hi, Sara, come in.
+g1|A1|good morning|phrase|صباح الخير|Good morning, teacher!
+g1|A1|good afternoon|phrase|مساء الخير (بعد الظهر)|Good afternoon, Mr. Adams.
+g1|A1|good evening|phrase|مساء الخير|Good evening, ladies and gentlemen.
+g1|A1|good night|phrase|تصبح على خير|Good night, sleep well.
+g1|A1|welcome|interj|أهلًا وسهلًا|Welcome to our home.
+g1|A2|greeting|n|تحية|She gave me a warm greeting.
+g1|A2|wave|v|يلوّح بيده|He waved at his neighbor.
+g1|A2|shake hands|phrase|يصافح|They shook hands and smiled.
+g1|A1|meet|v|يقابل / يتعرّف على|I want you to meet Sam.
+g1|A1|again|adv|مرة أخرى|Please say that again.
+g2|A1|name|n|اسم|My name is Omar.
+g2|A2|introduce|v|يُقدّم (شخصًا) / يعرّف|Let me introduce my sister.
+g2|A1|call|v|يُنادي / يُسمّي|Everyone calls him Mo.
+g2|A1|from|prep|من (الأصل)|I'm from Cairo.
+g2|A1|live|v|يعيش / يسكن|We live in Giza.
+g2|A2|age|n|عمر|Age is just a number.
+g2|A1|old|adj|كبير في السن / عمره|How old are you?
+g2|A1|country|n|بلد|Which country are you from?
+g2|A1|city|n|مدينة|I love this city.
+g2|B1|nationality|n|جنسية|What is your nationality?
+g2|A1|speak|v|يتكلم|Do you speak English?
+g2|A1|language|n|لغة|English is a global language.
+g2|A2|born|adj|مولود|I was born in 1995.
+g3|A1|please|adv|من فضلك|Help me, please.
+g3|A1|thanks|interj|شكرًا|Thanks for your help.
+g3|A1|thank|v|يشكر|I thank you very much.
+g3|A1|sorry|adj|آسف|I'm sorry I'm late.
+g3|A1|excuse me|phrase|عفوًا / لو سمحت|Excuse me, where is the exit?
+g3|A2|pardon|interj|عفوًا؟ (أعد من فضلك)|Pardon? I didn't hear you.
+g3|A2|polite|adj|مهذّب|He is always very polite.
+g3|A2|kind|adj|لطيف / طيب القلب|She is kind to everyone.
+g3|B1|appreciate|v|يقدّر / يُثمّن|I really appreciate your help.
+g3|B1|apologize|v|يعتذر|I apologize for the delay.
+g3|B1|forgive|v|يسامح|Please forgive my mistake.
+g3|B1|mind|v|يمانع / يهتم|Do you mind closing the window?
+g4|A1|question|n|سؤال|I have a quick question.
+g4|A1|answer|n|إجابة|Do you know the answer?
+g4|A1|ask|v|يسأل / يطلب|Can I ask something?
+g4|A2|reply|v|يردّ|She didn't reply to my message.
+g4|A1|what|pron|ماذا / ما|What time is it?
+g4|A1|where|adv|أين|Where do you live?
+g4|A1|when|adv|متى|When does the class start?
+g4|A1|why|adv|لماذا|Why are you late?
+g4|A1|who|pron|مَن|Who is that man?
+g4|A1|how|adv|كيف|How does this work?
+g4|A1|which|det|أي / أيّ واحد|Which one do you want?
+g4|A2|mean|v|يعني|What does this word mean?
+g4|A1|understand|v|يفهم|I don't understand the question.
+g4|A2|repeat|v|يعيد / يكرّر|Could you repeat that, please?
+g5|A1|yes|interj|نعم|Yes, I would love to.
+g5|A1|no|interj|لا|No, thank you.
+g5|A1|maybe|adv|ربما|Maybe we can go tomorrow.
+g5|A1|sure|adj|متأكد / بالتأكيد|Are you sure about this?
+g5|A1|of course|phrase|بالطبع|Of course, I can help.
+g5|A1|okay|adj|حسنًا / تمام|Okay, let's get started.
+g5|A1|right|adj|صحيح / على حق|You are absolutely right.
+g5|A1|wrong|adj|خطأ|Sorry, that's the wrong answer.
+g5|A2|agree|v|يوافق|I totally agree with you.
+g5|B1|disagree|v|يختلف / لا يوافق|I disagree with that idea.
+g5|A2|true|adj|صحيح / حقيقي|That's not true at all.
+g5|B1|probably|adv|على الأرجح|She will probably call later.
+g6|A1|talk|v|يتحدث|Can we talk for a minute?
+g6|A1|tell|v|يُخبر / يقول لـ|Tell me what happened.
+g6|A1|say|v|يقول|What did you say?
+g6|A2|chat|v|يتجاذب أطراف الحديث|We chat every evening.
+g6|A1|listen|v|يستمع|Please listen to me carefully.
+g6|A1|hear|v|يسمع|I can't hear you well.
+g6|A1|wait|v|ينتظر|Wait here for a moment.
+g6|A1|start|v|يبدأ|Let's start with the basics.
+g6|A2|continue|v|يكمل / يواصل|Please continue your story.
+g6|A2|explain|v|يشرح|Can you explain it again?
+g6|B1|mention|v|يذكر|He didn't mention the price.
+g6|B1|interrupt|v|يقاطع|Sorry to interrupt you.
+g6|A2|by the way|phrase|على فكرة|By the way, where is Ali?
+g7|A1|I|pron|أنا|I am ready.
+g7|A1|you|pron|أنت / أنتم|You look very happy.
+g7|A1|he|pron|هو|He works near here.
+g7|A1|she|pron|هي|She speaks three languages.
+g7|A1|we|pron|نحن|We are good friends.
+g7|A1|they|pron|هم|They live next door.
+g7|A1|it|pron|هو / هي (لغير العاقل)|It is a nice day.
+g7|A1|my|det|ـي (ملكية المتكلم)|This is my phone.
+g7|A1|your|det|ـك (ملكية المخاطب)|Is this your bag?
+g7|A1|this|det|هذا / هذه|This is very useful.
+g7|A1|that|det|ذلك / تلك|That sounds like a plan.
+g7|A1|here|adv|هنا|Come here, please.
+g8|A1|goodbye|interj|مع السلامة|Goodbye, and thank you!
+g8|A1|bye|interj|إلى اللقاء (غير رسمي)|Bye! See you tomorrow.
+g8|A2|leave|v|يغادر|I have to leave now.
+g8|A1|later|adv|لاحقًا|I'll call you later.
+g8|A1|soon|adv|قريبًا|We'll meet again soon.
+g8|A2|care|n|رعاية / اهتمام|Take care of yourself.
+g8|A2|luck|n|حظ|Good luck on your exam.
+g8|A2|wish|v|يتمنّى|I wish you all the best.
+g8|A1|hope|v|يأمل|I hope you feel better.
+g8|A2|congratulations|interj|مبروك / تهانينا|Congratulations on your new job!
+g8|A2|safe|adj|آمن / بسلام|Have a safe trip!
+g8|A1|see you|phrase|أراك لاحقًا|See you at the party.
+@sentences
+g1|A1|Hi! How are you doing?|أهلًا! كيف حالك؟
+g1|A1|Good morning! Did you sleep well?|صباح الخير! هل نمت جيدًا؟
+g1|A1|Hello, everyone. Thanks for coming today.|مرحبًا بالجميع. شكرًا لحضوركم اليوم.
+g1|A1|Welcome! Please come in and sit down.|أهلًا وسهلًا! تفضّل بالدخول والجلوس.
+g1|A2|Long time no see! How have you been?|مر وقت طويل! كيف كانت أحوالك؟
+g1|A1|It's so good to see you again.|سعدت جدًا برؤيتك مرة أخرى.
+g1|A2|Good evening. Do you have a reservation?|مساء الخير. هل لديك حجز؟
+g1|A2|Hey, what's up? Anything new?|أهلًا، ما الأخبار؟ هل من جديد؟
+g1|A2|How is your family doing?|كيف حال عائلتك؟
+g1|B1|Thank you for having me over.|شكرًا على استضافتك لي.
+g1|B1|Please, make yourself at home.|تفضّل، اعتبر نفسك في بيتك.
+g1|A1|Good night, and sleep well.|تصبح على خير ونم جيدًا.
+g2|A1|My name is Omar. Nice to meet you.|اسمي عمر. تشرّفت بمعرفتك.
+g2|A1|Hi there! What's your name, please?|أهلًا بك! ما اسمك من فضلك؟
+g2|A2|Let me introduce my friend, Sara.|اسمح لي أن أعرّفك على صديقتي سارة.
+g2|A2|I'm from Egypt, but I live in Dubai.|أنا من مصر لكنني أعيش في دبي.
+g2|A2|Where are you from originally?|من أين أنت في الأصل؟
+g2|A2|How old are you, by the way?|كم عمرك، على فكرة؟
+g2|A1|I am twenty-five years old.|عمري خمسة وعشرون عامًا.
+g2|A1|Do you speak English or Arabic?|هل تتحدث الإنجليزية أم العربية؟
+g2|A1|I speak a little English.|أتحدث القليل من الإنجليزية.
+g2|A2|Are you new in this city?|هل أنت جديد في هذه المدينة؟
+g2|A2|This is my first time here.|هذه أول مرة لي هنا.
+g2|A2|Please call me Mo. Everyone does.|ناديني مو من فضلك. الجميع يفعل ذلك.
+g2|B1|I'm glad we finally met.|يسعدني أننا التقينا أخيرًا.
+g3|A1|Thank you so much for your help.|شكرًا جزيلًا على مساعدتك.
+g3|A2|Thanks, I really appreciate it.|شكرًا، أقدّر ذلك حقًا.
+g3|A2|You're welcome. It was my pleasure.|عفوًا، كان ذلك من دواعي سروري.
+g3|A1|I'm sorry, it was my mistake.|آسف، كان ذلك خطئي.
+g3|A1|Excuse me, could you help me?|لو سمحت، هل يمكنك مساعدتي؟
+g3|A1|Sorry, could you say that again?|آسف، هل يمكنك قول ذلك مرة أخرى؟
+g3|A2|Sorry to bother you, but I'm lost.|آسف على الإزعاج، لكنني تائه.
+g3|B1|Would you mind opening the window?|هل تمانع في فتح النافذة؟
+g3|A2|No problem at all. Don't worry about it.|لا مشكلة إطلاقًا. لا تقلق بشأن ذلك.
+g3|B1|Please accept my apologies for the delay.|يرجى قبول اعتذاري عن التأخير.
+g3|A2|That's very kind of you.|هذا لطف كبير منك.
+g3|A2|Please, go ahead. After you.|تفضّل، بعدك.
+g4|A1|Can I ask you a quick question?|هل يمكنني أن أسألك سؤالًا سريعًا؟
+g4|A1|What does this word mean?|ماذا تعني هذه الكلمة؟
+g4|A2|I don't understand. Could you explain?|لا أفهم. هل يمكنك أن تشرح؟
+g4|A1|Where is the nearest bathroom?|أين أقرب دورة مياه؟
+g4|A1|What time does it start?|متى يبدأ ذلك؟
+g4|A1|Why are you so late today?|لماذا تأخّرت هكذا اليوم؟
+g4|A1|Who is the man over there?|مَن ذلك الرجل هناك؟
+g4|A1|How do you say this in English?|كيف تقول هذا بالإنجليزية؟
+g4|A2|Which one do you prefer?|أيّهما تفضّل؟
+g4|A2|I'm not sure. Let me check.|لست متأكدًا. دعني أتحقق.
+g4|A1|I don't know the answer yet.|لا أعرف الإجابة بعد.
+g4|A2|That is a really good question.|هذا سؤال جيد حقًا.
+g4|A2|Could you repeat the question, please?|هل يمكنك إعادة السؤال من فضلك؟
+g5|A1|Yes, of course. I'd be happy to.|نعم بالطبع. يسعدني ذلك.
+g5|A1|No, thank you. I'm fine.|لا، شكرًا. أنا بخير.
+g5|A2|Maybe, but I'm not sure yet.|ربما، لكنني لست متأكدًا بعد.
+g5|A2|I totally agree with you.|أتفق معك تمامًا.
+g5|B1|I'm afraid I disagree with that.|أخشى أنني لا أتفق مع ذلك.
+g5|A2|You're absolutely right about that.|أنت محق تمامًا في ذلك.
+g5|A2|That's not true. Check again.|هذا غير صحيح. تحقق مرة أخرى.
+g5|A1|Sure, no problem. I'll do it.|بالتأكيد، لا مشكلة. سأفعل ذلك.
+g5|A2|Okay, that sounds like a plan.|حسنًا، هذه خطة جيدة.
+g5|A2|I think you're wrong this time.|أظن أنك مخطئ هذه المرة.
+g5|B1|It probably won't rain today.|على الأرجح لن تمطر اليوم.
+g5|B1|Exactly! That's what I meant.|بالضبط! هذا ما قصدته.
+g6|A1|Can we talk for a minute?|هل يمكننا التحدث لدقيقة؟
+g6|A2|Let me tell you what happened.|دعني أخبرك بما حدث.
+g6|A2|Please listen to me carefully.|رجاءً استمع إليّ بعناية.
+g6|A1|I can't hear you very well.|لا أسمعك جيدًا.
+g6|A2|Wait a moment. I'll be right back.|انتظر لحظة. سأعود حالًا.
+g6|A2|Let's start with the basics.|لنبدأ بالأساسيات.
+g6|A2|Please, continue. I am listening.|تفضّل أكمل. أنا أستمع.
+g6|B1|Sorry to interrupt, but it's urgent.|آسف للمقاطعة، لكن الأمر عاجل.
+g6|A2|By the way, did you call Ali?|على فكرة، هل اتصلت بعلي؟
+g6|A2|Can you explain that in simple words?|هل يمكنك شرح ذلك بكلمات بسيطة؟
+g6|B1|As I mentioned, the plan has changed.|كما ذكرت، الخطة تغيّرت.
+g6|A2|We should chat more often.|ينبغي أن نتحدث أكثر.
+g6|B1|Anyway, let's get back to work.|على أي حال، لنعد إلى العمل.
+g7|A1|I am ready. Are you ready?|أنا جاهز. هل أنت جاهز؟
+g7|A1|This is my phone, not yours.|هذا هاتفي وليس هاتفك.
+g7|A1|Is that your bag over there?|هل تلك حقيبتك هناك؟
+g7|A2|We have been good friends for years.|نحن أصدقاء جيدون منذ سنوات.
+g7|A1|They live next door to us.|هم يسكنون بجوارنا.
+g7|A2|He works hard, and she studies a lot.|هو يعمل بجد وهي تذاكر كثيرًا.
+g7|A1|It is a beautiful day today.|الجو جميل اليوم.
+g7|A1|Come here and look at this.|تعال إلى هنا وانظر إلى هذا.
+g7|A1|Put it there, not here.|ضعه هناك وليس هنا.
+g7|A2|That looks interesting. What is it?|يبدو ذلك مثيرًا للاهتمام. ما هو؟
+g7|A1|Excuse me, is this seat free?|لو سمحت، هل هذا المقعد خالٍ؟
+g7|A2|These are mine, and those are yours.|هذه لي وتلك لك.
+g8|A1|Goodbye! It was nice talking to you.|إلى اللقاء! كان من الجميل التحدث إليك.
+g8|A1|Bye for now! See you tomorrow.|إلى اللقاء الآن! أراك غدًا.
+g8|A1|I have to leave now.|يجب أن أغادر الآن.
+g8|A2|I'll call you later tonight.|سأتصل بك لاحقًا الليلة.
+g8|A1|See you soon. Take care!|أراك قريبًا. اعتنِ بنفسك!
+g8|A2|Good luck with your exam!|بالتوفيق في امتحانك!
+g8|A2|Have a safe trip back home.|رحلة آمنة في العودة إلى المنزل.
+g8|A2|Congratulations on your new job!|مبروك على وظيفتك الجديدة!
+g8|A2|I wish you all the best.|أتمنى لك كل التوفيق.
+g8|A2|I hope you feel better soon.|آمل أن تتحسن قريبًا.
+g8|A2|Have a great weekend, everyone!|عطلة أسبوع رائعة للجميع!
+g8|A2|Thanks again, and have a nice day.|شكرًا مرة أخرى، ويوم سعيد.
+g8|B1|Let's keep in touch, okay?|لنبقَ على تواصل، اتفقنا؟

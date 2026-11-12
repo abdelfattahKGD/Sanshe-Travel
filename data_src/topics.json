@@ -1,0 +1,12 @@
+[
+ {"num":1,"ar":"التحية والأساسيات وبدء الكلام","en":"Greetings & Basics","emoji":"👋","src":"topic01.txt"},
+ {"num":2,"ar":"الحياة اليومية والبيت","en":"Daily Life & Home","emoji":"🏠","src":null},
+ {"num":3,"ar":"الشغل والمكتب والاجتماعات","en":"Work & Office","emoji":"💼","src":null},
+ {"num":4,"ar":"السفر والمواصلات","en":"Travel & Transport","emoji":"✈️","src":null},
+ {"num":5,"ar":"الأكل والمطاعم والتسوق","en":"Food & Shopping","emoji":"🍽️","src":null},
+ {"num":6,"ar":"الصحة والمشاعر","en":"Health & Feelings","emoji":"💙","src":null},
+ {"num":7,"ar":"التكنولوجيا والإنترنت","en":"Technology & Internet","emoji":"💻","src":null},
+ {"num":8,"ar":"الدراسة والتعلم","en":"Study & Learning","emoji":"🎓","src":null},
+ {"num":9,"ar":"الأسرة والعلاقات","en":"Family & Relationships","emoji":"👨‍👩‍👧","src":null},
+ {"num":10,"ar":"الفلوس والأعمال والطوارئ","en":"Money & Emergencies","emoji":"💰","src":null}
+]

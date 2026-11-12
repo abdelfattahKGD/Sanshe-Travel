@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.WordForge" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#10151B</item>
+        <item name="android:navigationBarColor">#10151B</item>
+        <item name="android:windowBackground">#10151B</item>
+    </style>
+</resources>
