@@ -29,20 +29,49 @@ data class DayStat(
     val wrong: Int,
 )
 
-/** Spaced repetition: simple Leitner system. Wrong answers come back in 10 minutes. */
+/** How well an item is known. This is what the UI shows, so "heard it" and "memorized it" are never confused. */
+enum class Status(val label: String, val emoji: String) {
+    NEW("جديدة", "⚪"),
+    HARD("صعبة", "🔴"),
+    LEARNING("بتتعلّم", "🟠"),
+    MEMORIZED("محفوظة", "🟢"),
+    MASTERED("متقنة", "🏆"),
+}
+
+/**
+ * Spaced repetition (Leitner). Rules that keep "memorized" honest:
+ *  - Only an answer ("I knew it" / correct choice) moves an item. Listening or browsing never does.
+ *  - Boxes: new -> 2 on first correct, then +1 per correct answer *after the due date*.
+ *  - Answering correctly BEFORE the due date earns nothing (no cramming the same card ten times).
+ *  - A wrong answer sends the item back to box 1 and it returns in 10 minutes.
+ *  - MEMORIZED = box 4+ (recalled correctly after gaps of 1, 2 and 4+ days). MASTERED = box 6.
+ */
 object Srs {
     private val days = intArrayOf(0, 1, 2, 4, 8, 16, 32)
     private const val DAY_MS = 24L * 60 * 60 * 1000
-    const val MASTERED_BOX = 5
+    private const val RETRY_MS = 10L * 60 * 1000
+
+    fun statusOf(p: Progress?): Status = when {
+        p == null || p.box == 0 -> Status.NEW
+        p.box == 1 -> Status.HARD
+        p.box <= 3 -> Status.LEARNING
+        p.box <= 5 -> Status.MEMORIZED
+        else -> Status.MASTERED
+    }
+
+    fun isEarly(p: Progress?, now: Long): Boolean = p != null && p.box >= 1 && p.due > now
 
     fun next(id: String, old: Progress?, correct: Boolean, now: Long): Progress {
+        if (correct && old != null && old.box >= 1 && old.due > now) {
+            return old.copy(correct = old.correct + 1, last = now)
+        }
         val box0 = old?.box ?: 0
         val newBox = if (correct) {
             if (box0 == 0) 2 else minOf(6, box0 + 1)
         } else {
             1
         }
-        val due = if (correct) now + days[newBox] * DAY_MS else now + 10 * 60 * 1000L
+        val due = if (correct) now + days[newBox] * DAY_MS else now + RETRY_MS
         return Progress(
             id = id,
             box = newBox,
@@ -53,6 +82,30 @@ object Srs {
             starred = old?.starred ?: false,
         )
     }
+
+    /** "بعد 4 أيام", "بعد 10 دقيقة"... */
+    fun dueText(due: Long, now: Long): String {
+        val diff = due - now
+        if (diff <= 0) return "دلوقتي"
+        val min = diff / 60000
+        if (min < 60) return "بعد ${maxOf(min, 1L)} دقيقة"
+        val hours = min / 60
+        if (hours < 24) return "بعد $hours ساعة"
+        val d = (hours + 12) / 24
+        return when (d) {
+            1L -> "بعد يوم"
+            2L -> "بعد يومين"
+            in 3L..10L -> "بعد $d أيام"
+            else -> "بعد $d يوم"
+        }
+    }
+
+    /** What happens if the user answers "I knew it" right now (shown under the button). */
+    fun previewCorrect(old: Progress?, now: Long): String =
+        if (isEarly(old, now)) "من غير تقدّم (معادها لسه)" else dueText(next("", old, true, now).due, now)
+
+    /** What happens if the user answers "not yet". */
+    fun previewWrong(now: Long): String = dueText(now + RETRY_MS, now)
 }
 
 private class Db(ctx: Context) : SQLiteOpenHelper(ctx, "wordforge.db", null, 1) {
@@ -170,12 +223,31 @@ class Repo(ctx: Context) {
 
     // ---------- stats ----------
 
-    fun learned(kind: Kind?, topicId: String? = null): Int = Library.items.count {
-        (kind == null || it.kind == kind) && (topicId == null || it.topicId == topicId) &&
-            (progress[it.id]?.box ?: 0) >= 1
+    fun statusOf(id: String): Status = Srs.statusOf(progress[id])
+
+    fun countByStatus(kind: Kind? = null, topicId: String? = null): Map<Status, Int> {
+        val m = HashMap<Status, Int>()
+        for (st in Status.entries) m[st] = 0
+        for (item in Library.items) {
+            if (kind != null && item.kind != kind) continue
+            if (topicId != null && item.topicId != topicId) continue
+            val st = Srs.statusOf(progress[item.id])
+            m[st] = (m[st] ?: 0) + 1
+        }
+        return m
     }
 
-    fun mastered(): Int = progress.values.count { it.box >= Srs.MASTERED_BOX }
+    /** Items that are really memorized (box 4+), not merely seen. */
+    fun memorized(kind: Kind?, topicId: String? = null): Int {
+        val m = countByStatus(kind, topicId)
+        return (m[Status.MEMORIZED] ?: 0) + (m[Status.MASTERED] ?: 0)
+    }
+
+    /** Items the user has answered at least once (learning, memorized or mastered, or marked hard). */
+    fun started(kind: Kind?, topicId: String? = null): Int {
+        val m = countByStatus(kind, topicId)
+        return Library.count(topicId, kind) - (m[Status.NEW] ?: 0)
+    }
 
     fun todayStat(): DayStat = dayStats(1).first()
 
@@ -251,5 +323,7 @@ class Repo(ctx: Context) {
         const val GOAL_WORDS = "goal_words"
         const val GOAL_SENTENCES = "goal_sentences"
         const val GOAL_ANSWERS = "goal_answers"
+        const val TTS_RATE = "tts_rate"
+        const val TTS_AUTO = "tts_auto"
     }
 }

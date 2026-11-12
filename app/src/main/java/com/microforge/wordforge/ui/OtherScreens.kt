@@ -1,5 +1,7 @@
 package com.microforge.wordforge.ui
 
+import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -14,7 +16,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -26,9 +28,11 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -38,11 +42,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.microforge.wordforge.data.Kind
 import com.microforge.wordforge.data.Library
 import com.microforge.wordforge.data.Repo
+import com.microforge.wordforge.data.Status
 
 object StatsScreen : Screen {
     override val key = "stats"
@@ -52,6 +57,8 @@ object StatsScreen : Screen {
     override fun Content(env: Env) {
         val repo = env.repo
         @Suppress("UNUSED_VARIABLE") val tick = repo.tick
+        val counts = repo.countByStatus()
+        val memorized = (counts[Status.MEMORIZED] ?: 0) + (counts[Status.MASTERED] ?: 0)
         val (answers, correct) = repo.totals()
         val accuracy = if (answers == 0) 0 else correct * 100 / answers
         val week = repo.dayStats(7)
@@ -62,58 +69,72 @@ object StatsScreen : Screen {
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp),
         ) {
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                StatCard("🔥", repo.streak().toString(), "أيام متتالية")
-                StatCard("📘", repo.learned(Kind.WORD).toString(), "كلمات متعلّمة")
-                StatCard("💬", repo.learned(Kind.SENTENCE).toString(), "جمل متعلّمة")
-            }
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                StatCard("🏆", repo.mastered().toString(), "متقنة")
-                StatCard("🎯", "$accuracy%", "الدقة")
-                StatCard("✍️", answers.toString(), "إجابات")
+            Appear(0) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    StatCard("🔥", repo.streak().toString(), "أيام متتالية", Amber)
+                    StatCard("🟢", memorized.toString(), "محفوظة فعلًا", Good)
+                    StatCard("🎯", "$accuracy%", "الدقة", Sky)
+                }
             }
 
-            SectionCard("آخر 7 أيام (عدد الإجابات)") {
-                Row(
-                    Modifier
-                        .fillMaxWidth()
-                        .height(150.dp),
-                    horizontalArrangement = Arrangement.SpaceEvenly,
-                    verticalAlignment = Alignment.Bottom,
-                ) {
-                    for (d in week) {
-                        val h = if (d.answers == 0) 2 else (d.answers * 90 / maxAnswers).coerceAtLeast(6)
-                        Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Bottom) {
-                            Text(d.answers.toString(), style = MaterialTheme.typography.bodySmall)
-                            Spacer(Modifier.height(4.dp))
-                            Box(
-                                Modifier
-                                    .width(22.dp)
-                                    .height(h.dp)
-                                    .background(
-                                        if (d.answers == 0) MaterialTheme.colorScheme.outline.copy(alpha = 0.3f) else Gold,
-                                        RoundedCornerShape(topStart = 4.dp, topEnd = 4.dp),
-                                    )
+            Appear(1) {
+                SectionCard("🧩 حالة كل المحتوى") {
+                    StatusBar(counts)
+                    for (st in Status.entries) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text("${st.emoji} ${st.label}", Modifier.weight(1f))
+                            Text(
+                                (counts[st] ?: 0).toString(),
+                                fontWeight = FontWeight.ExtraBold,
+                                color = statusColor(st),
                             )
-                            Spacer(Modifier.height(4.dp))
-                            Text(d.day.substring(5), style = MaterialTheme.typography.labelSmall)
+                        }
+                    }
+                    Text(
+                        "المحفوظة = افتكرتها صح 3 مرات على فترات متباعدة، مش مجرد سماع.",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+
+            Appear(2) {
+                SectionCard("📅 آخر 7 أيام (عدد الإجابات)") {
+                    Row(
+                        Modifier
+                            .fillMaxWidth()
+                            .height(150.dp),
+                        horizontalArrangement = Arrangement.SpaceEvenly,
+                        verticalAlignment = Alignment.Bottom,
+                    ) {
+                        for (d in week) {
+                            val h = if (d.answers == 0) 3 else (d.answers * 90 / maxAnswers).coerceAtLeast(8)
+                            Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Bottom) {
+                                Text(d.answers.toString(), style = MaterialTheme.typography.bodySmall)
+                                Spacer(Modifier.height(4.dp))
+                                GrowBar(h.dp, if (d.answers == 0) MaterialTheme.colorScheme.outline.copy(alpha = 0.3f) else Amber)
+                                Spacer(Modifier.height(4.dp))
+                                Text(d.day.substring(5), style = MaterialTheme.typography.labelSmall)
+                            }
                         }
                     }
                 }
             }
 
-            SectionCard("التقدّم حسب الموضوع") {
-                for (t in Library.topics.filter { it.available }) {
-                    val total = Library.count(t.id)
-                    val learned = repo.learned(null, t.id)
-                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                        Row {
-                            Text("${t.emoji} ${t.ar}", Modifier.weight(1f))
-                            Text("$learned / $total", fontWeight = FontWeight.Bold)
+            Appear(3) {
+                SectionCard("📚 التقدّم حسب الموضوع") {
+                    for (t in Library.topics.filter { it.available }) {
+                        val total = Library.count(t.id)
+                        val known = repo.memorized(null, t.id)
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            Row {
+                                Text("${t.emoji} ${t.ar}", Modifier.weight(1f))
+                                Text("$known / $total", fontWeight = FontWeight.Bold)
+                            }
+                            ProgressBar(if (total == 0) 0f else known.toFloat() / total, color = topicColor(t.num))
                         }
-                        ProgressBar(if (total == 0) 0f else learned.toFloat() / total)
                     }
                 }
             }
@@ -122,19 +143,33 @@ object StatsScreen : Screen {
 }
 
 @Composable
-private fun RowScope.StatCard(emoji: String, value: String, label: String) {
+private fun GrowBar(target: Dp, color: Color) {
+    var t by remember { mutableStateOf(0.dp) }
+    LaunchedEffect(target) { t = target }
+    val shown by animateDpAsState(t, tween(700), label = "growbar")
+    Box(
+        Modifier
+            .width(22.dp)
+            .height(shown)
+            .background(color, RoundedCornerShape(topStart = 6.dp, topEnd = 6.dp))
+    )
+}
+
+@Composable
+private fun RowScope.StatCard(emoji: String, value: String, label: String, tint: Color) {
     Card(
         Modifier.weight(1f),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(containerColor = tint.copy(alpha = 0.16f)),
     ) {
         Column(
             Modifier
                 .fillMaxWidth()
-                .padding(vertical = 14.dp, horizontal = 6.dp),
+                .padding(vertical = 16.dp, horizontal = 6.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Text(emoji, fontSize = 22.sp)
-            Text(value, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+            Text(emoji, fontSize = 24.sp)
+            Text(value, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.ExtraBold)
             Text(
                 label,
                 style = MaterialTheme.typography.bodySmall,
@@ -149,11 +184,18 @@ object SettingsScreen : Screen {
     override val key = "settings"
     override val title = "الإعدادات"
 
+    private val rates = floatArrayOf(0.7f, 1.0f, 1.25f)
+    private val rateLabels = listOf("🐢 بطيء", "🙂 عادي", "🐇 سريع")
+
     @Composable
     override fun Content(env: Env) {
         val repo = env.repo
+        val speaker = env.speaker
         @Suppress("UNUSED_VARIABLE") val tick = repo.tick
         var confirmReset by remember { mutableStateOf(false) }
+        val rateIdx = repo.getInt(Repo.TTS_RATE, 1).coerceIn(0, 2)
+        val auto = repo.getInt(Repo.TTS_AUTO, 1) == 1
+        val primary = MaterialTheme.colorScheme.primary
 
         Column(
             Modifier
@@ -162,21 +204,96 @@ object SettingsScreen : Screen {
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(14.dp),
         ) {
-            SectionCard("🎯 أهداف اليوم") {
-                Stepper("كلمات جديدة", repo.getInt(Repo.GOAL_WORDS, 10), 5, 0, 50) { repo.setInt(Repo.GOAL_WORDS, it) }
-                Stepper("جمل جديدة", repo.getInt(Repo.GOAL_SENTENCES, 5), 5, 0, 50) { repo.setInt(Repo.GOAL_SENTENCES, it) }
-                Stepper("إجابات (مراجعة وتدريب)", repo.getInt(Repo.GOAL_ANSWERS, 20), 10, 0, 200) { repo.setInt(Repo.GOAL_ANSWERS, it) }
+            Appear(0) {
+                SectionCard("🔊 الصوت") {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(if (speaker.ready) "✅" else "⚠️", fontSize = 22.sp)
+                        Spacer(Modifier.width(8.dp))
+                        Text(
+                            speaker.status,
+                            Modifier.weight(1f),
+                            color = if (speaker.ready) Good else Bad,
+                            fontWeight = FontWeight.Bold,
+                        )
+                    }
+                    Button(
+                        onClick = { speaker.say("Hello! Sanshe Turtle is ready.") },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(14.dp),
+                    ) { Text("🔊 اختبار الصوت") }
+                    if (!speaker.ready) {
+                        Text(
+                            "الصوت بيشتغل من محرك النطق بتاع الموبايل. جرّب بالترتيب:",
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        OutlinedButton(
+                            onClick = { speaker.installVoiceData() },
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(14.dp),
+                        ) { Text("⬇️ تنزيل بيانات الصوت الإنجليزي") }
+                        OutlinedButton(
+                            onClick = { speaker.openTtsSettings() },
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(14.dp),
+                        ) { Text("⚙️ إعدادات النطق في الموبايل") }
+                        OutlinedButton(
+                            onClick = { speaker.installGoogleTts() },
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(14.dp),
+                        ) { Text("🛒 تثبيت Google Text-to-Speech") }
+                    }
+                    Text("سرعة النطق", fontWeight = FontWeight.Bold)
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        rateLabels.forEachIndexed { i, label ->
+                            Pill(
+                                label,
+                                primary,
+                                filled = i == rateIdx,
+                                onClick = {
+                                    repo.setInt(Repo.TTS_RATE, i)
+                                    speaker.setRate(rates[i])
+                                    speaker.say("Hello, nice to meet you.")
+                                },
+                            )
+                        }
+                    }
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text("نطق تلقائي في بطاقات المراجعة", Modifier.weight(1f))
+                        Switch(
+                            checked = auto,
+                            onCheckedChange = { repo.setInt(Repo.TTS_AUTO, if (it) 1 else 0) },
+                        )
+                    }
+                    Text(
+                        "لو لسه مفيش صوت: اتأكد إن صوت الوسائط مش صفر وإن الموبايل مش على الصامت.",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
             }
-            SectionCard("ℹ️ عن التطبيق") {
-                Text("Word Forge — نسخة 0.1 (المرحلة 1)")
-                Text(
-                    "التطبيق شغّال أوفلاين بالكامل، وتقدّمك محفوظ على الموبايل بس.",
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
+
+            Appear(1) {
+                SectionCard("🎯 أهداف اليوم") {
+                    Stepper("كلمات جديدة", repo.getInt(Repo.GOAL_WORDS, 10), 5, 0, 50) { repo.setInt(Repo.GOAL_WORDS, it) }
+                    Stepper("جمل جديدة", repo.getInt(Repo.GOAL_SENTENCES, 5), 5, 0, 50) { repo.setInt(Repo.GOAL_SENTENCES, it) }
+                    Stepper("إجابات (مراجعة وتدريب)", repo.getInt(Repo.GOAL_ANSWERS, 20), 10, 0, 200) { repo.setInt(Repo.GOAL_ANSWERS, it) }
+                }
             }
+
+            Appear(2) {
+                SectionCard("ℹ️ عن التطبيق") {
+                    Text("Sanshe Turtle 🐢 — نسخة 0.2")
+                    Text(
+                        "شغّال أوفلاين بالكامل، وتقدّمك محفوظ على الموبايل بس.",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+
             Button(
                 onClick = { confirmReset = true },
                 modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Bad),
             ) { Text("🗑️ مسح كل التقدّم", color = Color.White) }
         }
@@ -236,6 +353,7 @@ object SearchScreen : Screen {
                 onValueChange = { query = it },
                 label = { Text("ابحث بالإنجليزي أو العربي") },
                 singleLine = true,
+                shape = RoundedCornerShape(16.dp),
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
@@ -248,7 +366,7 @@ object SearchScreen : Screen {
                 contentPadding = PaddingValues(horizontal = 16.dp, vertical = 4.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
             ) {
-                items(results, key = { it.id }) { ItemRow(it, env) }
+                itemsIndexed(results, key = { _, r -> r.id }) { _, item -> ItemRow(item, env) }
             }
         }
     }
@@ -265,9 +383,9 @@ class SoonScreen(override val key: String, override val title: String, private v
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
-            Text("🔜", fontSize = 56.sp)
+            PopIn { Text("🔜", fontSize = 64.sp) }
             Spacer(Modifier.height(12.dp))
-            Text("قريبًا", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+            Text("قريبًا", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.ExtraBold)
             Spacer(Modifier.height(8.dp))
             Text(body, textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
