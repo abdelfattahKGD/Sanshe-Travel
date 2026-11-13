@@ -1,0 +1,211 @@
+# Topic 4 - Travel & Transport
+@group g1|المطار والطيران|Airport & Flights
+@group g2|وسائل المواصلات|Transport
+@group g3|الاتجاهات والأماكن|Directions
+@group g4|الفنادق والإقامة|Hotels & Stay
+@group g5|السياحة والمعالم|Sightseeing
+@group g6|القيادة والسيارات|Driving & Cars
+@group g7|التأخير والمشاكل|Delays & Problems
+@group g8|تخطيط الرحلة|Trip Planning
+@words
+g1|A1|airport|n|مطار|We arrived at the airport.
+g1|A1|flight|n|رحلة طيران|My flight leaves at noon.
+g1|A1|passport|n|جواز سفر|Don't forget your passport.
+g1|A1|ticket|n|تذكرة|I booked two tickets online.
+g1|A2|luggage|n|الأمتعة|Where can I get my luggage?
+g1|A2|suitcase|n|شنطة سفر|My suitcase is too heavy.
+g1|B1|boarding|n|الصعود إلى الطائرة|Boarding starts in ten minutes.
+g1|A2|gate|n|بوابة|Go to gate number twelve.
+g1|A2|passenger|n|راكب|Every passenger needs a ticket.
+g1|B1|customs|n|الجمارك|We passed through customs quickly.
+g1|A2|visa|n|تأشيرة|I need a tourist visa.
+g1|B1|departure|n|المغادرة|The departure time has changed.
+g1|B1|arrival|n|الوصول|Our arrival is at six.
+g2|A1|bus|n|أتوبيس / حافلة|The bus is late.
+g2|A1|train|n|قطار|I take the train daily.
+g2|A1|taxi|n|تاكسي|Let's take a taxi.
+g2|A1|car|n|سيارة|He bought a new car.
+g2|A2|bicycle|n|دراجة|She rides a bicycle to school.
+g2|A2|subway|n|مترو الأنفاق|The subway is faster than the bus.
+g2|A2|ship|n|سفينة|The ship leaves at dawn.
+g2|A1|plane|n|طائرة|The plane landed safely.
+g2|A2|driver|n|سائق|The driver was very polite.
+g2|A1|station|n|محطة|Where is the train station?
+g2|B1|platform|n|رصيف المحطة|The train leaves from platform three.
+g2|A2|traffic|n|زحمة المرور|The traffic is terrible today.
+g3|A2|direction|n|اتجاه|Which direction is the beach?
+g3|A1|map|n|خريطة|Look at the map.
+g3|A2|straight|adv|مباشرة / على طول|Go straight for two blocks.
+g3|A1|turn|v|يلفّ / ينعطف|Turn right after the bridge.
+g3|A2|behind|prep|خلف|The pharmacy is behind the bank.
+g3|B1|opposite|prep|مقابل|The hotel is opposite the station.
+g3|A1|near|prep|قريب من|Is there a bank near here?
+g3|A1|far|adv|بعيد|Is it far from here?
+g3|A2|distance|n|مسافة|The distance is about five kilometers.
+g3|A1|road|n|طريق|This road is closed today.
+g3|A2|bridge|n|كوبري / جسر|Cross the bridge, then turn right.
+g3|A2|address|n|عنوان|Can you write the address?
+g3|B1|intersection|n|تقاطع|Stop at the next intersection.
+g4|A1|hotel|n|فندق|We stayed in a nice hotel.
+g4|A2|reservation|n|حجز|I have a reservation tonight.
+g4|A1|check in|phrase|يسجّل الدخول (فندق / مطار)|We check in at three.
+g4|A1|check out|phrase|يسجّل الخروج|Check out is at noon.
+g4|B1|receptionist|n|موظف الاستقبال|The receptionist was very helpful.
+g4|A2|guest|n|ضيف / نزيل|Our guests arrive tomorrow.
+g4|A2|booking|n|حجز (عملية الحجز)|I changed my booking online.
+g4|A1|stay|v|يقيم / يمكث|How long will you stay?
+g4|A2|balcony|n|شرفة|The room has a balcony.
+g4|A2|view|n|منظر / إطلالة|The view is absolutely amazing.
+g4|B1|lobby|n|ردهة الفندق|Meet me in the lobby.
+g4|A2|available|adj|متاح|Is this room available tonight?
+g5|A2|tourist|n|سائح|The city is full of tourists.
+g5|A1|trip|n|رحلة|We took a short trip.
+g5|A2|tour|n|جولة سياحية|We joined a city tour.
+g5|A2|guide|n|مرشد سياحي|Our guide spoke perfect English.
+g5|B1|sightseeing|n|مشاهدة المعالم|We went sightseeing all day.
+g5|B1|souvenir|n|هدية تذكارية|I bought a small souvenir.
+g5|A1|museum|n|متحف|The museum opens at nine.
+g5|A1|beach|n|شاطئ|The beach was almost empty.
+g5|A2|island|n|جزيرة|We visited a tiny island.
+g5|A2|mountain|n|جبل|The mountain is covered in snow.
+g5|A1|camera|n|كاميرا|Don't forget your camera.
+g5|A1|photo|n|صورة|Can you take a photo?
+g5|A1|travel|v|يسافر|I love to travel.
+g6|A1|drive|v|يقود (سيارة)|I drive to work.
+g6|A2|license|n|رخصة قيادة|Show me your driving license.
+g6|B1|fuel|n|وقود|We're running out of fuel.
+g6|B1|engine|n|محرّك|The engine makes a strange noise.
+g6|B1|tire|n|إطار السيارة|I have a flat tire.
+g6|A2|speed|n|سرعة|Reduce your speed, please.
+g6|B1|brake|n|فرامل|Press the brake slowly.
+g6|B1|seatbelt|n|حزام الأمان|Always wear your seatbelt.
+g6|A2|accident|n|حادث|There was an accident ahead.
+g6|B1|lane|n|حارة مرورية|Stay in your lane.
+g6|B1|rental|n|إيجار (سيارة)|We booked a rental car.
+g6|B1|mechanic|n|ميكانيكي|The mechanic fixed it quickly.
+g7|A1|late|adj|متأخر|The train is late.
+g7|A2|miss|v|يفوّت|Hurry, or you'll miss it.
+g7|A2|lost|adj|تائه / مفقود|I think we're lost.
+g7|B1|delayed|adj|متأخّر (رحلة)|Our flight is delayed.
+g7|A2|crowded|adj|مزدحم|The bus was very crowded.
+g7|B1|queue|n|طابور|The queue was really long.
+g7|B1|complain|v|يشتكي|Nobody wants to complain.
+g7|A2|mistake|n|خطأ|There's a mistake on my ticket.
+g7|A2|change|v|يغيّر|I need to change trains.
+g7|B1|rush|n|استعجال|Why the rush?
+g7|A2|hurry|v|يستعجل|Hurry up, we're running late!
+g7|B1|connection|n|رحلة ربط / اتصال|I missed my connection.
+g8|A1|book|v|يحجز|Let's book the tickets today.
+g8|B1|destination|n|وجهة|Our final destination is Rome.
+g8|B2|itinerary|n|برنامج الرحلة|Send me the full itinerary.
+g8|B1|budget|n|ميزانية|Our budget is very limited.
+g8|A2|pack|v|يحزم الشنطة|I haven't packed yet.
+g8|B1|unpack|v|يفرّغ الشنطة|We unpacked as soon as we arrived.
+g8|B1|agency|n|وكالة|A travel agency booked everything.
+g8|B1|insurance|n|تأمين|Do you have travel insurance?
+g8|B1|abroad|adv|في الخارج|She studied abroad last year.
+g8|B1|foreign|adj|أجنبي|He speaks three foreign languages.
+g8|A2|local|adj|محلي|Let's try the local food.
+g8|B1|route|n|مسار|Which route is the fastest?
+g8|B1|journey|n|رحلة (مسافة)|The journey took six hours.
+@sentences
+g1|A1|What time does your flight leave?|متى تقلع رحلتك؟
+g1|A2|Please have your passport and ticket ready.|جهّز جواز سفرك وتذكرتك من فضلك.
+g1|A2|Where can I collect my luggage?|أين يمكنني استلام أمتعتي؟
+g1|A2|My suitcase is heavier than I expected.|شنطتي أثقل مما توقعت.
+g1|B1|Boarding begins at gate twelve.|يبدأ الصعود إلى الطائرة عند البوابة اثنتي عشرة.
+g1|A2|All passengers must show their boarding pass.|على جميع الركاب إبراز بطاقة الصعود.
+g1|B1|Do you have anything to declare at customs?|هل لديك شيء للتصريح عنه في الجمارك؟
+g1|A2|I need to apply for a tourist visa.|أحتاج إلى التقدّم بطلب تأشيرة سياحية.
+g1|B1|The departure time has been changed.|تم تغيير موعد المغادرة.
+g1|B1|Our arrival time is half past six.|موعد وصولنا السادسة والنصف.
+g1|A2|Is this a direct flight?|هل هذه رحلة مباشرة؟
+g1|A2|Please arrive two hours before departure.|من فضلك احضر قبل المغادرة بساعتين.
+g1|B1|I always get nervous before takeoff.|أتوتر دائمًا قبل الإقلاع.
+g2|A1|The bus comes every fifteen minutes.|الأتوبيس يأتي كل خمس عشرة دقيقة.
+g2|A1|I take the train to work daily.|أركب القطار إلى العمل يوميًا.
+g2|A1|Let's take a taxi. It's faster.|لنركب تاكسي. إنه أسرع.
+g2|A1|My car is in the garage.|سيارتي في الجراج.
+g2|A2|She rides her bicycle to the office.|تركب دراجتها إلى المكتب.
+g2|A2|The subway is cheap and very fast.|المترو رخيص وسريع جدًا.
+g2|A2|The ship leaves the port at dawn.|تغادر السفينة الميناء عند الفجر.
+g2|A2|Our plane landed ten minutes early.|هبطت طائرتنا قبل موعدها بعشر دقائق.
+g2|A2|The driver stopped in front of the hotel.|توقف السائق أمام الفندق.
+g2|B1|Which platform does the train leave from?|من أي رصيف يغادر القطار؟
+g2|A1|Where is the nearest train station?|أين أقرب محطة قطار؟
+g2|A2|The traffic is terrible this morning.|المرور سيئ جدًا هذا الصباح.
+g3|A2|Which direction is the city center?|في أي اتجاه وسط المدينة؟
+g3|A2|Can you show me on the map?|هل يمكنك أن تريني على الخريطة؟
+g3|A2|Go straight, then turn right after the bridge.|امشِ مباشرة ثم انعطف يمينًا بعد الكوبري.
+g3|A2|The pharmacy is right behind the bank.|الصيدلية خلف البنك مباشرة.
+g3|B1|The hotel is opposite the train station.|الفندق مقابل محطة القطار.
+g3|A1|Is there a bank near here?|هل يوجد بنك قريب من هنا؟
+g3|A1|Is it far from here?|هل هو بعيد من هنا؟
+g3|A2|The distance is about five kilometers.|المسافة حوالي خمسة كيلومترات.
+g3|A2|This road is closed because of construction.|هذا الطريق مغلق بسبب أعمال البناء.
+g3|B1|Stop at the next intersection, please.|توقف عند التقاطع القادم من فضلك.
+g3|A2|Could you write down the address for me?|هل يمكنك كتابة العنوان لي؟
+g3|A2|I think we took the wrong turn.|أظن أننا أخطأنا في المنعطف.
+g3|A2|Walk two blocks and you'll see it.|امشِ مربعين سكنيين وسترى المكان.
+g4|A2|We stayed at a lovely little hotel.|أقمنا في فندق صغير جميل.
+g4|A2|I have a reservation under the name Ahmed.|لدي حجز باسم أحمد.
+g4|A1|What time can we check in?|متى يمكننا تسجيل الدخول؟
+g4|A2|Check out is at twelve noon.|تسجيل الخروج في الثانية عشرة ظهرًا.
+g4|B1|The receptionist gave us a room key.|أعطانا موظف الاستقبال مفتاح الغرفة.
+g4|A2|We're expecting guests this weekend.|نتوقع ضيوفًا في عطلة الأسبوع هذه.
+g4|A2|I'd like to change my booking, please.|أود تغيير حجزي من فضلك.
+g4|A2|How long are you planning to stay?|كم تخطط أن تمكث؟
+g4|A2|Our room has a small balcony.|غرفتنا فيها شرفة صغيرة.
+g4|A2|The view from the window was incredible.|المنظر من النافذة كان رائعًا.
+g4|B1|Please wait for me in the lobby.|انتظرني في ردهة الفندق من فضلك.
+g4|A2|Do you have any rooms available tonight?|هل لديكم غرف متاحة الليلة؟
+g5|A2|The city is full of tourists in summer.|المدينة مليئة بالسياح في الصيف.
+g5|A2|We took a short trip to the coast.|قمنا برحلة قصيرة إلى الساحل.
+g5|B1|We joined a guided tour of the old city.|انضممنا إلى جولة مع مرشد في المدينة القديمة.
+g5|A2|Our guide spoke perfect English and Arabic.|تحدّث مرشدنا الإنجليزية والعربية بطلاقة.
+g5|B1|We spent the day sightseeing downtown.|قضينا اليوم في مشاهدة المعالم وسط المدينة.
+g5|B1|I bought a small souvenir for my mother.|اشتريت هدية تذكارية صغيرة لأمي.
+g5|A1|The museum is closed on Mondays.|المتحف مغلق أيام الإثنين.
+g5|A2|We spent the whole afternoon at the beach.|قضينا فترة ما بعد الظهر كلها على الشاطئ.
+g5|A2|You can reach the island by boat.|يمكنك الوصول إلى الجزيرة بالقارب.
+g5|A2|They climbed the mountain early in the morning.|تسلّقوا الجبل في الصباح الباكر.
+g5|A1|Could you take a photo of us?|هل يمكنك أن تلتقط لنا صورة؟
+g5|A2|I always carry my camera when I travel.|أحمل كاميرتي دائمًا عندما أسافر.
+g5|A2|Traveling is the best way to learn.|السفر أفضل طريقة للتعلّم.
+g6|A1|I drive to work every single day.|أقود إلى العمل كل يوم.
+g6|A2|Please show me your driving license.|أرني رخصة القيادة من فضلك.
+g6|B1|We're almost out of fuel.|وقودنا على وشك النفاد.
+g6|B1|The engine is making a strange noise.|المحرك يُصدر صوتًا غريبًا.
+g6|B1|I think we have a flat tire.|أظن أن لدينا إطارًا مفرغًا.
+g6|A2|Please reduce your speed in this area.|من فضلك خفّف سرعتك في هذه المنطقة.
+g6|B1|Press the brake pedal gently.|اضغط على دواسة الفرامل بلطف.
+g6|B1|Always wear your seatbelt when driving.|ارتدِ حزام الأمان دائمًا عند القيادة.
+g6|A2|There was a serious accident on the highway.|وقع حادث خطير على الطريق السريع.
+g6|B1|Stay in the right lane, please.|ابقَ في الحارة اليمنى من فضلك.
+g6|B1|We booked a rental car for the week.|حجزنا سيارة مستأجرة للأسبوع.
+g6|B1|The mechanic said it needs new brakes.|قال الميكانيكي إنها تحتاج فرامل جديدة.
+g7|A2|I'm sorry, the train is running late.|آسف، القطار متأخر.
+g7|A2|Hurry up, or we'll miss the flight.|أسرع وإلا سنفوّت الرحلة.
+g7|A2|I think we're completely lost.|أظن أننا تائهون تمامًا.
+g7|B1|Our flight has been delayed by two hours.|تأخرت رحلتنا ساعتين.
+g7|A2|The metro was crowded this morning.|كان المترو مزدحمًا هذا الصباح.
+g7|B1|We stood in a long queue for an hour.|وقفنا في طابور طويل لمدة ساعة.
+g7|B1|I want to complain about the service.|أريد أن أشتكي من الخدمة.
+g7|A2|There's a mistake on my ticket.|يوجد خطأ في تذكرتي.
+g7|A2|Can I change my seat, please?|هل يمكنني تغيير مقعدي من فضلك؟
+g7|B1|Don't rush. We have plenty of time.|لا تستعجل. لدينا وقت كثير.
+g7|B1|I missed my connection in Istanbul.|فاتتني رحلة الربط في إسطنبول.
+g7|A2|Everything went wrong on that trip.|كل شيء سار بشكل خاطئ في تلك الرحلة.
+g8|A2|Let's book the tickets as soon as possible.|لنحجز التذاكر في أقرب وقت ممكن.
+g8|B1|Our final destination is Rome.|وجهتنا النهائية روما.
+g8|B1|Can you send me the full itinerary?|هل يمكنك إرسال برنامج الرحلة كاملًا؟
+g8|B1|Our travel budget is quite limited.|ميزانية سفرنا محدودة جدًا.
+g8|A2|I haven't packed my bags yet.|لم أحزم حقائبي بعد.
+g8|B1|We unpacked and went straight to the beach.|فرّغنا الحقائب وذهبنا مباشرة إلى الشاطئ.
+g8|B1|A travel agency arranged everything for us.|رتّبت لنا وكالة سفر كل شيء.
+g8|B1|Do you have travel insurance for the trip?|هل لديك تأمين سفر للرحلة؟
+g8|B1|She studied abroad for two years.|درست في الخارج لمدة سنتين.
+g8|B1|He speaks three foreign languages fluently.|يتحدث ثلاث لغات أجنبية بطلاقة.
+g8|A2|Let's try some local food tonight.|لنجرّب بعض الأكل المحلي الليلة.
+g8|B1|Which route is the fastest to Alexandria?|أي طريق هو الأسرع إلى الإسكندرية؟
+g8|B1|The journey took almost nine hours.|استغرقت الرحلة نحو تسع ساعات.

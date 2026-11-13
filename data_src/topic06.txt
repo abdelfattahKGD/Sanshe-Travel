@@ -1,0 +1,211 @@
+# Topic 6 - Health & Feelings
+@group g1|أعضاء الجسم|Body Parts
+@group g2|الأعراض والأمراض|Symptoms & Illness
+@group g3|الطبيب والمستشفى|Doctor & Hospital
+@group g4|العادات الصحية|Healthy Habits
+@group g5|المشاعر الإيجابية|Positive Feelings
+@group g6|المشاعر السلبية|Negative Feelings
+@group g7|التعبير عن المشاعر|Expressing Feelings
+@group g8|الطوارئ والنصائح الصحية|Emergencies & Advice
+@words
+g1|A1|head|n|رأس|My head hurts.
+g1|A1|face|n|وجه|Wash your face, please.
+g1|A1|eye|n|عين|She has beautiful green eyes.
+g1|A1|ear|n|أذن / ودن|Cover your ears, please.
+g1|A1|nose|n|أنف / مناخير|His nose is running.
+g1|A1|mouth|n|فم|Open your mouth wide.
+g1|A1|tooth|n|سنّة / سن|I lost a tooth.
+g1|A1|hand|n|يد / إيد|Raise your hand, please.
+g1|A1|finger|n|إصبع / صباع|I cut my finger.
+g1|A1|arm|n|ذراع / دراع|He broke his arm.
+g1|A1|leg|n|ساق / رجل|My leg is sore.
+g1|A1|foot|n|قدم|My left foot is swollen.
+g1|A1|back|n|ظهر|I have back pain.
+g2|A1|sick|adj|مريض|I feel sick today.
+g2|A2|pain|n|ألم|I feel sharp pain here.
+g2|A2|headache|n|صداع|I have a terrible headache.
+g2|A2|fever|n|حمّى / سخونية|He has a high fever.
+g2|A2|cough|n|كحّة / سعال|That cough sounds bad.
+g2|A2|flu|n|إنفلونزا|Half the office has the flu.
+g2|A2|stomach|n|معدة / بطن|My stomach hurts badly.
+g2|B1|sneeze|v|يعطس|I sneeze when it's dusty.
+g2|B1|allergy|n|حساسية|She has a peanut allergy.
+g2|B1|dizzy|adj|دايخ / يشعر بدوار|I feel dizzy suddenly.
+g2|B1|injury|n|إصابة|He recovered from his injury.
+g2|B2|infection|n|عدوى / التهاب|The wound has an infection.
+g2|B1|symptom|n|عَرَض (مرض)|Fever is a common symptom.
+g3|A1|doctor|n|دكتور / طبيب|I need to see a doctor.
+g3|A2|nurse|n|ممرّضة / ممرّض|The nurse took my temperature.
+g3|A1|hospital|n|مستشفى|He was taken to hospital.
+g3|A2|clinic|n|عيادة|The clinic opens at nine.
+g3|A2|pharmacy|n|صيدلية|The pharmacy is next door.
+g3|A2|appointment|n|ميعاد / موعد|I have a doctor's appointment.
+g3|A2|patient|n|مريض (تحت العلاج)|The patient is feeling better.
+g3|A2|medicine|n|دواء|Take this medicine twice daily.
+g3|B1|prescription|n|روشتة / وصفة طبية|Do I need a prescription?
+g3|B1|treatment|n|علاج|She is receiving new treatment.
+g3|B2|surgery|n|جراحة / عملية|He needs surgery next week.
+g3|B1|ambulance|n|إسعاف|Call an ambulance immediately.
+g3|A2|test|n|تحليل / فحص|The blood test is normal.
+g4|A2|healthy|adj|صحي / بصحة جيدة|Try to eat healthy food.
+g4|A2|exercise|n|تمرين / رياضة|Daily exercise keeps you strong.
+g4|A2|diet|n|نظام غذائي|I'm on a strict diet.
+g4|B1|vitamin|n|فيتامين|Oranges are full of vitamin C.
+g4|A2|weight|n|وزن|He lost weight recently.
+g4|A1|strong|adj|قوي|You look strong and healthy.
+g4|A2|weak|adj|ضعيف|I feel weak and tired.
+g4|B1|recover|v|يتعافى|She will recover very soon.
+g4|B2|heal|v|يلتئم / يشفى|The wound will heal slowly.
+g4|B1|stretch|v|يمدّد عضلاته|Stretch before you run.
+g4|A2|gym|n|جيم / صالة رياضية|I go to the gym.
+g4|B1|habit|n|عادة|Reading is a good habit.
+g5|A1|happy|adj|سعيد|I'm so happy today.
+g5|A2|glad|adj|مسرور|I'm glad you came.
+g5|A2|excited|adj|متحمّس|The kids are very excited.
+g5|A2|proud|adj|فخور|I'm proud of you.
+g5|B1|grateful|adj|ممتن|I'm truly grateful for everything.
+g5|B1|cheerful|adj|بشوش / مرح|She is always cheerful.
+g5|A2|calm|adj|هادئ / مطمئن|Stay calm and breathe slowly.
+g5|B1|confident|adj|واثق|He feels confident about it.
+g5|B1|joy|n|بهجة|Her visit brought us joy.
+g5|A2|enjoy|v|يستمتع|I enjoy reading in the evening.
+g5|A1|love|v|يحب|I love my family.
+g5|A1|smile|v|يبتسم|Please smile for the camera.
+g6|A1|sad|adj|حزين|Why are you so sad?
+g6|A1|angry|adj|غضبان|He was angry about it.
+g6|A2|upset|adj|منزعج / مضايق|She is upset about the news.
+g6|A2|worried|adj|قلقان|I'm worried about my exam.
+g6|A2|afraid|adj|خايف|Don't be afraid of mistakes.
+g6|A2|nervous|adj|متوتر|I feel nervous before interviews.
+g6|B1|lonely|adj|وحيد / يشعر بالوحدة|He felt lonely in the city.
+g6|A2|bored|adj|زهقان / ملّان|I'm bored. Let's go out.
+g6|B1|jealous|adj|غيور / يغار|She was jealous of her sister.
+g6|B1|disappointed|adj|محبط|I'm disappointed with the result.
+g6|B1|embarrassed|adj|محرَج|He looked really embarrassed.
+g6|B1|stressed|adj|مضغوط|I've been very stressed lately.
+g7|A1|feel|v|يشعر|How do you feel today?
+g7|B1|mood|n|مزاج|She's in a good mood.
+g7|A2|cry|v|يبكي|The baby started to cry.
+g7|A2|laugh|v|يضحك|We laughed all night.
+g7|B1|shout|v|يصرخ|Please don't shout at me.
+g7|B1|hug|n|حضن / عناق|Give me a big hug.
+g7|A2|worry|v|يقلق|Don't worry, it's fine.
+g7|B1|trust|v|يثق|I trust you completely.
+g7|B1|emotion|n|عاطفة / شعور|He couldn't hide his emotion.
+g7|A1|tired|adj|تعبان|I'm too tired to cook.
+g7|B1|exhausted|adj|مُنهَك|The long trip left us exhausted.
+g7|A2|energy|n|طاقة|I have no energy today.
+g8|B1|emergency|n|حالة طوارئ|This is a medical emergency.
+g8|A1|help|v|يساعد|Please help me!
+g8|B1|danger|n|خطر|Keep away from danger.
+g8|A2|careful|adj|حذر|Be careful on the stairs.
+g8|B1|bleed|v|ينزف|His finger started to bleed.
+g8|B2|wound|n|جرح|Clean the wound first.
+g8|B1|bandage|n|ضمادة|Put a bandage on it.
+g8|B1|burn|v|يحرق / يحترق|Careful, don't burn yourself.
+g8|B2|faint|v|يُغمى عليه|She almost fainted from heat.
+g8|B1|advice|n|نصيحة|Thanks for your advice.
+g8|B1|recommend|v|يوصي / ينصح|I recommend this medicine.
+g8|B1|avoid|v|يتجنّب|Avoid spicy food today.
+g8|B1|warning|n|تحذير|Read the warning label first.
+@sentences
+g1|A1|My head hurts. I need some rest.|رأسي يؤلمني. أحتاج إلى بعض الراحة.
+g1|A1|Wash your face before you go to bed.|اغسل وجهك قبل أن تنام.
+g1|A1|She has beautiful, big green eyes.|لها عيون خضراء كبيرة وجميلة.
+g1|A2|Please cover your ears. It's too loud.|غطِّ أذنيك من فضلك. الصوت عالٍ جدًا.
+g1|A2|His nose has been running all day.|أنفه يسيل طوال اليوم.
+g1|A1|Open your mouth wide and say ahh.|افتح فمك واسعًا وقل آه.
+g1|A2|I lost a tooth while eating.|فقدت سنة وأنا آكل.
+g1|A1|Raise your hand if you know it.|ارفع يدك إن كنت تعرف.
+g1|A1|I cut my finger with a knife.|جرحت إصبعي بالسكين.
+g1|A2|He broke his arm playing football.|كسر ذراعه وهو يلعب كرة القدم.
+g1|A2|My legs are sore after the long walk.|ساقاي تؤلمانني بعد المشي الطويل.
+g1|A2|My back hurts when I sit too long.|ظهري يؤلمني عندما أجلس طويلًا.
+g2|A1|I feel sick, so I'm staying home.|أشعر بالمرض لذا سأبقى في البيت.
+g2|A2|I have a sharp pain in my side.|أشعر بألم حاد في جنبي.
+g2|A2|I've had a terrible headache since morning.|عندي صداع شديد منذ الصباح.
+g2|A2|He has a high fever and chills.|عنده حمّى شديدة وقشعريرة.
+g2|A2|That cough sounds really bad. See a doctor.|تلك الكحة تبدو سيئة جدًا. اذهب إلى الطبيب.
+g2|A2|Half the office has the flu.|نصف المكتب مصاب بالإنفلونزا.
+g2|A2|My stomach hurts after every meal.|معدتي تؤلمني بعد كل وجبة.
+g2|B1|I sneeze a lot when it's dusty.|أعطس كثيرًا عندما يكون الجو مغبرًا.
+g2|B1|She has a serious peanut allergy.|عندها حساسية شديدة من الفول السوداني.
+g2|B1|I feel dizzy when I stand up.|أشعر بالدوار عندما أقف.
+g2|B1|He is recovering from a knee injury.|يتعافى من إصابة في الركبة.
+g2|B1|The wound might get infected.|الجرح قد يلتهب.
+g2|B1|Fever is a common symptom of the flu.|الحمى عرض شائع للإنفلونزا.
+g3|A1|I need to see a doctor today.|أحتاج إلى زيارة الطبيب اليوم.
+g3|A2|The nurse will take your temperature first.|ستقيس الممرضة درجة حرارتك أولًا.
+g3|A2|He was rushed to the hospital last night.|نُقل إلى المستشفى مسرعًا الليلة الماضية.
+g3|A2|The clinic is open until eight.|العيادة مفتوحة حتى الثامنة.
+g3|A2|Where is the nearest pharmacy, please?|أين أقرب صيدلية من فضلك؟
+g3|A2|I have a doctor's appointment at noon.|عندي موعد مع الطبيب عند الظهر.
+g3|A2|The patient is feeling much better today.|المريض يشعر بتحسن كبير اليوم.
+g3|A2|Take this medicine twice a day.|تناول هذا الدواء مرتين يوميًا.
+g3|B1|Do I need a prescription for this?|هل أحتاج وصفة طبية لهذا؟
+g3|B1|The new treatment is working well.|العلاج الجديد يعمل جيدًا.
+g3|B1|She will have surgery next week.|ستجري عملية جراحية الأسبوع القادم.
+g3|B1|Quick, call an ambulance right now!|بسرعة، اتصل بالإسعاف الآن!
+g3|A2|The results of my blood test are normal.|نتائج تحليل الدم عندي طبيعية.
+g4|A2|Try to eat healthy food every day.|حاول أن تأكل طعامًا صحيًا كل يوم.
+g4|A2|Daily exercise keeps your body strong.|التمارين اليومية تُبقي جسمك قويًا.
+g4|A2|I'm on a diet to lose weight.|أتبع نظامًا غذائيًا لأخسر وزني.
+g4|B1|Oranges are full of vitamin C.|البرتقال مليء بفيتامين سي.
+g4|A2|He lost ten kilos in three months.|خسر عشرة كيلو في ثلاثة أشهر.
+g4|A2|I feel weak because I skipped breakfast.|أشعر بالضعف لأنني تخطّيت الفطور.
+g4|B1|You will recover quickly if you rest.|ستتعافى سريعًا إن ارتحت.
+g4|B1|The wound will heal in a week.|الجرح سيلتئم خلال أسبوع.
+g4|B1|Always stretch before you start running.|امدد عضلاتك دائمًا قبل أن تبدأ الجري.
+g4|A2|I go to the gym three times weekly.|أذهب إلى الجيم ثلاث مرات أسبوعيًا.
+g4|B1|Reading before bed is a good habit.|القراءة قبل النوم عادة جيدة.
+g4|A2|Drink enough water and sleep well.|اشرب ماءً كافيًا ونم جيدًا.
+g5|A1|I'm so happy to see you again.|أنا سعيد جدًا برؤيتك مجددًا.
+g5|A2|I'm glad you could make it.|يسعدني أنك استطعت الحضور.
+g5|A2|The kids are very excited about the trip.|الأطفال متحمسون جدًا للرحلة.
+g5|A2|I'm really proud of what you did.|أنا فخور حقًا بما فعلته.
+g5|B1|I'm truly grateful for your support.|أنا ممتن حقًا لدعمك.
+g5|B1|She is always cheerful in the morning.|هي دائمًا مرحة في الصباح.
+g5|A2|Stay calm and take a deep breath.|ابقَ هادئًا وخذ نفسًا عميقًا.
+g5|B1|He feels confident about the interview.|يشعر بالثقة تجاه المقابلة.
+g5|B1|Her visit brought us so much joy.|زيارتها جلبت لنا بهجة كبيرة.
+g5|A2|I enjoy reading in the evening.|أستمتع بالقراءة في المساء.
+g5|A1|I love spending time with my family.|أحب قضاء الوقت مع عائلتي.
+g5|A1|Please smile. I'm taking a photo.|ابتسم من فضلك. سألتقط صورة.
+g6|A1|Why are you so sad today?|لماذا أنت حزين جدًا اليوم؟
+g6|A2|He was angry about the long delay.|كان غاضبًا بسبب التأخير الطويل.
+g6|A2|She is upset about the bad news.|هي منزعجة من الأخبار السيئة.
+g6|A2|I'm worried about my final exam.|أنا قلق بشأن امتحاني النهائي.
+g6|A2|Don't be afraid of making mistakes.|لا تخف من ارتكاب الأخطاء.
+g6|A2|I always feel nervous before interviews.|أشعر دائمًا بالتوتر قبل المقابلات.
+g6|B1|He felt lonely in the big city.|شعر بالوحدة في المدينة الكبيرة.
+g6|A2|I'm bored. Let's go somewhere.|زهقت. لنذهب إلى مكان ما.
+g6|B1|She was jealous of her sister's success.|غارت من نجاح أختها.
+g6|B1|I'm disappointed with the final result.|أنا محبط من النتيجة النهائية.
+g6|B1|He looked really embarrassed in front of everyone.|بدا محرجًا جدًا أمام الجميع.
+g6|B1|I've been very stressed lately.|لقد كنت مضغوطًا جدًا مؤخرًا.
+g7|A1|How do you feel today?|كيف تشعر اليوم؟
+g7|B1|She's in a really good mood.|هي في مزاج جيد جدًا.
+g7|A2|The baby started to cry loudly.|بدأ الطفل يبكي بصوت عالٍ.
+g7|A2|We laughed so much last night.|ضحكنا كثيرًا الليلة الماضية.
+g7|B1|Please don't shout at me.|من فضلك لا تصرخ عليّ.
+g7|B1|Come here and give me a hug.|تعال هنا وأعطني حضنًا.
+g7|A2|Don't worry. Everything will be fine.|لا تقلق. كل شيء سيكون بخير.
+g7|B1|I trust you completely with this.|أثق بك تمامًا في هذا.
+g7|B1|He couldn't hide his emotions.|لم يستطع إخفاء مشاعره.
+g7|A1|I'm too tired to cook tonight.|أنا متعب جدًا لأطبخ الليلة.
+g7|B1|The long trip left us exhausted.|الرحلة الطويلة تركتنا منهكين.
+g7|A2|I have no energy this afternoon.|ليس عندي أي طاقة هذا العصر.
+g8|B1|This is a medical emergency. Call now!|هذه حالة طبية طارئة. اتصل الآن!
+g8|A1|Please help me. I can't breathe.|ساعدني من فضلك. لا أستطيع التنفس.
+g8|B1|Stay away from the danger zone.|ابتعد عن منطقة الخطر.
+g8|A2|Be careful on the wet stairs.|احذر على السلالم المبللة.
+g8|B1|His finger started to bleed badly.|بدأ إصبعه ينزف بشدة.
+g8|B1|Clean the wound with fresh water.|نظّف الجرح بماء نظيف.
+g8|B1|Put a bandage on it, please.|ضع ضمادة عليه من فضلك.
+g8|B1|Careful! Don't burn yourself on the stove.|احذر! لا تحرق نفسك على الموقد.
+g8|B2|She almost fainted from the heat.|كادت تُغمى عليها من الحر.
+g8|B1|Thank you for your good advice.|شكرًا على نصيحتك الجيدة.
+g8|B1|I recommend that you see a doctor.|أنصحك بزيارة الطبيب.
+g8|B1|Avoid spicy food until you feel better.|تجنّب الطعام الحار حتى تشعر بتحسّن.
+g8|B1|Read the warning label before use.|اقرأ ملصق التحذير قبل الاستخدام.
+g8|B1|Stay calm and call the emergency number.|ابقَ هادئًا واتصل برقم الطوارئ.

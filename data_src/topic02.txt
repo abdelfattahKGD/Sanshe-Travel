@@ -1,0 +1,211 @@
+# Topic 2 - Daily Life & Home
+@group g1|البيت والغرف|House & Rooms
+@group g2|الأثاث والأدوات|Furniture & Items
+@group g3|الروتين الصباحي|Morning Routine
+@group g4|الأعمال المنزلية|Household Chores
+@group g5|الوقت والأيام|Time & Days
+@group g6|الطقس والفصول|Weather & Seasons
+@group g7|الأنشطة اليومية|Daily Activities
+@group g8|الجيران والحي|Neighborhood
+@words
+g1|A1|house|n|بيت / منزل|We bought a new house.
+g1|A1|home|n|بيت (مكان السكن)|I'm going home now.
+g1|A1|room|n|غرفة|This room is very bright.
+g1|A1|kitchen|n|مطبخ|She is cooking in the kitchen.
+g1|A1|bedroom|n|غرفة نوم|My bedroom is upstairs.
+g1|A1|bathroom|n|حمّام|The bathroom is on the left.
+g1|A1|living room|n|غرفة المعيشة|We watch TV in the living room.
+g1|A1|door|n|باب|Please close the door.
+g1|A1|window|n|نافذة|Open the window, please.
+g1|A1|floor|n|أرضية / طابق|The floor is wet.
+g1|A2|roof|n|سقف / سطح|The roof needs repair.
+g1|A1|garden|n|حديقة|They have a small garden.
+g2|A1|table|n|طاولة|Put the plates on the table.
+g2|A1|chair|n|كرسي|Please take a chair.
+g2|A1|bed|n|سرير|I make my bed daily.
+g2|A1|sofa|n|أريكة|The cat sleeps on the sofa.
+g2|A1|lamp|n|مصباح / أباجورة|Turn on the lamp, please.
+g2|A2|mirror|n|مرآة|She looked in the mirror.
+g2|A2|shelf|n|رف|The books are on the shelf.
+g2|A2|drawer|n|درج|Your keys are in the drawer.
+g2|A2|carpet|n|سجادة / موكيت|The carpet feels very soft.
+g2|A2|curtain|n|ستارة|She closed the curtain quickly.
+g2|A1|key|n|مفتاح|I lost my house key.
+g2|A1|clock|n|ساعة حائط|The clock is five minutes slow.
+g2|A2|fridge|n|ثلاجة|There's milk in the fridge.
+g3|A1|wake up|phrase|يستيقظ|I wake up at seven.
+g3|A1|get up|phrase|يقوم من السرير|Get up, it's already late.
+g3|A2|brush|v|يفرّش (أسنان / شعر)|Brush your teeth twice daily.
+g3|A1|wash|v|يغسل|Wash your hands before eating.
+g3|A2|shower|n|دش / استحمام|I take a quick shower.
+g3|A2|towel|n|منشفة|Hand me a clean towel.
+g3|A2|soap|n|صابون|This soap smells wonderful.
+g3|A2|toothbrush|n|فرشاة أسنان|I forgot my toothbrush.
+g3|A2|dress|v|يرتدي ملابسه|He dressed quickly and left.
+g3|B1|comb|v|يمشّط (الشعر)|She combs her hair carefully.
+g3|A2|sleepy|adj|نعسان|I feel sleepy this morning.
+g3|A2|alarm|n|منبّه|My alarm rings at six.
+g4|A1|clean|v|ينظّف|I clean my room weekly.
+g4|A2|sweep|v|يكنس|Please sweep the kitchen floor.
+g4|A2|dishes|n|أطباق (غسيل الأطباق)|She washes the dishes.
+g4|B1|laundry|n|غسيل الملابس|I do laundry on Sundays.
+g4|A2|iron|v|يكوي|He irons his shirt.
+g4|A1|cook|v|يطبخ|My mother cooks very well.
+g4|B1|tidy|v|يرتّب|Tidy your desk before leaving.
+g4|A2|trash|n|قمامة|Take out the trash, please.
+g4|B1|vacuum|v|يكنس بالمكنسة الكهربائية|I vacuum the carpet weekly.
+g4|B1|mop|v|يمسح الأرض بالمساحة|Mop the floor after cooking.
+g4|B1|fold|v|يطوي|Fold the clothes neatly, please.
+g4|B1|dust|n|غبار|There is dust everywhere.
+g4|A2|repair|v|يصلّح|Can you repair this chair?
+g5|A1|time|n|وقت|Do we have enough time?
+g5|A1|hour|n|ساعة (60 دقيقة)|The trip takes one hour.
+g5|A1|minute|n|دقيقة|Wait a minute, please.
+g5|A1|today|adv|النهاردة / اليوم|Today is my day off.
+g5|A1|tomorrow|adv|بكرة / غدًا|I'll see you tomorrow.
+g5|A1|yesterday|adv|امبارح / أمس|I called you yesterday.
+g5|A1|morning|n|صباح|I run every morning.
+g5|A1|afternoon|n|بعد الظهر|We met in the afternoon.
+g5|A1|evening|n|مساء|We eat dinner in the evening.
+g5|A1|night|n|ليل|It gets cold at night.
+g5|A1|week|n|أسبوع|I'll finish this week.
+g5|A2|weekend|n|عطلة نهاية الأسبوع|What are you doing this weekend?
+g5|A1|month|n|شهر|She was born last month.
+g6|A1|weather|n|طقس|The weather is lovely today.
+g6|A1|sunny|adj|مشمس|It's a sunny day.
+g6|A2|rainy|adj|ممطر|Rainy days make me sleepy.
+g6|A2|cloudy|adj|غائم|It's cloudy this morning.
+g6|A2|windy|adj|عاصف / كتير الهوا|It was windy last night.
+g6|A1|cold|adj|بارد|The water is very cold.
+g6|A1|hot|adj|حار / ساخن|It's too hot outside.
+g6|A1|warm|adj|دافئ|Keep the baby warm.
+g6|A2|snow|n|ثلج|Children love playing in snow.
+g6|A1|summer|n|صيف|We travel every summer.
+g6|A1|winter|n|شتاء|Winter nights are very long.
+g6|B1|temperature|n|درجة الحرارة|The temperature dropped suddenly.
+g7|A1|sleep|v|ينام|I sleep eight hours.
+g7|A1|eat|v|يأكل|Let's eat together tonight.
+g7|A1|drink|v|يشرب|Drink more water daily.
+g7|A1|watch|v|يشاهد|We watch movies on Fridays.
+g7|A1|read|v|يقرأ|She reads before bed.
+g7|A1|play|v|يلعب / يعزف|The kids play outside.
+g7|A1|walk|v|يمشي|I walk to work.
+g7|A2|rest|v|يرتاح|You should rest today.
+g7|A2|relax|v|يسترخي|I relax by listening to music.
+g7|A1|sit|v|يجلس|Please sit here.
+g7|A1|stand|v|يقف|Stand up straight, please.
+g7|A1|open|v|يفتح|Open your books, please.
+g7|A1|close|v|يُغلق|Close the door quietly.
+g8|A2|neighbor|n|جار|My neighbor is very friendly.
+g8|A1|street|n|شارع|Our street is quiet.
+g8|A2|building|n|مبنى / عمارة|The building has ten floors.
+g8|A2|apartment|n|شقة|We rent a small apartment.
+g8|A2|elevator|n|مصعد|The elevator is out of order.
+g8|A2|stairs|n|سلالم|Take the stairs, please.
+g8|A1|park|n|حديقة عامة / متنزّه|Let's walk in the park.
+g8|A2|corner|n|ناصية / ركن|Turn left at the corner.
+g8|A2|noise|n|ضوضاء / إزعاج|The noise woke me up.
+g8|A2|quiet|adj|هادئ|This neighborhood is very quiet.
+g8|B1|parking|n|مكان انتظار السيارات|There is free parking here.
+g8|B1|entrance|n|مدخل|Meet me at the entrance.
+@sentences
+g1|A1|We just moved into a new house.|انتقلنا للتو إلى بيت جديد.
+g1|A2|Our kitchen is small, but very comfortable.|مطبخنا صغير لكنه مريح جدًا.
+g1|A2|Which bedroom do you want to use?|أي غرفة نوم تريد أن تستخدم؟
+g1|A2|The bathroom is at the end of the hall.|الحمّام في آخر الممر.
+g1|A2|Please leave your shoes next to the door.|من فضلك اترك حذاءك بجوار الباب.
+g1|A2|The living room gets a lot of sunlight.|غرفة المعيشة تدخلها شمس كثيرة.
+g1|B1|Can you open the window? It's stuffy.|هل يمكنك فتح النافذة؟ الجو خانق.
+g1|A2|We have a small garden behind the house.|لدينا حديقة صغيرة خلف البيت.
+g1|B1|The roof leaks whenever it rains heavily.|السقف يتسرّب كلما أمطرت بغزارة.
+g1|A2|I'm happy to be home after a long day.|سعيد بوجودي في البيت بعد يوم طويل.
+g1|A2|Our apartment has two rooms and a balcony.|شقتنا فيها غرفتان وشرفة.
+g1|B1|There is a spare room for guests.|يوجد غرفة إضافية للضيوف.
+g2|A1|Put the plates on the table, please.|ضع الأطباق على الطاولة من فضلك.
+g2|B1|This sofa is too soft for my back.|هذه الأريكة ناعمة جدًا على ظهري.
+g2|A2|I need a new lamp for my desk.|أحتاج مصباحًا جديدًا لمكتبي.
+g2|A2|Your keys are in the top drawer.|مفاتيحك في الدرج العلوي.
+g2|A2|She bought a beautiful mirror for the hallway.|اشترت مرآة جميلة للممر.
+g2|A2|The books are on the shelf above the bed.|الكتب على الرف فوق السرير.
+g2|A2|Could you close the curtains, please?|هل يمكنك إغلاق الستائر من فضلك؟
+g2|A1|There is cold water in the fridge.|يوجد ماء بارد في الثلاجة.
+g2|A1|The clock on the wall is broken.|ساعة الحائط معطّلة.
+g2|A2|We need a bigger bed for the guest room.|نحتاج سريرًا أكبر لغرفة الضيوف.
+g2|A2|This carpet is very soft and warm.|هذه السجادة ناعمة ودافئة جدًا.
+g2|A2|Please don't lose your house key again.|من فضلك لا تضيّع مفتاح البيت مرة أخرى.
+g3|A1|I wake up at six every morning.|أستيقظ في السادسة كل صباح.
+g3|A2|My alarm rings, but I never hear it.|المنبّه يرنّ لكنني لا أسمعه أبدًا.
+g3|A2|Get up now, or you'll be late.|قم الآن وإلا ستتأخر.
+g3|A1|I brush my teeth after breakfast.|أنظّف أسناني بعد الفطور.
+g3|A2|She takes a long, hot shower every day.|تأخذ دشًا طويلًا ساخنًا كل يوم.
+g3|A1|Where is the soap? I can't find it.|أين الصابون؟ لا أجده.
+g3|A2|Hand me a clean towel, please.|ناولني منشفة نظيفة من فضلك.
+g3|B1|He dressed quickly and ran out the door.|ارتدى ملابسه بسرعة وخرج مسرعًا.
+g3|A2|I feel sleepy before my first coffee.|أشعر بالنعاس قبل أول فنجان قهوة.
+g3|B1|She combs her hair in front of the mirror.|تمشّط شعرها أمام المرآة.
+g3|A2|I forgot my toothbrush at the hotel.|نسيت فرشاة أسناني في الفندق.
+g3|B1|My mornings are always busy and noisy.|صباحاتي دائمًا مزدحمة وصاخبة.
+g4|A1|I clean my room every weekend.|أنظّف غرفتي كل عطلة أسبوع.
+g4|A2|Please sweep the floor before the guests arrive.|من فضلك اكنس الأرض قبل وصول الضيوف.
+g4|A2|Who is washing the dishes tonight?|من سيغسل الأطباق الليلة؟
+g4|A2|I do the laundry on Saturday mornings.|أغسل الملابس صباح أيام السبت.
+g4|B1|He irons his shirts every Sunday evening.|يكوي قمصانه كل مساء أحد.
+g4|A2|Dinner is ready. Come and eat, everyone!|العشاء جاهز. تعالوا لتأكلوا جميعًا!
+g4|B1|Tidy up your toys before bedtime.|رتّب ألعابك قبل وقت النوم.
+g4|A2|Can you take out the trash, please?|هل يمكنك إخراج القمامة من فضلك؟
+g4|B1|I vacuum the carpet twice a week.|أكنس السجادة بالمكنسة الكهربائية مرتين أسبوعيًا.
+g4|B1|Mop the floor, and the kitchen will shine.|امسح الأرض وسيلمع المطبخ.
+g4|B1|Let's fold these clothes before they wrinkle.|لنطوِ هذه الملابس قبل أن تتجعّد.
+g4|B1|There is dust all over the shelves.|يوجد غبار على كل الرفوف.
+g4|A2|My brother will repair the broken chair.|سيصلّح أخي الكرسي المكسور.
+g5|A2|Do we have enough time to finish?|هل لدينا وقت كافٍ لننتهي؟
+g5|A2|The trip takes about one hour.|الرحلة تستغرق حوالي ساعة.
+g5|A1|I'll be ready in five minutes.|سأكون جاهزًا خلال خمس دقائق.
+g5|A2|Today is my day off from work.|اليوم إجازتي من العمل.
+g5|A1|I'll call you tomorrow morning.|سأتصل بك صباح الغد.
+g5|A2|I was very tired yesterday evening.|كنت متعبًا جدًا مساء أمس.
+g5|A2|We usually have lunch in the afternoon.|نتناول الغداء عادةً بعد الظهر.
+g5|A2|It gets very cold here at night.|يصبح الجو باردًا جدًا هنا ليلًا.
+g5|A2|I have a big meeting this week.|لدي اجتماع كبير هذا الأسبوع.
+g5|A2|What are you doing this weekend?|ماذا ستفعل في عطلة نهاية الأسبوع؟
+g5|B1|My rent is due at the end of the month.|الإيجار مستحق في نهاية الشهر.
+g5|A1|We meet every Friday at eight.|نلتقي كل جمعة في الثامنة.
+g5|A2|It's already late. Let's go to bed.|الوقت تأخّر بالفعل. لننم.
+g6|A1|The weather is lovely today.|الطقس جميل اليوم.
+g6|A1|It's sunny, so let's go outside.|الجو مشمس فلنخرج.
+g6|A2|It has been rainy all week.|ظل الجو ممطرًا طوال الأسبوع.
+g6|A2|The sky is cloudy, but it won't rain.|السماء غائمة لكنها لن تمطر.
+g6|B1|It was so windy that my umbrella broke.|كانت الرياح قوية لدرجة أن مظلتي انكسرت.
+g6|A1|Take a jacket. It's really cold outside.|خذ جاكيت. الجو بارد جدًا في الخارج.
+g6|A2|It's too hot to play in the sun.|الجو حار جدًا للعب تحت الشمس.
+g6|A2|I prefer warm weather to cold weather.|أفضّل الطقس الدافئ على الطقس البارد.
+g6|B1|It might snow in the mountains tonight.|ربما تتساقط الثلوج في الجبال الليلة.
+g6|A2|We always travel somewhere in the summer.|نسافر دائمًا إلى مكان ما في الصيف.
+g6|A2|Winter evenings are perfect for hot tea.|أمسيات الشتاء مثالية للشاي الساخن.
+g6|B1|The temperature will drop below zero tomorrow.|ستنخفض درجة الحرارة تحت الصفر غدًا.
+g7|A2|I usually sleep for about eight hours.|عادةً أنام حوالي ثماني ساعات.
+g7|A1|Let's eat dinner together tonight.|لنتناول العشاء معًا الليلة.
+g7|A2|You should drink more water every day.|يجب أن تشرب ماءً أكثر كل يوم.
+g7|A2|We watch a movie every Friday night.|نشاهد فيلمًا كل ليلة جمعة.
+g7|A2|She likes to read before going to bed.|تحب القراءة قبل النوم.
+g7|A2|The kids are playing in the yard.|الأطفال يلعبون في الفناء.
+g7|A2|I walk to work when the weather is nice.|أمشي إلى العمل عندما يكون الطقس لطيفًا.
+g7|A2|You look tired. You should rest.|تبدو متعبًا. يجب أن ترتاح.
+g7|A2|I like to relax with some music.|أحب أن أسترخي مع بعض الموسيقى.
+g7|A2|Please sit down and make yourself comfortable.|اجلس من فضلك واشعر بالراحة.
+g7|B1|Stand up straight and breathe slowly.|قف باستقامة وتنفّس ببطء.
+g7|A2|Open your books to page twenty.|افتحوا كتبكم على الصفحة عشرين.
+g7|A2|Please close the door quietly. The baby is sleeping.|أغلق الباب بهدوء من فضلك. الطفل نائم.
+g8|A1|Our neighbor is a very kind man.|جارنا رجل طيب جدًا.
+g8|A1|There's a small park near our street.|يوجد حديقة صغيرة قرب شارعنا.
+g8|A2|The building has an elevator and a garage.|المبنى فيه مصعد وجراج.
+g8|A1|We live on the third floor.|نسكن في الطابق الثالث.
+g8|A2|The elevator is out of order today.|المصعد معطّل اليوم.
+g8|A2|Take the stairs. It's good exercise.|استخدم السلالم. إنها رياضة جيدة.
+g8|A2|Turn left at the next corner.|انعطف يسارًا عند الناصية القادمة.
+g8|A2|The noise from the street woke me up.|ضوضاء الشارع أيقظتني.
+g8|B1|I love how quiet this neighborhood is.|أحب مدى هدوء هذا الحي.
+g8|B1|There's free parking behind the building.|يوجد موقف سيارات مجاني خلف المبنى.
+g8|B1|The main entrance is on the other side.|المدخل الرئيسي على الجانب الآخر.
+g8|B1|My neighbors play loud music at night.|جيراني يشغّلون موسيقى عالية ليلًا.
+g8|B1|Could you keep the noise down, please?|هل يمكنك خفض الضجيج من فضلك؟

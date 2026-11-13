@@ -1,0 +1,211 @@
+# Topic 8 - Study & Learning
+@group g1|المدرسة والجامعة|School & University
+@group g2|المواد الدراسية|Subjects
+@group g3|أدوات المذاكرة|Study Tools
+@group g4|الامتحانات والدرجات|Exams & Grades
+@group g5|التعلم والمذاكرة|Learning Actions
+@group g6|القراءة والكتابة|Reading & Writing
+@group g7|مهارات اللغة|Language Skills
+@group g8|الدورات والأهداف|Courses & Goals
+@words
+g1|A1|school|n|مدرسة|My school starts at eight.
+g1|A1|university|n|جامعة|She studies at a big university.
+g1|A2|college|n|كلية|He is applying to college.
+g1|A1|class|n|فصل / حصة|Our class starts at nine.
+g1|A1|classroom|n|قاعة الدرس|The classroom is quite small.
+g1|A1|teacher|n|مدرّس|My teacher explains very well.
+g1|A1|student|n|طالب|Every student received a notebook.
+g1|A2|professor|n|أستاذ جامعي|The professor gave a long lecture.
+g1|B1|principal|n|مدير المدرسة|The principal welcomed the students.
+g1|A1|lesson|n|درس|Today's lesson was very interesting.
+g1|A2|grade|n|درجة / صف دراسي|She got a high grade.
+g1|A2|degree|n|شهادة جامعية|He has a master's degree.
+g1|B1|campus|n|حرم جامعي|The campus is huge and green.
+g2|B2|curriculum|n|منهج دراسي|The curriculum includes five subjects.
+g2|A1|math|n|رياضيات|Math is easier than physics.
+g2|A1|science|n|علوم|We love science class.
+g2|A1|history|n|تاريخ|History is my favorite subject.
+g2|A2|geography|n|جغرافيا|Geography helps you understand maps.
+g2|B1|literature|n|أدب|She studies Arabic literature.
+g2|A2|physics|n|فيزياء|Physics is quite difficult.
+g2|A2|chemistry|n|كيمياء|We have chemistry today.
+g2|A2|biology|n|أحياء|Biology explains how bodies work.
+g2|A1|art|n|فن / رسم|I take an art class.
+g2|A1|music|n|موسيقى|We study music on Tuesdays.
+g2|A2|grammar|n|قواعد اللغة|English grammar isn't that hard.
+g3|A2|textbook|n|كتاب مدرسي|Open your textbook to page ten.
+g3|A1|homework|n|واجب|I finished my homework early.
+g3|B1|assignment|n|تكليف / مهمة دراسية|The assignment is due Friday.
+g3|A2|note|n|ملاحظة|Write a short note, please.
+g3|A1|dictionary|n|قاموس|Look it up in the dictionary.
+g3|A1|library|n|مكتبة (للاستعارة)|The library closes at six.
+g3|A2|backpack|n|شنطة ضهر|My backpack is very heavy.
+g3|A1|pencil|n|قلم رصاص|Do you have a pencil?
+g3|A2|eraser|n|ممحاة|I need an eraser.
+g3|A2|ruler|n|مسطرة|Draw a line with a ruler.
+g3|B1|highlighter|n|قلم تحديد|Use a highlighter for key words.
+g3|A1|page|n|صفحة|Turn to the next page.
+g4|A1|exam|n|امتحان|The exam starts at nine.
+g4|A2|quiz|n|اختبار قصير|We have a quiz tomorrow.
+g4|A2|score|n|درجة / نتيجة|Her score was ninety percent.
+g4|A2|pass|v|ينجح / يمرّر|I hope to pass this exam.
+g4|A2|fail|v|يرسب|Don't worry, you won't fail.
+g4|A2|result|n|نتيجة|The results come out Monday.
+g4|B1|certificate|n|شهادة (دورة)|She received a certificate yesterday.
+g4|B1|diploma|n|دبلومة / شهادة|He earned a diploma in design.
+g4|B1|revise|v|يراجع (للامتحان)|I need to revise tonight.
+g4|A2|final|adj|نهائي|The final exam is tomorrow.
+g4|A2|correct|adj|صحيح (إجابة)|Is this answer correct?
+g4|A2|mark|n|علامة / درجة|I got a good mark.
+g4|B2|retake|v|يعيد الامتحان|He must retake the exam.
+g5|A1|learn|v|يتعلّم|I want to learn Spanish.
+g5|A1|study|v|يذاكر / يدرس|I study every evening.
+g5|A1|teach|v|يعلّم|She teaches English at school.
+g5|A2|practice|v|يتدرّب|Practice speaking every day.
+g5|B1|memorize|v|يحفظ عن ظهر قلب|I memorize ten words daily.
+g5|A1|remember|v|يتذكّر|I can't remember his name.
+g5|A1|forget|v|ينسى|Don't forget your homework.
+g5|B1|review|v|يراجع|Review your notes before class.
+g5|B1|focus|v|يركّز|Focus on one thing at a time.
+g5|B1|concentrate|v|يركّز / يتمعّن|I can't concentrate with noise.
+g5|B1|discover|v|يكتشف|You'll discover something new daily.
+g5|B1|research|n|بحث علمي|Her research is very impressive.
+g5|B1|translate|v|يترجم|Can you translate this sentence?
+g6|A1|write|v|يكتب|Please write your name here.
+g6|A2|spell|v|يتهجّى|How do you spell that?
+g6|B1|essay|n|مقال / موضوع إنشاء|I'm writing an essay tonight.
+g6|B1|paragraph|n|فقرة|Read the first paragraph aloud.
+g6|A2|sentence|n|جملة|Make a sentence with this word.
+g6|A1|letter|n|حرف / خطاب|This word has six letters.
+g6|A1|story|n|قصة|She told a funny story.
+g6|B1|novel|n|رواية|He wrote a historical novel.
+g6|B1|article|n|مقال صحفي|I read a good article.
+g6|B1|summary|n|ملخّص|Write a short summary, please.
+g6|B1|vocabulary|n|مفردات|Reading improves your vocabulary.
+g6|A1|word|n|كلمة|I don't know this word.
+g7|B1|pronounce|v|ينطق|How do you pronounce this?
+g7|B1|accent|n|لهجة / نبرة|She has a lovely accent.
+g7|B1|fluent|adj|يتحدّث بطلاقة|He is fluent in English.
+g7|A2|beginner|n|مبتدئ|I'm a complete beginner.
+g7|B1|advanced|adj|متقدّم|This is an advanced course.
+g7|B1|intermediate|adj|متوسّط المستوى|She is an intermediate learner.
+g7|A2|listening|n|مهارة الاستماع|Listening is my weakest skill.
+g7|A2|speaking|n|مهارة التحدث|Speaking needs a lot of practice.
+g7|A2|reading|n|مهارة القراءة|Reading helps you learn faster.
+g7|A2|writing|n|مهارة الكتابة|Her writing is clear and neat.
+g7|A2|meaning|n|معنى|What's the meaning of this?
+g7|B1|native|adj|أصلي (لغة أم)|He is a native speaker.
+g8|A1|course|n|دورة / مقرر|I'm taking an online course.
+g8|B1|lecture|n|محاضرة|The lecture lasts two hours.
+g8|B1|workshop|n|ورشة عمل|Join our writing workshop.
+g8|B2|scholarship|n|منحة دراسية|She won a full scholarship.
+g8|B1|graduate|v|يتخرّج|I graduate in June.
+g8|B2|enroll|v|يسجّل في دورة|He enrolled in a language course.
+g8|B1|register|v|يسجّل اسمه|Register before the deadline.
+g8|B1|knowledge|n|معرفة|Knowledge is real power.
+g8|A2|education|n|تعليم|Education changes lives.
+g8|B1|curious|adj|فضولي / مهتم|Stay curious and keep learning.
+g8|B1|motivation|n|دافع / حماس|I lost my motivation.
+g8|B1|discipline|n|انضباط|Learning needs daily discipline.
+g8|B1|timetable|n|جدول الحصص|Check the class timetable.
+@sentences
+g1|A1|My school starts at eight o'clock.|تبدأ مدرستي في الثامنة.
+g1|A2|She studies medicine at a large university.|تدرس الطب في جامعة كبيرة.
+g1|A2|He is applying to several colleges.|يتقدّم لعدة كليات.
+g1|A1|Our English class starts at nine.|حصة الإنجليزي عندنا تبدأ في التاسعة.
+g1|A1|The classroom was quiet and clean.|كان الفصل هادئًا ونظيفًا.
+g1|A1|My teacher explains everything very clearly.|مدرّسي يشرح كل شيء بوضوح شديد.
+g1|A1|Every student must bring a notebook.|على كل طالب إحضار دفتر.
+g1|A2|The professor gave a fascinating lecture today.|ألقى الأستاذ محاضرة رائعة اليوم.
+g1|B1|The principal welcomed all the new students.|رحّب مدير المدرسة بجميع الطلاب الجدد.
+g1|A1|Today's lesson was really interesting.|درس اليوم كان ممتعًا حقًا.
+g1|A2|She always gets high grades in math.|تحصل دائمًا على درجات عالية في الرياضيات.
+g1|A2|He has a master's degree in engineering.|لديه ماجستير في الهندسة.
+g1|B1|The campus is huge, green, and beautiful.|الحرم الجامعي ضخم وأخضر وجميل.
+g2|A1|What's your favorite subject at school?|ما مادتك المفضلة في المدرسة؟
+g2|A1|Math is easier than physics for me.|الرياضيات أسهل من الفيزياء بالنسبة لي.
+g2|A1|We do a science experiment on Fridays.|نجري تجربة علمية أيام الجمعة.
+g2|A1|History teaches us about the past.|يعلّمنا التاريخ عن الماضي.
+g2|A2|Geography helps you understand maps better.|الجغرافيا تساعدك على فهم الخرائط أفضل.
+g2|B1|She studies Arabic literature at university.|تدرس الأدب العربي في الجامعة.
+g2|A2|Physics is quite difficult, but interesting.|الفيزياء صعبة لكنها مثيرة للاهتمام.
+g2|A2|We have a chemistry lab tomorrow.|عندنا معمل كيمياء غدًا.
+g2|A2|Biology explains how the human body works.|الأحياء تشرح كيف يعمل جسم الإنسان.
+g2|A1|I take an art class every Sunday.|أحضر حصة فن كل أحد.
+g2|A1|She plays music and paints beautifully.|تعزف الموسيقى وترسم ببراعة.
+g2|A2|English grammar isn't as hard as it looks.|قواعد الإنجليزية ليست صعبة كما تبدو.
+g3|A2|Please open your textbook to page ten.|افتح كتابك المدرسي على الصفحة عشرة من فضلك.
+g3|A1|I finished my homework before dinner.|أنهيت واجبي قبل العشاء.
+g3|B1|The assignment is due next Friday.|التكليف موعد تسليمه الجمعة القادمة.
+g3|A2|Write a short note to your teacher.|اكتب ملاحظة قصيرة لمدرّسك.
+g3|A1|Look up the word in the dictionary.|ابحث عن الكلمة في القاموس.
+g3|A1|The library closes at six on weekdays.|المكتبة تُغلق في السادسة في أيام الأسبوع.
+g3|A2|My backpack is too heavy today.|شنطة ضهري ثقيلة جدًا اليوم.
+g3|A1|Do you have a pencil I can borrow?|هل لديك قلم رصاص أستعيره؟
+g3|A2|I need an eraser to fix this.|أحتاج ممحاة لإصلاح هذا.
+g3|A2|Use a ruler to draw straight lines.|استخدم مسطرة لرسم خطوط مستقيمة.
+g3|B1|Use a highlighter for the key words.|استخدم قلم تحديد للكلمات المهمة.
+g3|A1|Turn to the next page, please.|انتقل إلى الصفحة التالية من فضلك.
+g4|A1|The exam starts at nine sharp.|يبدأ الامتحان في التاسعة تمامًا.
+g4|A2|We have a short quiz tomorrow morning.|عندنا اختبار قصير صباح الغد.
+g4|A2|Her score was ninety percent.|كانت درجتها تسعين بالمئة.
+g4|A2|I really hope to pass this exam.|آمل حقًا أن أنجح في هذا الامتحان.
+g4|A2|Don't worry, you won't fail.|لا تقلق، لن ترسب.
+g4|A2|The results will be announced on Monday.|ستُعلن النتائج يوم الإثنين.
+g4|B1|She received a certificate of achievement.|حصلت على شهادة تقدير.
+g4|B1|He earned a diploma in graphic design.|حصل على دبلومة في التصميم الجرافيكي.
+g4|B1|I need to revise all night.|أحتاج إلى المراجعة طوال الليل.
+g4|A2|The final exam is next Thursday.|الامتحان النهائي يوم الخميس القادم.
+g4|A2|Is this answer correct or wrong?|هل هذه الإجابة صحيحة أم خاطئة؟
+g4|A2|I got a good mark in English.|حصلت على درجة جيدة في الإنجليزية.
+g4|B2|He has to retake the exam.|عليه أن يعيد الامتحان.
+g5|A1|I really want to learn Spanish.|أريد حقًا أن أتعلم الإسبانية.
+g5|A1|I study for two hours every evening.|أذاكر ساعتين كل مساء.
+g5|A1|She teaches English at a primary school.|تدرّس الإنجليزية في مدرسة ابتدائية.
+g5|A2|Practice speaking English every single day.|تدرّب على التحدث بالإنجليزية كل يوم.
+g5|B1|I memorize ten new words every day.|أحفظ عشر كلمات جديدة كل يوم.
+g5|A1|I can't remember his name.|لا أستطيع تذكر اسمه.
+g5|A1|Don't forget to bring your homework.|لا تنسَ إحضار واجبك.
+g5|B1|Review your notes before the class.|راجع ملاحظاتك قبل الحصة.
+g5|B1|Focus on one task at a time.|ركّز على مهمة واحدة في كل مرة.
+g5|B1|I can't concentrate when it's noisy.|لا أستطيع التركيز عندما يكون المكان صاخبًا.
+g5|B1|You'll discover something new every day.|ستكتشف شيئًا جديدًا كل يوم.
+g5|B1|Her research on health is impressive.|بحثها عن الصحة مبهر.
+g5|B1|Can you translate this sentence for me?|هل يمكنك ترجمة هذه الجملة لي؟
+g6|A1|Please write your full name here.|اكتب اسمك الكامل هنا من فضلك.
+g6|A2|How do you spell your last name?|كيف تتهجّى اسم عائلتك؟
+g6|B1|I'm writing an essay on climate change.|أكتب مقالًا عن التغير المناخي.
+g6|B1|Read the first paragraph out loud.|اقرأ الفقرة الأولى بصوت عالٍ.
+g6|A2|Make a sentence using this new word.|كوّن جملة باستخدام هذه الكلمة الجديدة.
+g6|A1|This word has seven letters.|هذه الكلمة فيها سبعة حروف.
+g6|A1|My grandmother tells wonderful stories.|جدتي تحكي قصصًا رائعة.
+g6|B1|He wrote a long historical novel.|كتب رواية تاريخية طويلة.
+g6|B1|I read an interesting article yesterday.|قرأت مقالًا مثيرًا للاهتمام أمس.
+g6|B1|Write a short summary of the story.|اكتب ملخصًا قصيرًا للقصة.
+g6|B1|Reading daily improves your vocabulary quickly.|القراءة اليومية تحسّن مفرداتك بسرعة.
+g6|A1|I don't know this word yet.|لا أعرف هذه الكلمة بعد.
+g7|B1|How do you pronounce this word?|كيف تنطق هذه الكلمة؟
+g7|B1|She has a lovely British accent.|لها لكنة بريطانية جميلة.
+g7|B1|He is fluent in three languages.|هو يتحدث ثلاث لغات بطلاقة.
+g7|A2|I'm a complete beginner in French.|أنا مبتدئ تمامًا في الفرنسية.
+g7|B1|This is an advanced grammar course.|هذه دورة قواعد متقدمة.
+g7|B1|My level is intermediate, not advanced.|مستواي متوسط وليس متقدمًا.
+g7|A2|Listening is my weakest skill right now.|الاستماع هو أضعف مهاراتي الآن.
+g7|A2|Speaking needs a lot of daily practice.|التحدث يحتاج إلى تدريب يومي كثير.
+g7|A2|Reading helps you learn new words.|القراءة تساعدك على تعلم كلمات جديدة.
+g7|A2|Her writing is clear and well organized.|كتابتها واضحة ومنظّمة جيدًا.
+g7|A2|What is the meaning of this word?|ما معنى هذه الكلمة؟
+g7|B1|He is a native English speaker.|هو متحدث أصلي للإنجليزية.
+g8|A1|I'm taking an online course this month.|آخذ دورة أونلاين هذا الشهر.
+g8|B1|The lecture lasts about two hours.|المحاضرة تستمر حوالي ساعتين.
+g8|B1|Join our free writing workshop on Saturday.|انضم إلى ورشة الكتابة المجانية يوم السبت.
+g8|B2|She won a full scholarship abroad.|فازت بمنحة دراسية كاملة في الخارج.
+g8|B1|I will graduate from university in June.|سأتخرج من الجامعة في يونيو.
+g8|B2|He enrolled in an evening language course.|سجّل في دورة لغة مسائية.
+g8|B1|Please register before the deadline.|سجّل من فضلك قبل الموعد النهائي.
+g8|B1|Knowledge is the real power.|المعرفة هي القوة الحقيقية.
+g8|A2|Good education changes people's lives.|التعليم الجيد يغيّر حياة الناس.
+g8|B1|Stay curious and never stop learning.|ابقَ فضوليًا ولا تتوقف عن التعلم.
+g8|B1|I lost my motivation this week.|فقدت حماسي هذا الأسبوع.
+g8|B1|Learning a language needs daily discipline.|تعلّم لغة يحتاج إلى انضباط يومي.
+g8|B1|Please check the class timetable online.|راجع جدول الحصص أونلاين من فضلك.

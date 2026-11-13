@@ -1,0 +1,211 @@
+# Topic 5 - Food, Restaurants & Shopping
+@group g1|الأكل الأساسي|Basic Foods
+@group g2|الفواكه والخضار|Fruits & Vegetables
+@group g3|المشروبات والحلويات|Drinks & Desserts
+@group g4|المطعم|At the Restaurant
+@group g5|الطبخ والمذاق|Cooking & Taste
+@group g6|المحلات والتسوق|Shops & Shopping
+@group g7|الأسعار والدفع|Prices & Payment
+@group g8|الملابس والمقاسات|Clothes & Sizes
+@words
+g1|A1|bread|n|عيش / خبز|I buy fresh bread daily.
+g1|A1|rice|n|أرز|We eat rice with chicken.
+g1|A1|meat|n|لحم|She doesn't eat meat.
+g1|A1|chicken|n|فراخ / دجاج|The chicken is perfectly cooked.
+g1|A1|fish|n|سمك|Fish is good for you.
+g1|A1|egg|n|بيضة|I want a boiled egg.
+g1|A1|cheese|n|جبنة|Add some cheese, please.
+g1|A1|milk|n|لبن / حليب|Do we need more milk?
+g1|A2|butter|n|زبدة|Spread butter on the bread.
+g1|A1|soup|n|شوربة|This soup is too salty.
+g1|A1|salad|n|سلطة|I'll have a green salad.
+g1|A1|sandwich|n|ساندوتش|He made a cheese sandwich.
+g1|A2|pasta|n|مكرونة|We cooked pasta for dinner.
+g2|A1|apple|n|تفاحة|I eat an apple daily.
+g2|A1|banana|n|موزة|This banana is not ripe.
+g2|A1|orange|n|برتقالة|She peeled an orange.
+g2|A1|lemon|n|ليمون|Squeeze some lemon on it.
+g2|A2|grape|n|عنب (حبّة)|The grapes taste very sweet.
+g2|A2|strawberry|n|فراولة|I love strawberry jam.
+g2|A1|tomato|n|طماطم|Add one chopped tomato.
+g2|A1|potato|n|بطاطس|Peel the potato first.
+g2|A1|onion|n|بصل|Chop the onion finely.
+g2|A2|carrot|n|جزر|Rabbits love fresh carrots.
+g2|A2|cucumber|n|خيار|Slice the cucumber thinly.
+g2|A2|garlic|n|ثوم|I use a lot of garlic.
+g2|A1|vegetable|n|خضار|Eat more green vegetables.
+g3|A1|water|n|مياه|A glass of water, please.
+g3|A1|tea|n|شاي|I prefer tea to coffee.
+g3|A1|coffee|n|قهوة|She drinks black coffee daily.
+g3|A1|juice|n|عصير|Orange juice, please.
+g3|A1|sugar|n|سكر|No sugar for me.
+g3|A2|honey|n|عسل|I add honey to tea.
+g3|A1|chocolate|n|شوكولاتة|The chocolate cake is amazing.
+g3|A1|cake|n|كيكة|She baked a birthday cake.
+g3|A1|ice cream|n|آيس كريم|Kids love ice cream.
+g3|A2|cookie|n|بسكويت / كوكيز|These cookies are still warm.
+g3|A1|sweet|adj|حلو|This tea is too sweet.
+g3|A2|dessert|n|حلو (طبق الحلويات)|What's for dessert tonight?
+g4|A1|restaurant|n|مطعم|This restaurant is very popular.
+g4|A1|menu|n|قائمة الطعام|Could I see the menu?
+g4|A1|waiter|n|جرسون|The waiter brought our drinks.
+g4|A1|order|v|يطلب (طعام)|Are you ready to order?
+g4|A2|bill|n|الحساب / الفاتورة|Can we have the bill?
+g4|A2|tip|n|بقشيش|I left a small tip.
+g4|B1|reserve|v|يحجز (طاولة)|I'd like to reserve a table.
+g4|A1|meal|n|وجبة|That was a delicious meal.
+g4|A1|breakfast|n|فطار|Breakfast is served until ten.
+g4|A1|lunch|n|غداء|Let's have lunch together.
+g4|A1|dinner|n|عشاء|What's for dinner tonight?
+g4|A1|hungry|adj|جعان|I'm so hungry today.
+g4|A2|thirsty|adj|عطشان|Are you thirsty?
+g5|A2|delicious|adj|لذيذ|The pizza was absolutely delicious.
+g5|A2|taste|n|طعم|I like the taste.
+g5|A2|spicy|adj|حار (بالتوابل)|Too spicy for my taste.
+g5|B1|sour|adj|حامض|This lemon is very sour.
+g5|B1|bitter|adj|مرّ|Black coffee tastes bitter.
+g5|A2|fresh|adj|طازج|The fish is very fresh.
+g5|B1|raw|adj|نيء|Don't eat raw chicken.
+g5|B1|fry|v|يقلي|Fry the onions slowly.
+g5|B1|boil|v|يسلق / يغلي|Boil the water first.
+g5|B1|bake|v|يخبز (في الفرن)|I love to bake bread.
+g5|A2|recipe|n|وصفة|Can I have the recipe?
+g5|B1|ingredient|n|مكوّن|Fresh ingredients make better food.
+g6|A1|shop|n|محل|The shop closes at nine.
+g6|A1|store|n|متجر|This store sells shoes.
+g6|A1|market|n|سوق|We buy vegetables at the market.
+g6|A1|supermarket|n|سوبر ماركت|The supermarket is open late.
+g6|A2|mall|n|مول|Let's meet at the mall.
+g6|A2|bakery|n|مخبز|The bakery smells wonderful.
+g6|A2|customer|n|زبون|Every customer gets a discount.
+g6|B1|cashier|n|أمين الصندوق|The cashier was very friendly.
+g6|A2|basket|n|سلّة|Put it in the basket.
+g6|B2|aisle|n|ممر بين الرفوف|It's in the third aisle.
+g6|A1|bag|n|كيس / شنطة|Do you need a bag?
+g6|A1|buy|v|يشتري|I want to buy shoes.
+g6|A1|sell|v|يبيع|They sell fresh bread.
+g7|A1|price|n|سعر|What's the price?
+g7|A1|cheap|adj|رخيص|This shirt is really cheap.
+g7|A1|expensive|adj|غالي|That watch is too expensive.
+g7|A2|cost|v|تكلّف|How much does it cost?
+g7|A1|pay|v|يدفع|Let me pay the bill.
+g7|A2|cash|n|فلوس نقدًا|Do you accept cash?
+g7|A1|card|n|كارت / بطاقة|Can I pay by card?
+g7|A2|discount|n|خصم|Is there a student discount?
+g7|A2|sale|n|تخفيضات|Everything is on sale today.
+g7|B1|receipt|n|إيصال|Keep the receipt, please.
+g7|B1|refund|n|استرداد المبلغ|I'd like a refund, please.
+g7|A2|total|n|الإجمالي|The total is fifty dollars.
+g8|A1|clothes|n|ملابس|I need new clothes.
+g8|A1|shirt|n|قميص|He wore a white shirt.
+g8|A1|pants|n|بنطلون|These pants are too long.
+g8|A1|shoes|n|حذاء|My shoes are very comfortable.
+g8|A1|jacket|n|جاكيت|Take your jacket with you.
+g8|A1|size|n|مقاس|What size do you wear?
+g8|A2|fit|v|يناسب (المقاس)|This jacket doesn't fit me.
+g8|A2|try on|phrase|يجرّب (ملابس)|Can I try on this shirt?
+g8|A1|color|n|لون|What color do you like?
+g8|A1|wear|v|يرتدي|Do you wear a tie?
+g8|B1|tight|adj|ضيّق|These shoes are too tight.
+g8|B1|loose|adj|واسع|The jacket feels slightly loose.
+@sentences
+g1|A1|I usually have bread and cheese for breakfast.|عادةً آكل خبزًا وجبنة في الفطور.
+g1|A1|We eat rice with chicken every Friday.|نأكل أرزًا مع الفراخ كل جمعة.
+g1|A2|She doesn't eat meat, only fish.|هي لا تأكل اللحم، فقط السمك.
+g1|A2|Can you boil two eggs for me?|هل يمكنك سلق بيضتين لي؟
+g1|A2|Add some butter and a little salt.|أضف بعض الزبدة وقليلًا من الملح.
+g1|A1|Would you like milk in your coffee?|هل تريد حليبًا في قهوتك؟
+g1|A2|This soup is too salty for me.|هذه الشوربة مالحة جدًا بالنسبة لي.
+g1|A1|I'll have a green salad, please.|سآخذ سلطة خضراء من فضلك.
+g1|A1|He made himself a cheese sandwich.|صنع لنفسه ساندوتش جبنة.
+g1|A2|We cooked pasta for dinner last night.|طبخنا مكرونة للعشاء الليلة الماضية.
+g1|A2|The chicken needs ten more minutes.|الفراخ تحتاج عشر دقائق أخرى.
+g1|A1|Fish and rice is my favorite meal.|السمك والأرز وجبتي المفضلة.
+g2|A1|I eat an apple every morning.|آكل تفاحة كل صباح.
+g2|A1|This banana isn't ripe yet.|هذه الموزة لم تنضج بعد.
+g2|A2|She peeled an orange for her son.|قشّرت برتقالة لابنها.
+g2|A2|Squeeze a little lemon on the fish.|اعصر قليلًا من الليمون على السمك.
+g2|A2|Strawberries are in season right now.|الفراولة في موسمها الآن.
+g2|A2|Add one chopped tomato to the salad.|أضف طماطم مقطّعة إلى السلطة.
+g2|A2|Peel the potatoes and cut them small.|قشّر البطاطس وقطّعها صغيرة.
+g2|A2|Chop the onion before you fry it.|قطّع البصل قبل أن تقليه.
+g2|A2|Rabbits love fresh carrots and cucumbers.|الأرانب تحب الجزر والخيار الطازج.
+g2|A2|I put a lot of garlic in it.|وضعت الكثير من الثوم فيه.
+g2|A2|You should eat more green vegetables.|يجب أن تأكل خضارًا أخضر أكثر.
+g2|A2|These grapes are sweet and juicy.|هذا العنب حلو وطازج.
+g3|A1|Could I have a glass of water?|هل يمكنني الحصول على كوب ماء؟
+g3|A1|I prefer tea to coffee in the evening.|أفضّل الشاي على القهوة في المساء.
+g3|A1|How do you take your coffee?|كيف تشرب قهوتك؟
+g3|A1|A fresh orange juice, please.|عصير برتقال طازج من فضلك.
+g3|A1|No sugar for me, thanks.|بدون سكر لي، شكرًا.
+g3|A2|She adds honey to her warm milk.|تضيف العسل إلى حليبها الدافئ.
+g3|A2|I can't resist chocolate cake.|لا أستطيع مقاومة كعكة الشوكولاتة.
+g3|A2|She baked a birthday cake for him.|خبزت له كعكة عيد ميلاد.
+g3|A1|The kids want ice cream again.|الأطفال يريدون آيس كريم مرة أخرى.
+g3|A2|These cookies are still warm.|هذه البسكويتات لا تزال دافئة.
+g3|A1|This tea is much too sweet.|هذا الشاي حلو أكثر من اللازم.
+g3|A2|What would you like for dessert?|ماذا تريد كحلوى؟
+g4|A1|Let's try that new restaurant tonight.|لنجرّب ذلك المطعم الجديد الليلة.
+g4|A1|Could we see the menu, please?|هل يمكننا رؤية قائمة الطعام من فضلك؟
+g4|A2|The waiter will be with you shortly.|سيكون الجرسون معكم بعد قليل.
+g4|A1|Are you ready to order now?|هل أنتم جاهزون للطلب الآن؟
+g4|A2|Can we have the bill, please?|هل يمكننا الحصول على الحساب من فضلك؟
+g4|A2|Should we leave a tip?|هل ينبغي أن نترك بقشيشًا؟
+g4|A2|I'd like to reserve a table for four.|أود حجز طاولة لأربعة أشخاص.
+g4|A1|That was a delicious meal.|كانت تلك وجبة لذيذة.
+g4|A1|Breakfast is served until ten thirty.|يُقدَّم الفطور حتى العاشرة والنصف.
+g4|A1|Let's have lunch at one o'clock.|لنتناول الغداء في الواحدة.
+g4|A1|What would you like for dinner?|ماذا تريد للعشاء؟
+g4|A1|I'm so hungry. Let's eat now.|أنا جائع جدًا. لنأكل الآن.
+g4|A2|Are you thirsty? Have some water.|هل أنت عطشان؟ اشرب بعض الماء.
+g5|A2|This pizza tastes absolutely delicious.|هذه البيتزا لذيذة جدًا.
+g5|A2|I love the taste of fresh herbs.|أحب طعم الأعشاب الطازجة.
+g5|A2|Is this dish very spicy?|هل هذا الطبق حار جدًا؟
+g5|B1|This lemon is much too sour.|هذا الليمون حامض جدًا.
+g5|B1|Black coffee tastes bitter to me.|القهوة السوداء طعمها مرّ بالنسبة لي.
+g5|A2|Make sure the fish is fresh.|تأكد أن السمك طازج.
+g5|B1|You should never eat raw chicken.|يجب ألا تأكل الدجاج النيء أبدًا.
+g5|B1|Fry the onions slowly until golden.|اقلِ البصل ببطء حتى يصبح ذهبيًا.
+g5|B1|Boil the water, then add the pasta.|اغلِ الماء ثم أضف المكرونة.
+g5|B1|I like to bake bread on weekends.|أحب خبز العيش في عطلات نهاية الأسبوع.
+g5|A2|Can you give me the recipe?|هل يمكنك إعطائي الوصفة؟
+g5|B1|Fresh ingredients make all the difference.|المكوّنات الطازجة تصنع كل الفرق.
+g6|A1|The shop closes at nine tonight.|يُغلق المحل في التاسعة الليلة.
+g6|A1|This store sells shoes and bags.|هذا المتجر يبيع الأحذية والحقائب.
+g6|A1|We buy vegetables at the local market.|نشتري الخضار من السوق المحلي.
+g6|A1|The supermarket is open until midnight.|السوبر ماركت مفتوح حتى منتصف الليل.
+g6|A2|Let's meet at the mall at six.|لنلتقِ في المول في السادسة.
+g6|A2|The bakery on the corner smells wonderful.|المخبز عند الناصية رائحته رائعة.
+g6|A2|Every customer gets a free coffee.|كل زبون يحصل على قهوة مجانية.
+g6|B1|The cashier was very friendly and helpful.|كان أمين الصندوق ودودًا ومتعاونًا جدًا.
+g6|A2|Put the eggs carefully in the basket.|ضع البيض بحرص في السلة.
+g6|B1|You'll find the rice in aisle three.|ستجد الأرز في الممر الثالث.
+g6|A1|Do you need a bag for that?|هل تحتاج كيسًا لذلك؟
+g6|A1|I want to buy a new pair of shoes.|أريد شراء زوج أحذية جديد.
+g6|A1|They sell fresh bread every morning.|يبيعون خبزًا طازجًا كل صباح.
+g7|A1|What's the price of this phone?|كم سعر هذا الهاتف؟
+g7|A1|This shirt is really cheap today.|هذا القميص رخيص جدًا اليوم.
+g7|A1|That watch is far too expensive.|تلك الساعة غالية جدًا.
+g7|A2|How much does this jacket cost?|كم تكلّف هذه الجاكيت؟
+g7|A1|I'll pay by card, if that's okay.|سأدفع بالبطاقة إن لم يكن هناك مانع.
+g7|A2|Do you accept cash or only cards?|هل تقبلون النقد أم البطاقات فقط؟
+g7|A2|Is there a discount for students?|هل يوجد خصم للطلاب؟
+g7|A2|Everything in the shop is on sale.|كل شيء في المحل عليه تخفيضات.
+g7|B1|Please keep the receipt for returns.|احتفظ بالإيصال للإرجاع من فضلك.
+g7|B1|I'd like a refund, please.|أود استرداد المبلغ من فضلك.
+g7|A2|The total comes to fifty dollars.|يصل الإجمالي إلى خمسين دولارًا.
+g7|A2|Can I get a better price?|هل يمكنني الحصول على سعر أفضل؟
+g7|B1|That's a fair price for this quality.|هذا سعر عادل لهذه الجودة.
+g8|A1|I need some new clothes for summer.|أحتاج بعض الملابس الجديدة للصيف.
+g8|A1|He wore a white shirt and a tie.|ارتدى قميصًا أبيض وربطة عنق.
+g8|A1|These pants are too long for me.|هذا البنطلون طويل جدًا عليّ.
+g8|A1|My shoes are very comfortable.|حذائي مريح جدًا.
+g8|A1|Take a jacket. It might get cold.|خذ جاكيت. قد يصبح الجو باردًا.
+g8|A1|What size do you usually wear?|ما المقاس الذي ترتديه عادةً؟
+g8|A2|This jacket doesn't fit me properly.|هذه الجاكيت لا تناسبني تمامًا.
+g8|A2|Can I try on this shirt?|هل يمكنني تجربة هذا القميص؟
+g8|A1|Do you have this in another color?|هل لديكم هذا بلون آخر؟
+g8|A1|She always wears bright colors.|هي دائمًا ترتدي ألوانًا زاهية.
+g8|B1|These shoes are a bit tight.|هذا الحذاء ضيّق قليلًا.
+g8|B1|The sleeves feel slightly loose.|الأكمام تبدو واسعة قليلًا.
+g8|A2|I prefer simple, comfortable clothes.|أفضّل ملابس بسيطة ومريحة.

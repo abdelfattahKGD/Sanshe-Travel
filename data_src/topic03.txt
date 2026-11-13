@@ -1,0 +1,211 @@
+# Topic 3 - Work & Office
+@group g1|الوظائف والأدوار|Jobs & Roles
+@group g2|التوظيف والمقابلات|Hiring & Interviews
+@group g3|الاجتماعات|Meetings
+@group g4|المهام والمواعيد النهائية|Tasks & Deadlines
+@group g5|الإيميل والتواصل|Email & Communication
+@group g6|أدوات المكتب|Office Supplies
+@group g7|العمل الجماعي والمهارات|Teamwork & Skills
+@group g8|الإجازات والمسار المهني|Leave & Career
+@words
+g1|A1|job|n|وظيفة|She found a new job.
+g1|A1|work|v|يعمل|I work from nine to five.
+g1|A2|boss|n|مدير / رئيس العمل|My boss is very fair.
+g1|A2|manager|n|مدير|The manager called a meeting.
+g1|A2|employee|n|موظف|Every employee gets a badge.
+g1|B1|colleague|n|زميل عمل|My colleague helped me today.
+g1|A1|team|n|فريق|Our team is very strong.
+g1|A1|company|n|شركة|He works for a large company.
+g1|A1|office|n|مكتب (مكان العمل)|The office opens at eight.
+g1|B1|career|n|مسار مهني|She started her career in sales.
+g1|B1|client|n|عميل|The client loved our idea.
+g1|A2|engineer|n|مهندس|He is a software engineer.
+g2|A2|apply|v|يتقدّم (لوظيفة)|I applied for three jobs.
+g2|A2|interview|n|مقابلة شخصية|I have an interview tomorrow.
+g2|B1|resume|n|سيرة ذاتية|Please send me your resume.
+g2|B1|hire|v|يوظّف|They want to hire two people.
+g2|B1|candidate|n|مرشّح|The best candidate got the job.
+g2|A2|experience|n|خبرة|He has five years of experience.
+g2|A2|skill|n|مهارة|Typing is a useful skill.
+g2|B1|position|n|منصب / وظيفة|The position is still open.
+g2|B1|vacancy|n|وظيفة شاغرة|We have a vacancy now.
+g2|B1|qualification|n|مؤهل|A degree is a basic qualification.
+g2|B1|requirement|n|شرط / متطلّب|English is a basic requirement.
+g2|A2|offer|n|عرض (وظيفة)|He accepted the job offer.
+g3|A1|meeting|n|اجتماع|The meeting starts at ten.
+g3|B1|agenda|n|جدول أعمال|Please check the meeting agenda.
+g3|A2|schedule|n|جدول مواعيد|My schedule is full today.
+g3|B1|attend|v|يحضر|Will you attend the workshop?
+g3|B1|discuss|v|يناقش|Let's discuss the budget tomorrow.
+g3|B1|presentation|n|عرض تقديمي|Her presentation was excellent.
+g3|B1|suggest|v|يقترح|I suggest we start early.
+g3|B1|decision|n|قرار|We made the decision together.
+g3|B1|proposal|n|اقتراح / مقترح|The client accepted our proposal.
+g3|B2|postpone|v|يؤجّل|They postponed the meeting again.
+g3|A2|cancel|v|يلغي|Please cancel my appointment.
+g3|B1|conference|n|مؤتمر|He spoke at the conference.
+g3|A2|topic|n|موضوع (نقاش)|Today's topic is customer service.
+g4|A2|task|n|مهمة|This task is very simple.
+g4|B1|deadline|n|موعد نهائي|The deadline is next Monday.
+g4|A2|project|n|مشروع|We finished the project early.
+g4|A2|report|n|تقرير|I'm writing the monthly report.
+g4|A1|plan|n|خطة|Do you have a plan?
+g4|A2|goal|n|هدف|My goal is to improve.
+g4|B1|progress|n|تقدّم|We are making good progress.
+g4|B1|deliver|v|يسلّم / يوصّل|We deliver on time.
+g4|A1|finish|v|ينهي|I'll finish the work tonight.
+g4|A2|prepare|v|يُحضّر / يجهّز|I need to prepare slides.
+g4|B1|priority|n|أولوية|Safety is our top priority.
+g4|B1|urgent|adj|عاجل|This email is very urgent.
+g4|B1|delay|n|تأخير|There was a long delay.
+g5|A1|email|n|بريد إلكتروني|I'll send you an email.
+g5|B1|attach|v|يرفق|Please attach the signed form.
+g5|B1|attachment|n|مرفق|I can't open the attachment.
+g5|A1|send|v|يرسل|Send me the file, please.
+g5|A2|receive|v|يستلم|Did you receive my message?
+g5|B1|forward|v|يحوّل (رسالة)|Please forward this to everyone.
+g5|A2|subject|n|عنوان الرسالة / موضوع|Write a clear email subject.
+g5|A2|contact|v|يتواصل مع|You can contact me anytime.
+g5|B1|inbox|n|صندوق الوارد|My inbox is always full.
+g5|B1|draft|n|مسوّدة|Here's the first draft.
+g5|B2|notify|v|يُخطر / يبلّغ|Please notify me when finished.
+g5|A2|update|n|تحديث / مستجدات|Send me a quick update.
+g6|A1|desk|n|مكتب (طاولة)|My desk is always messy.
+g6|A2|printer|n|طابعة|The printer is out of paper.
+g6|A1|paper|n|ورق|I need more paper.
+g6|A1|pen|n|قلم|May I borrow your pen?
+g6|A1|notebook|n|دفتر ملاحظات|She wrote it in her notebook.
+g6|A2|folder|n|ملف / مجلد|Put it in the blue folder.
+g6|B1|stapler|n|دباسة|Who took my stapler?
+g6|B1|scanner|n|ماسح ضوئي|The scanner is not working.
+g6|A2|copy|v|ينسخ|Please copy these pages.
+g6|A2|file|n|ملف|Save the file before closing.
+g6|A2|calendar|n|تقويم|Check the calendar for dates.
+g6|B1|whiteboard|n|سبّورة بيضاء|He wrote the idea on the whiteboard.
+g7|B2|cooperate|v|يتعاون|We must cooperate to succeed.
+g7|A2|support|v|يدعم|Our manager always supports us.
+g7|A2|share|v|يشارك|Please share your ideas.
+g7|B1|lead|v|يقود|She will lead the team.
+g7|B1|organize|v|ينظّم|I organize all our events.
+g7|B1|communicate|v|يتواصل / يوصّل الفكرة|Good teams communicate clearly.
+g7|A2|improve|v|يحسّن / يتحسّن|We must improve our service.
+g7|B1|solve|v|يحلّ (مشكلة)|Can you solve this problem?
+g7|A1|problem|n|مشكلة|We have a small problem.
+g7|B1|responsible|adj|مسؤول|He is responsible for sales.
+g7|B1|creative|adj|مبدع|She has a creative mind.
+g7|B1|professional|adj|محترف|Be professional and stay calm.
+g7|B2|efficient|adj|كفء / فعّال|This system is very efficient.
+g8|A1|break|n|استراحة|Let's take a short break.
+g8|A2|vacation|n|إجازة (سفر)|I'm on vacation next week.
+g8|A2|holiday|n|عطلة رسمية|Monday is a public holiday.
+g8|B2|resign|v|يستقيل|He decided to resign today.
+g8|B1|retire|v|يتقاعد|My father retires next year.
+g8|B1|promotion|n|ترقية|She got a big promotion.
+g8|B1|raise|n|زيادة في الراتب|He asked for a raise.
+g8|B1|overtime|n|وقت إضافي|We worked overtime all week.
+g8|B1|shift|n|وردية|My shift ends at midnight.
+g8|B1|absent|adj|غائب|He was absent yesterday.
+g8|A2|training|n|تدريب|The training starts on Monday.
+g8|B1|notice|n|إشعار (استقالة)|I submitted my notice yesterday.
+g8|B1|contract|n|عقد|Read the contract carefully.
+@sentences
+g1|A2|I work at a small software company.|أعمل في شركة برمجيات صغيرة.
+g1|A2|My boss is out of the office today.|مديري خارج المكتب اليوم.
+g1|B1|She is the new manager of our department.|هي المديرة الجديدة لقسمنا.
+g1|B1|Every employee must wear a badge.|يجب على كل موظف ارتداء بطاقة تعريف.
+g1|A2|My colleagues are friendly and helpful.|زملائي ودودون ومتعاونون.
+g1|B1|I'm proud to be part of this team.|أنا فخور بأنني جزء من هذا الفريق.
+g1|A2|He is looking for a better job.|يبحث عن وظيفة أفضل.
+g1|B1|She started her career as a teacher.|بدأت مسيرتها المهنية كمعلمة.
+g1|B1|Our biggest client is visiting tomorrow.|أكبر عملائنا سيزورنا غدًا.
+g1|A2|He is an engineer at a big company.|هو مهندس في شركة كبيرة.
+g1|A1|What time does the office open?|متى يفتح المكتب؟
+g1|A2|I usually work from home on Fridays.|عادةً أعمل من البيت أيام الجمعة.
+g2|A2|I applied for three jobs last week.|تقدّمت لثلاث وظائف الأسبوع الماضي.
+g2|A2|I have a job interview tomorrow morning.|لدي مقابلة عمل صباح الغد.
+g2|B1|Please send your resume before Friday.|أرسل سيرتك الذاتية قبل الجمعة من فضلك.
+g2|B1|We want to hire two new developers.|نريد توظيف مطوّرَين جديدين.
+g2|B1|The best candidate will start next month.|المرشح الأفضل سيبدأ الشهر القادم.
+g2|B1|Do you have any experience in sales?|هل لديك أي خبرة في المبيعات؟
+g2|B1|Communication is a very important skill.|التواصل مهارة مهمة جدًا.
+g2|B1|Is the position still open?|هل الوظيفة ما زالت متاحة؟
+g2|B1|There is a vacancy in our design team.|توجد وظيفة شاغرة في فريق التصميم.
+g2|B1|A degree is required for this position.|الشهادة الجامعية مطلوبة لهذا المنصب.
+g2|B1|Tell me about your biggest strength.|أخبرني عن أكبر نقطة قوة لديك.
+g2|B1|They offered me the job today!|عرضوا عليّ الوظيفة اليوم!
+g3|A2|The meeting starts at ten sharp.|يبدأ الاجتماع في العاشرة تمامًا.
+g3|B1|Please check the agenda before the meeting.|راجع جدول الأعمال قبل الاجتماع من فضلك.
+g3|B1|Can we schedule a call for Monday?|هل يمكننا تحديد مكالمة يوم الإثنين؟
+g3|B1|Everyone must attend the training session.|يجب أن يحضر الجميع جلسة التدريب.
+g3|B1|Let's discuss this issue in the meeting.|لنناقش هذه المسألة في الاجتماع.
+g3|B1|She gave an excellent presentation today.|قدّمت عرضًا تقديميًا ممتازًا اليوم.
+g3|B1|I suggest we move to the next topic.|أقترح أن ننتقل إلى الموضوع التالي.
+g3|B1|We need to make a decision today.|نحتاج إلى اتخاذ قرار اليوم.
+g3|B1|The client accepted our proposal yesterday.|وافق العميل على مقترحنا أمس.
+g3|B1|They postponed the meeting until next week.|أجّلوا الاجتماع إلى الأسبوع القادم.
+g3|B1|I'm sorry, I have to cancel our meeting.|آسف، يجب أن ألغي اجتماعنا.
+g3|B1|Does anyone have questions or comments?|هل لدى أحد أسئلة أو تعليقات؟
+g3|B1|He will speak at the international conference.|سيتحدث في المؤتمر الدولي.
+g4|B1|This task should take about an hour.|هذه المهمة ينبغي أن تستغرق نحو ساعة.
+g4|B1|The deadline is next Monday morning.|الموعد النهائي صباح الإثنين القادم.
+g4|B1|We finished the project two days early.|أنهينا المشروع قبل موعده بيومين.
+g4|B1|I'm writing the monthly report right now.|أكتب التقرير الشهري الآن.
+g4|B1|We need a clear plan for this project.|نحتاج إلى خطة واضحة لهذا المشروع.
+g4|B1|Our goal is to double sales this year.|هدفنا مضاعفة المبيعات هذا العام.
+g4|B1|We are making good progress on the design.|نحقق تقدمًا جيدًا في التصميم.
+g4|B1|We always deliver on time.|نسلّم دائمًا في الموعد.
+g4|B1|I'll finish this work before I leave.|سأنتهي من هذا العمل قبل أن أغادر.
+g4|B1|I still need to prepare the slides.|ما زلت بحاجة إلى تجهيز الشرائح.
+g4|B1|Safety is always our top priority.|السلامة دائمًا أولويتنا القصوى.
+g4|B1|This request is urgent, so please hurry.|هذا الطلب عاجل لذا أسرع من فضلك.
+g4|A2|Sorry for the delay. I was very busy.|آسف على التأخير. كنت مشغولًا جدًا.
+g5|A2|I'll send you an email this afternoon.|سأرسل لك بريدًا إلكترونيًا بعد الظهر.
+g5|B1|Please attach the signed contract to the email.|أرفق العقد الموقّع بالبريد من فضلك.
+g5|B1|I can't open the attachment you sent.|لا أستطيع فتح المرفق الذي أرسلته.
+g5|A2|Did you receive my message yesterday?|هل استلمت رسالتي أمس؟
+g5|B1|Please forward this email to the whole team.|أعد توجيه هذا البريد إلى الفريق كله.
+g5|B1|Write a clear subject line for your email.|اكتب عنوانًا واضحًا لرسالتك.
+g5|A2|You can contact me at any time.|يمكنك التواصل معي في أي وقت.
+g5|B1|My inbox is full of unread messages.|صندوق الوارد عندي مليء برسائل غير مقروءة.
+g5|B1|Here is the first draft of the report.|هذه المسودة الأولى من التقرير.
+g5|B1|Please notify me when the file is ready.|أبلغني عندما يكون الملف جاهزًا.
+g5|B1|Send me a quick update after the call.|أرسل لي تحديثًا سريعًا بعد المكالمة.
+g5|A2|I'll reply to your email tomorrow.|سأردّ على بريدك غدًا.
+g6|A2|My desk is always covered with papers.|مكتبي دائمًا مغطّى بالأوراق.
+g6|A2|The printer is out of paper again.|الطابعة نفدت منها الأوراق مرة أخرى.
+g6|A2|May I borrow your pen for a moment?|هل يمكنني استعارة قلمك للحظة؟
+g6|A2|She wrote everything in her notebook.|كتبت كل شيء في دفترها.
+g6|A2|Put these documents in the blue folder.|ضع هذه المستندات في المجلد الأزرق.
+g6|B1|Who took my stapler again?|من أخذ دباستي مرة أخرى؟
+g6|B1|Please scan this page and send it to me.|امسح هذه الصفحة ضوئيًا وأرسلها لي.
+g6|B1|I need ten copies of this report.|أحتاج عشر نسخ من هذا التقرير.
+g6|A2|Save the file before you close the program.|احفظ الملف قبل إغلاق البرنامج.
+g6|A2|Check the calendar before booking a room.|راجع التقويم قبل حجز قاعة.
+g6|B1|He drew the diagram on the whiteboard.|رسم المخطط على السبورة البيضاء.
+g6|B1|Can you print this document in color?|هل يمكنك طباعة هذا المستند بالألوان؟
+g7|B1|We must cooperate to finish on time.|يجب أن نتعاون لننتهي في الموعد.
+g7|B1|Our manager always supports the team.|مديرنا يدعم الفريق دائمًا.
+g7|B1|Please share your ideas with everyone.|شارك أفكارك مع الجميع من فضلك.
+g7|B1|She will lead the new project.|ستقود المشروع الجديد.
+g7|B1|I organize our monthly team events.|أنظّم فعاليات فريقنا الشهرية.
+g7|B1|Good teams communicate clearly and often.|الفرق الجيدة تتواصل بوضوح وباستمرار.
+g7|B1|We need to improve our customer service.|نحتاج إلى تحسين خدمة العملاء.
+g7|B1|Can you help me solve this problem?|هل يمكنك مساعدتي في حل هذه المشكلة؟
+g7|A2|We have a small problem with the system.|لدينا مشكلة صغيرة في النظام.
+g7|B1|He is responsible for the sales team.|هو مسؤول عن فريق المبيعات.
+g7|B1|She always comes up with creative ideas.|هي دائمًا تأتي بأفكار مبدعة.
+g7|B2|Please stay professional, even when you're stressed.|حافظ على احترافيتك حتى لو كنت متوتّرًا.
+g7|B1|This new system is faster and more efficient.|هذا النظام الجديد أسرع وأكثر كفاءة.
+g8|A2|Let's take a ten-minute break.|لنأخذ استراحة عشر دقائق.
+g8|A2|I'm on vacation for two weeks.|أنا في إجازة لمدة أسبوعين.
+g8|A2|Monday is a public holiday this year.|الإثنين عطلة رسمية هذا العام.
+g8|B1|He decided to resign after five years.|قرر أن يستقيل بعد خمس سنوات.
+g8|B1|My father will retire next year.|والدي سيتقاعد العام القادم.
+g8|B1|She got a big promotion last month.|حصلت على ترقية كبيرة الشهر الماضي.
+g8|B1|I'm going to ask for a raise.|سأطلب زيادة في الراتب.
+g8|B1|We worked overtime all week long.|عملنا ساعات إضافية طوال الأسبوع.
+g8|B1|My night shift ends at six.|ورديتي الليلية تنتهي في السادسة.
+g8|B1|He was absent from work yesterday.|كان غائبًا عن العمل أمس.
+g8|B1|The training starts on Monday at nine.|يبدأ التدريب يوم الإثنين في التاسعة.
+g8|B1|I gave my manager two weeks' notice.|أخطرت مديري قبل أسبوعين.
+g8|B1|Please read the contract carefully before signing.|اقرأ العقد بعناية قبل التوقيع.

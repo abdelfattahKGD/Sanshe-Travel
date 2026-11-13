@@ -1,0 +1,211 @@
+# Topic 9 - Family & Relationships
+@group g1|أفراد الأسرة|Family Members
+@group g2|الأقارب والزواج|Relatives & Marriage
+@group g3|الأطفال والتربية|Kids & Parenting
+@group g4|الأصدقاء|Friends
+@group g5|العلاقات العاطفية|Relationships
+@group g6|الحياة الأسرية|Family Life
+@group g7|المناسبات والاحتفالات|Celebrations
+@group g8|التواصل والخلافات|Communication & Conflicts
+@words
+g1|A1|family|n|عائلة / أسرة|My family is very close.
+g1|A1|mother|n|أم|My mother cooks wonderfully.
+g1|A1|father|n|أب|His father is a doctor.
+g1|A2|parent|n|والد / والدة|Every parent wants the best.
+g1|A1|brother|n|أخ|My brother lives abroad.
+g1|A1|sister|n|أخت|Her sister is a nurse.
+g1|A1|son|n|ابن|Their son is five.
+g1|A1|daughter|n|بنت / ابنة|Our daughter loves drawing.
+g1|A1|grandmother|n|جدّة|My grandmother tells great stories.
+g1|A1|grandfather|n|جدّ|My grandfather plants vegetables.
+g1|A1|uncle|n|عم / خال|My uncle lives nearby.
+g1|A1|aunt|n|عمة / خالة|My aunt visits every Friday.
+g1|A2|cousin|n|ابن عم / ابن خال|My cousin is getting married.
+g2|A1|husband|n|زوج|Her husband works abroad.
+g2|A1|wife|n|زوجة|His wife is a teacher.
+g2|A1|married|adj|متزوج|They have been married ten years.
+g2|A1|single|adj|أعزب / عزباء|Are you single or married?
+g2|A2|engaged|adj|مخطوب|They got engaged last week.
+g2|A2|wedding|n|فرح / حفل زفاف|The wedding was beautiful.
+g2|B1|bride|n|عروسة|The bride looked wonderful.
+g2|B2|groom|n|عريس|The groom arrived late.
+g2|B1|divorce|n|طلاق|Divorce is never easy.
+g2|A2|relative|n|قريب (من العائلة)|A relative is visiting us.
+g2|B1|in-law|n|نسيب / أقارب الزوج أو الزوجة|My in-laws are very kind.
+g2|A2|couple|n|زوجان|The couple looks very happy.
+g3|A1|baby|n|رضيع / بيبي|The baby is sleeping now.
+g3|A1|child|n|طفل|Every child needs love.
+g3|A1|kid|n|عيّل / طفل|My kid loves cartoons.
+g3|A2|teenager|n|مراهق|Their teenager sleeps till noon.
+g3|A2|adult|n|بالغ|Adults must buy a ticket.
+g3|B1|bring up|phrase|يربّي (طفلًا)|They brought up three children.
+g3|A2|grow up|phrase|يكبر|I grew up in Cairo.
+g3|B1|childhood|n|الطفولة|He had a happy childhood.
+g3|A1|birthday|n|عيد ميلاد|Today is her birthday.
+g3|A1|toy|n|لعبة (أطفال)|The toy is on the floor.
+g3|B1|babysit|v|يجلس مع الأطفال|I babysit my niece sometimes.
+g3|B2|adopt|v|يتبنّى|They decided to adopt a child.
+g4|A1|friend|n|صديق|She is a loyal friend.
+g4|A1|best friend|n|أعز صديق|Sara is my best friend.
+g4|A2|friendship|n|صداقة|Their friendship lasted decades.
+g4|A2|classmate|n|زميل دراسة|My classmate lent me a pen.
+g4|B1|roommate|n|زميل سكن|My roommate cooks very well.
+g4|B2|acquaintance|n|معرفة (شخص تعرفه)|He's just an acquaintance.
+g4|A2|stranger|n|غريب|Never talk to a stranger.
+g4|B2|companion|n|رفيق|Books are my best companion.
+g4|A2|invite|v|يدعو|I'll invite my friends.
+g4|A1|visit|v|يزور|We visit grandma every weekend.
+g4|B1|hang out|phrase|يقضي وقتًا مع الأصدقاء|We often hang out together.
+g4|B1|buddy|n|صاحبي|He's my old buddy.
+g4|B1|loyal|adj|وفي|A loyal friend never leaves.
+g5|B1|relationship|n|علاقة|They have a healthy relationship.
+g5|A2|date|n|موعد غرامي|They had a lovely date.
+g5|B1|romantic|adj|رومانسي|It was a romantic dinner.
+g5|B1|fall in love|phrase|يقع في الحب|They fell in love instantly.
+g5|A2|kiss|v|يُقبّل|He kissed her cheek.
+g5|B2|propose|v|يتقدّم للزواج|He proposed on the beach.
+g5|A2|partner|n|شريك / شريكة الحياة|My partner always listens.
+g5|B2|crush|n|إعجاب (مراهقة)|He has a crush on her.
+g5|B1|break up|phrase|ينفصل (علاقة)|They decided to break up.
+g5|A2|honest|adj|صريح / أمين|Be honest with me.
+g5|B2|faithful|adj|مخلص / وفي (للشريك)|He stayed faithful to her.
+g5|B2|affection|n|مودّة / حنان|She showed him great affection.
+g5|B2|commitment|n|التزام|Marriage needs real commitment.
+g6|B2|household|n|أسرة / أهل البيت|Everyone in the household helps.
+g6|B1|responsibility|n|مسؤولية|Parenting is a big responsibility.
+g6|B1|chore|n|مهمة منزلية|Washing dishes is my chore.
+g6|B1|tradition|n|تقليد|It's a family tradition.
+g6|A2|respect|n|احترام|Show respect to your elders.
+g6|B1|obey|v|يطيع|Children should obey their parents.
+g6|B1|argue|v|يتجادل / يتخانق|They always argue about money.
+g6|B2|quarrel|n|خناقة / مشاجرة|We had a small quarrel.
+g6|B1|generation|n|جيل|Every generation is different.
+g6|B2|elder|adj|أكبر سنًا / كبير العائلة|My elder brother is married.
+g6|B1|value|n|قيمة|Family values are important.
+g6|A2|rule|n|قاعدة|House rules apply to everyone.
+g7|A2|celebrate|v|يحتفل|We celebrate every success.
+g7|A1|party|n|حفلة|The party starts at eight.
+g7|A2|gift|n|هدية|She loved her gift.
+g7|B1|anniversary|n|ذكرى سنوية|Happy anniversary, my dear!
+g7|A2|festival|n|مهرجان / عيد|The festival lasts three days.
+g7|B2|feast|n|وليمة|They prepared a huge feast.
+g7|B1|decorate|v|يزيّن|We decorate the house together.
+g7|B1|congratulate|v|يهنّئ|Let me congratulate you.
+g7|B2|toast|n|نخب (تحية بالكأس)|He raised a toast.
+g7|A2|candle|n|شمعة|Blow out the candles!
+g7|B2|reunion|n|لمّة / لقاء عائلي|The family reunion is Friday.
+g7|A2|surprise|n|مفاجأة|It's a surprise party!
+g7|B1|ceremony|n|حفل رسمي|The ceremony starts at noon.
+g8|A2|conversation|n|محادثة|We had a long conversation.
+g8|A2|opinion|n|رأي|What's your opinion?
+g8|B2|misunderstanding|n|سوء فهم|It was a simple misunderstanding.
+g8|B2|compromise|n|حل وسط / تنازل|Marriage needs a lot of compromise.
+g8|B1|apology|n|اعتذار|I owe you an apology.
+g8|B1|argument|n|جدال / نقاش حاد|They had a loud argument.
+g8|B1|patience|n|صبر|Parents need endless patience.
+g8|B2|empathy|n|تعاطف / تفهّم|Empathy builds strong relationships.
+g8|B2|gossip|n|ثرثرة / نميمة|I don't enjoy gossip.
+g8|A2|secret|n|سر|Can you keep a secret?
+g8|A2|promise|v|يعد / يتعهّد|I promise to call you.
+g8|B1|honesty|n|صدق / أمانة|Honesty matters in friendship.
+@sentences
+g1|A1|My family is small but very close.|عائلتي صغيرة لكنها مترابطة جدًا.
+g1|A1|My mother makes the best koshari.|أمي تعمل أفضل كشري.
+g1|A1|His father works as a pilot.|والده يعمل طيّارًا.
+g1|A2|Every parent wants the best for their kids.|كل والد يريد الأفضل لأولاده.
+g1|A1|My brother lives in Canada now.|أخي يعيش في كندا الآن.
+g1|A1|Her sister is studying medicine.|أختها تدرس الطب.
+g1|A1|Their son starts school next year.|ابنهم سيبدأ المدرسة العام القادم.
+g1|A1|Our daughter loves drawing and painting.|ابنتنا تحب الرسم والتلوين.
+g1|A1|My grandmother tells the best stories.|جدتي تحكي أجمل القصص.
+g1|A1|My grandfather grows vegetables in his garden.|جدي يزرع الخضار في حديقته.
+g1|A1|My uncle lives in the next city.|عمي يسكن في المدينة المجاورة.
+g1|A1|My aunt visits us every Friday.|خالتي تزورنا كل جمعة.
+g1|A2|My cousin is getting married in May.|ابن عمي سيتزوج في مايو.
+g2|A2|Her husband works abroad most of the year.|زوجها يعمل في الخارج معظم العام.
+g2|A2|His wife is a primary school teacher.|زوجته مدرّسة في مدرسة ابتدائية.
+g2|A2|They have been married for ten years.|هما متزوجان منذ عشر سنوات.
+g2|A1|Are you single or married?|هل أنت أعزب أم متزوج؟
+g2|A2|They got engaged last summer.|خُطبا الصيف الماضي.
+g2|A2|The wedding was held on the beach.|أُقيم الفرح على الشاطئ.
+g2|B1|The bride looked absolutely wonderful.|بدت العروسة رائعة تمامًا.
+g2|B2|The groom was a little nervous.|كان العريس متوترًا قليلًا.
+g2|B1|Divorce is never an easy decision.|الطلاق ليس قرارًا سهلًا أبدًا.
+g2|A2|A distant relative is visiting us tomorrow.|قريب بعيد سيزورنا غدًا.
+g2|B1|My in-laws live in the same building.|أصهاري يسكنون في نفس المبنى.
+g2|A2|The couple looks really happy together.|يبدو الزوجان سعيدين جدًا معًا.
+g3|A1|The baby finally fell asleep.|نام الطفل الرضيع أخيرًا.
+g3|A1|Every child needs love and attention.|كل طفل يحتاج إلى الحب والاهتمام.
+g3|A1|My kid loves watching cartoons.|ابني يحب مشاهدة الكرتون.
+g3|A2|Their teenager sleeps until noon.|مراهقهم ينام حتى الظهر.
+g3|A2|Adults pay full price for tickets.|البالغون يدفعون السعر الكامل للتذاكر.
+g3|B1|They brought up three kids alone.|ربّوا ثلاثة أطفال بمفردهم.
+g3|A2|I grew up in a small village.|نشأت في قرية صغيرة.
+g3|B1|He had a very happy childhood.|كانت طفولته سعيدة جدًا.
+g3|A1|Today is my daughter's birthday.|اليوم عيد ميلاد ابنتي.
+g3|A1|The toys are all over the floor.|الألعاب في كل مكان على الأرض.
+g3|B1|I babysit my niece on weekends.|أرعى ابنة أخي في عطلات نهاية الأسبوع.
+g3|B2|They decided to adopt a child.|قرروا تبنّي طفل.
+g4|A1|She is my best friend since school.|هي أعز صديقاتي منذ المدرسة.
+g4|A1|Sara and I have been friends for years.|سارة وأنا صديقتان منذ سنوات.
+g4|A2|Their friendship has lasted over twenty years.|دامت صداقتهما أكثر من عشرين عامًا.
+g4|A2|My classmate lent me her notes.|زميلتي في الدراسة أعارتني ملاحظاتها.
+g4|B1|My roommate cooks dinner every night.|زميلي في السكن يطبخ العشاء كل ليلة.
+g4|B2|He is just an acquaintance, not a friend.|هو مجرد معرفة وليس صديقًا.
+g4|A2|Never accept gifts from a stranger.|لا تقبل هدايا من غريب أبدًا.
+g4|B2|A good book is a great companion.|الكتاب الجيد رفيق عظيم.
+g4|A2|I'd like to invite you to dinner.|أود دعوتك إلى العشاء.
+g4|A1|We visit our grandparents every weekend.|نزور جدّينا كل عطلة أسبوع.
+g4|B1|We often hang out after work.|نقضي وقتًا معًا غالبًا بعد العمل.
+g4|B1|He's my old buddy from school.|هو صاحبي القديم من المدرسة.
+g4|B1|A loyal friend never leaves you alone.|الصديق الوفي لا يتركك وحدك أبدًا.
+g5|B1|They have a very healthy relationship.|علاقتهما صحية جدًا.
+g5|A2|They went on a lovely date last night.|ذهبا في موعد جميل الليلة الماضية.
+g5|B1|It was a very romantic dinner.|كان عشاءً رومانسيًا جدًا.
+g5|B1|They fell in love at first sight.|وقعا في الحب من أول نظرة.
+g5|A2|He kissed her gently on the cheek.|قبّلها بلطف على خدها.
+g5|B2|He proposed to her on the beach.|تقدّم لها بالزواج على الشاطئ.
+g5|A2|My partner always supports my dreams.|شريكي يدعم أحلامي دائمًا.
+g5|B2|He has had a crush on her.|هو معجب بها منذ فترة.
+g5|B1|They decided to break up last month.|قررا الانفصال الشهر الماضي.
+g5|A2|Please be honest with me.|كن صريحًا معي من فضلك.
+g5|B2|She stayed faithful to him for years.|ظلت مخلصة له لسنوات.
+g5|B2|He showed her great warmth and affection.|أظهر لها دفئًا وحنانًا كبيرين.
+g5|B2|A marriage needs real commitment.|الزواج يحتاج إلى التزام حقيقي.
+g6|B2|Everyone in the household helps with chores.|كل أفراد البيت يساعدون في الأعمال المنزلية.
+g6|B1|Parenting is a very big responsibility.|تربية الأبناء مسؤولية كبيرة جدًا.
+g6|B1|Washing the dishes is my daily chore.|غسل الأطباق مهمتي اليومية.
+g6|B1|It's a family tradition on Eid.|إنها تقليد عائلي في العيد.
+g6|A2|We should always show respect to elders.|يجب أن نُظهر الاحترام للكبار دائمًا.
+g6|B1|Children should obey their parents.|يجب أن يطيع الأطفال والديهم.
+g6|B1|They always argue about money.|هم يتجادلون دائمًا بشأن المال.
+g6|B2|We had a small quarrel last night.|حدثت بيننا مشادة صغيرة ليلة أمس.
+g6|B1|Every generation sees the world differently.|كل جيل يرى العالم بشكل مختلف.
+g6|B2|My elder brother is already married.|أخي الأكبر متزوج بالفعل.
+g6|B1|Family values are very important to us.|القيم العائلية مهمة جدًا لنا.
+g6|A2|House rules apply to everyone here.|قواعد البيت تنطبق على الجميع هنا.
+g7|A2|We celebrate every small success together.|نحتفل بكل نجاح صغير معًا.
+g7|A1|The party starts at eight tonight.|تبدأ الحفلة في الثامنة الليلة.
+g7|A2|She absolutely loved her birthday gift.|أحبّت هدية عيد ميلادها جدًا.
+g7|B1|Happy anniversary to my dear wife!|عيد زواج سعيد يا زوجتي العزيزة!
+g7|A2|The festival lasts for three days.|يستمر المهرجان ثلاثة أيام.
+g7|B2|They prepared a huge feast for everyone.|أعدّوا وليمة ضخمة للجميع.
+g7|B1|We decorate the house before every holiday.|نزيّن البيت قبل كل عطلة.
+g7|B1|Let me congratulate you on your success.|اسمح لي أن أهنئك على نجاحك.
+g7|B2|He raised a toast to the happy couple.|رفع نخبًا للزوجين السعيدين.
+g7|A2|Make a wish and blow out the candles.|تمنَّ أمنية وأطفئ الشموع.
+g7|B2|The family reunion is next Friday.|لمّة العائلة يوم الجمعة القادمة.
+g7|A2|It's a surprise, so don't tell her.|إنها مفاجأة فلا تخبرها.
+g7|B1|The ceremony starts at noon sharp.|يبدأ الحفل في الظهر تمامًا.
+g8|A2|We had a long and honest conversation.|أجرينا محادثة طويلة وصريحة.
+g8|A2|I'd like to hear your opinion.|أود أن أسمع رأيك.
+g8|B2|It was just a simple misunderstanding.|كان مجرد سوء فهم بسيط.
+g8|B2|Marriage needs a lot of compromise.|الزواج يحتاج الكثير من التنازلات.
+g8|B1|I owe you a sincere apology.|أدين لك باعتذار صادق.
+g8|B1|They had a loud argument yesterday.|حدث بينهما جدال عالٍ أمس.
+g8|B1|Parents need endless patience with toddlers.|الآباء يحتاجون صبرًا لا ينتهي مع الأطفال الصغار.
+g8|B2|Empathy helps us understand each other.|التعاطف يساعدنا على فهم بعضنا.
+g8|B2|I really don't enjoy gossip.|لا أستمتع بالنميمة حقًا.
+g8|A2|Can you keep a secret for me?|هل يمكنك أن تحتفظ بسر لي؟
+g8|A2|I promise I'll call you tonight.|أعدك أنني سأتصل بك الليلة.
+g8|B1|Honesty is the base of friendship.|الصدق أساس الصداقة.

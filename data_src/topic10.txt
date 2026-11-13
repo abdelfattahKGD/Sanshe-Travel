@@ -1,0 +1,211 @@
+# Topic 10 - Money, Business & Emergencies
+@group g1|الفلوس والبنك|Money & Banking
+@group g2|الدخل والمصاريف|Income & Spending
+@group g3|الأعمال والتجارة|Business
+@group g4|العقود والمدفوعات|Contracts & Payments
+@group g5|التفاوض والأسعار|Negotiation & Pricing
+@group g6|حالات الطوارئ|Emergencies
+@group g7|طلب المساعدة والإبلاغ|Reporting & Help
+@group g8|الأمان والاستعداد|Safety & Preparedness
+@words
+g1|A1|money|n|فلوس|I don't have much money.
+g1|A1|bank|n|بنك|The bank opens at nine.
+g1|B1|balance|n|رصيد|Check your account balance online.
+g1|B1|deposit|v|يودع|I'll deposit the cash today.
+g1|B2|withdraw|v|يسحب (فلوس)|I need to withdraw cash.
+g1|B1|loan|n|قرض|He took a bank loan.
+g1|B1|interest|n|فائدة|The interest rate is low.
+g1|B1|savings|n|مدّخرات|She spent all her savings.
+g1|A2|ATM|n|ماكينة صرف|Is there an ATM nearby?
+g1|A2|coin|n|عملة معدنية|I only have one coin.
+g1|B1|currency|n|عملة|Which currency do you use?
+g1|A2|wallet|n|محفظة|My wallet is empty.
+g1|A2|salary|n|مرتب|My salary arrives monthly.
+g2|B1|income|n|دخل|Her monthly income is stable.
+g2|B1|expense|n|مصروف|Rent is our biggest expense.
+g2|A1|spend|v|ينفق / يقضي|Don't spend it all today.
+g2|A2|earn|v|يكسب|He earns a good living.
+g2|B1|afford|v|يقدر مادّيًا|I can't afford that car.
+g2|A2|rent|n|إيجار|The rent is due Friday.
+g2|B1|debt|n|دَيْن|He paid off his debt.
+g2|B1|owe|v|يدين بـ|I owe you ten dollars.
+g2|B1|invest|v|يستثمر|She invests in small companies.
+g2|B1|profit|n|ربح|The company made a profit.
+g2|B1|loss|n|خسارة|We suffered a heavy loss.
+g2|A2|tax|n|ضريبة|Everyone must pay tax.
+g3|A2|business|n|عمل تجاري|He runs a small business.
+g3|B1|trade|n|تجارة|Trade between countries is growing.
+g3|B1|supplier|n|مورّد|Our supplier delivers on Mondays.
+g3|A2|product|n|منتج|This product sells quickly.
+g3|A2|service|n|خدمة|The service was excellent.
+g3|B1|brand|n|ماركة / علامة تجارية|It's a well-known brand.
+g3|B1|advertise|v|يعلن / يسوّق|We advertise on social media.
+g3|B2|competitor|n|منافس|Our competitor lowered prices.
+g3|B2|startup|n|شركة ناشئة|She founded a tech startup.
+g3|A2|owner|n|مالك|The owner greeted us warmly.
+g3|B1|import|v|يستورد|We import coffee from Brazil.
+g3|B1|export|v|يصدّر|They export cotton worldwide.
+g3|B1|stock|n|مخزون / أسهم|This item is out of stock.
+g4|B1|invoice|n|فاتورة (تجارية)|Please send me the invoice.
+g4|A2|payment|n|دفعة / سداد|The payment arrives tomorrow.
+g4|B1|agreement|n|اتفاق|We reached an agreement.
+g4|A2|sign|v|يوقّع|Please sign at the bottom.
+g4|B1|signature|n|توقيع|Your signature is missing here.
+g4|B2|installment|n|قسط|I pay in monthly installments.
+g4|B1|fee|n|رسوم|What's the registration fee?
+g4|A2|charge|v|يحاسب / يخصم|They charge extra for delivery.
+g4|B2|penalty|n|غرامة|There's a penalty for delay.
+g4|B1|due|adj|مستحق|The payment is due Monday.
+g4|B2|overdue|adj|متأخر السداد|Your invoice is already overdue.
+g4|B2|guarantee|n|ضمان|This phone has a guarantee.
+g5|B1|negotiate|v|يفاوض|Let's negotiate the final price.
+g5|A2|deal|n|صفقة|That's a great deal!
+g5|B1|bargain|n|فرصة رخيصة|This jacket was a bargain.
+g5|B1|quote|n|عرض سعر|Can you send a quote?
+g5|B1|estimate|n|تقدير تقريبي|Give me a rough estimate.
+g5|B1|worth|adj|يستحق|It's worth every penny.
+g5|A2|fair|adj|عادل|That's a fair price.
+g5|B1|increase|v|يزيد|Prices increase every year.
+g5|B2|decrease|v|ينخفض|Sales decreased last month.
+g5|B1|reasonable|adj|معقول|The price seems reasonable.
+g5|A2|extra|adj|إضافي|Is there an extra charge?
+g5|A2|include|v|يشمل|Does this include delivery?
+g6|A1|fire|n|حريق / نار|There's a fire downstairs!
+g6|A2|police|n|شرطة|Call the police immediately.
+g6|B1|rescue|v|ينقذ|They rescued the trapped hikers.
+g6|A2|thief|n|حرامي / لص|A thief stole my bag.
+g6|A2|steal|v|يسرق|Someone tried to steal it.
+g6|B1|robbery|n|سرقة بالإكراه|The robbery happened last night.
+g6|B1|earthquake|n|زلزال|The earthquake shook the city.
+g6|B1|flood|n|فيضان|The flood damaged many homes.
+g6|B2|evacuate|v|يخلي المكان|Everyone must evacuate the building.
+g6|B1|shelter|n|مأوى|We found shelter from the storm.
+g6|B1|siren|n|صفّارة إنذار|I heard a loud siren.
+g6|B1|explosion|n|انفجار|There was a loud explosion.
+g6|B1|firefighter|n|رجل إطفاء|The firefighter saved the cat.
+g7|B1|inform|v|يُبلغ|Inform the police immediately.
+g7|B2|witness|n|شاهد عيان|A witness saw everything.
+g7|B1|victim|n|ضحية|The victim is now safe.
+g7|B2|trapped|adj|محاصر / عالق|Two people are trapped inside.
+g7|B1|missing|adj|مفقود|My dog is missing.
+g7|B1|injured|adj|مصاب|Three people were injured.
+g7|B1|first aid|phrase|إسعافات أولية|Do you know first aid?
+g7|B1|fire exit|phrase|مخرج الحريق|Where is the fire exit?
+g7|B1|emergency number|phrase|رقم الطوارئ|What's the emergency number here?
+g7|B1|lost and found|phrase|المفقودات|Check the lost and found.
+g7|B2|claim|n|مطالبة / تعويض|I filed an insurance claim.
+g7|B1|damage|n|ضرر|The storm caused major damage.
+g8|A2|safety|n|سلامة|Safety comes first, always.
+g8|B2|precaution|n|احتياط|Take every precaution possible.
+g8|B1|risk|n|مخاطرة|Driving fast is a risk.
+g8|A2|lock|v|يقفل|Lock the door tonight.
+g8|B1|supplies|n|مؤن / مستلزمات|We stored enough food supplies.
+g8|B1|flashlight|n|كشّاف إضاءة|Keep a flashlight nearby.
+g8|B2|extinguisher|n|طفّاية حريق|The fire extinguisher is here.
+g8|A2|helmet|n|خوذة|Always wear a helmet.
+g8|B1|instruction|n|تعليمات|Follow the instructions carefully.
+g8|B2|cautious|adj|حَذِر|Be cautious near the water.
+g8|B2|alert|adj|منتبه / متيقّظ|Stay alert at night.
+g8|B2|hazard|n|خطر محتمل|Wet floors are a hazard.
+g8|B1|guard|n|حارس|The guard checked our bags.
+@sentences
+g1|A1|I don't have much money right now.|ليس معي الكثير من الفلوس الآن.
+g1|A1|The bank opens at nine every morning.|يفتح البنك في التاسعة كل صباح.
+g1|B1|Check your account balance online.|راجع رصيد حسابك أونلاين.
+g1|B1|I'll deposit the cash this afternoon.|سأودع النقود بعد الظهر.
+g1|B2|I need to withdraw some cash.|أحتاج إلى سحب بعض النقود.
+g1|B1|He took a bank loan to buy a house.|أخذ قرضًا من البنك ليشتري بيتًا.
+g1|B1|The interest rate on this loan is low.|سعر الفائدة على هذا القرض منخفض.
+g1|B1|She spent all her savings on the trip.|أنفقت كل مدخراتها على الرحلة.
+g1|A2|Is there an ATM near here?|هل يوجد ماكينة صرف قريبة من هنا؟
+g1|B1|Which currency do they use there?|أي عملة يستخدمون هناك؟
+g1|A2|I left my wallet at the office.|تركت محفظتي في المكتب.
+g1|A2|My salary arrives at the end of the month.|يصل مرتبي في نهاية الشهر.
+g1|A2|Do you have any coins for the machine?|هل معك عملات معدنية للماكينة؟
+g2|B1|Her monthly income is quite stable.|دخلها الشهري ثابت تمامًا.
+g2|B1|Rent is our biggest monthly expense.|الإيجار أكبر مصروف شهري لدينا.
+g2|A2|Don't spend it all in one day.|لا تنفقها كلها في يوم واحد.
+g2|A2|He earns a good living as a designer.|يكسب عيشًا جيدًا كمصمم.
+g2|B1|I can't afford a new car right now.|لا أستطيع شراء سيارة جديدة الآن.
+g2|A2|The rent is due on the first.|الإيجار مستحق في الأول من الشهر.
+g2|B1|He finally paid off his debt.|سدّد دَينه أخيرًا.
+g2|B1|I owe you ten dollars from yesterday.|أدين لك بعشرة دولارات من أمس.
+g2|B1|She invests in small local companies.|تستثمر في شركات محلية صغيرة.
+g2|B1|The company made a huge profit this year.|حققت الشركة ربحًا ضخمًا هذا العام.
+g2|B1|We suffered a heavy loss last month.|تكبدنا خسارة كبيرة الشهر الماضي.
+g2|A2|Everyone has to pay tax on income.|على الجميع دفع الضريبة على الدخل.
+g3|A2|He runs a small family business.|يدير عملًا تجاريًا عائليًا صغيرًا.
+g3|B1|Trade between our countries is growing.|التجارة بين بلدينا تنمو.
+g3|B1|Our supplier delivers every Monday morning.|مورّدنا يسلّم كل صباح إثنين.
+g3|A2|This product sells very quickly.|هذا المنتج يُباع بسرعة كبيرة.
+g3|A2|Customer service is our top concern.|خدمة العملاء هي أكبر اهتماماتنا.
+g3|B1|It's a well-known international brand.|إنها علامة تجارية عالمية معروفة.
+g3|B1|We advertise mostly on social media.|نعلن في الغالب على وسائل التواصل.
+g3|B2|Our main competitor lowered their prices.|منافسنا الرئيسي خفّض أسعاره.
+g3|B2|She founded a successful tech startup.|أسست شركة تقنية ناشئة ناجحة.
+g3|A2|The owner greeted us at the door.|استقبلنا المالك عند الباب.
+g3|B1|We import coffee from Brazil.|نستورد القهوة من البرازيل.
+g3|B1|They export cotton to many countries.|يصدّرون القطن إلى دول كثيرة.
+g3|B1|This item is currently out of stock.|هذا المنتج غير متوفر حاليًا.
+g4|B1|Please send me the invoice today.|أرسل لي الفاتورة اليوم من فضلك.
+g4|A2|The payment will arrive tomorrow morning.|ستصل الدفعة صباح الغد.
+g4|B1|We finally reached a fair agreement.|توصلنا أخيرًا إلى اتفاق عادل.
+g4|A2|Please sign at the bottom of the page.|وقّع أسفل الصفحة من فضلك.
+g4|B1|Your signature is missing on page two.|توقيعك ناقص في الصفحة الثانية.
+g4|B2|I pay for the phone in monthly installments.|أدفع ثمن الهاتف بأقساط شهرية.
+g4|B1|What is the registration fee?|كم رسوم التسجيل؟
+g4|A2|They charge extra for home delivery.|يحاسبون برسوم إضافية على التوصيل المنزلي.
+g4|B2|There is a penalty for late payment.|توجد غرامة على التأخر في السداد.
+g4|B1|The next payment is due on Monday.|الدفعة التالية مستحقة يوم الإثنين.
+g4|B2|Your invoice is already overdue.|فاتورتك متأخرة السداد بالفعل.
+g4|B2|This laptop comes with a two-year guarantee.|هذا اللابتوب يأتي بضمان لمدة عامين.
+g5|B1|Let's negotiate the final price together.|لنتفاوض على السعر النهائي معًا.
+g5|A2|That's a really great deal!|هذه صفقة رائعة حقًا!
+g5|B1|This jacket was a real bargain.|كانت هذه الجاكيت فرصة رخيصة حقيقية.
+g5|B1|Can you send me a written quote?|هل يمكنك إرسال عرض سعر مكتوب؟
+g5|B1|Give me a rough estimate, please.|أعطني تقديرًا تقريبيًا من فضلك.
+g5|B1|It's worth every single penny.|إنه يستحق كل قرش.
+g5|A2|That sounds like a fair offer.|يبدو ذلك عرضًا عادلًا.
+g5|B1|Prices increase a little every year.|الأسعار ترتفع قليلًا كل عام.
+g5|B2|Sales decreased sharply last month.|انخفضت المبيعات بشدة الشهر الماضي.
+g5|B1|The price seems quite reasonable.|السعر يبدو معقولًا جدًا.
+g5|A2|Is there an extra charge for this?|هل هناك رسوم إضافية لهذا؟
+g5|A2|Does the price include delivery?|هل يشمل السعر التوصيل؟
+g6|A1|There's a fire on the second floor!|هناك حريق في الطابق الثاني!
+g6|A2|Please call the police immediately.|اتصل بالشرطة فورًا من فضلك.
+g6|B1|They rescued two hikers from the mountain.|أنقذوا متسلقَين من الجبل.
+g6|A2|A thief stole my bag yesterday.|سرق لص حقيبتي أمس.
+g6|A2|Someone tried to steal my bike.|حاول أحدهم سرقة دراجتي.
+g6|B1|The robbery happened late last night.|حدثت السرقة متأخرًا الليلة الماضية.
+g6|B1|The earthquake shook the whole city.|هزّ الزلزال المدينة كلها.
+g6|B1|The flood damaged hundreds of homes.|دمّر الفيضان مئات المنازل.
+g6|B2|Everyone must evacuate the building now.|على الجميع إخلاء المبنى الآن.
+g6|B1|We found shelter from the storm.|وجدنا مأوى من العاصفة.
+g6|B1|I heard a loud siren outside.|سمعت صفارة إنذار عالية بالخارج.
+g6|B1|There was a huge explosion downtown.|وقع انفجار ضخم وسط المدينة.
+g6|B1|The firefighter saved the little cat.|أنقذ رجل الإطفاء القطة الصغيرة.
+g7|B1|Please inform the police right away.|أبلغ الشرطة فورًا من فضلك.
+g7|B2|A witness saw everything clearly.|شاهد عيان رأى كل شيء بوضوح.
+g7|B1|The victim is safe and receiving help.|الضحية بأمان وتتلقى المساعدة.
+g7|B2|Two people are trapped inside the car.|شخصان محاصران داخل السيارة.
+g7|B1|My dog has been missing since morning.|كلبي مفقود منذ الصباح.
+g7|B1|Three people were injured in the crash.|أُصيب ثلاثة أشخاص في الحادث.
+g7|B1|Do you know basic first aid?|هل تعرف الإسعافات الأولية الأساسية؟
+g7|B1|Where is the nearest fire exit?|أين أقرب مخرج حريق؟
+g7|B1|What's the emergency number in this country?|ما رقم الطوارئ في هذا البلد؟
+g7|B1|Please check the lost and found.|تفقّد المفقودات من فضلك.
+g7|B2|I filed an insurance claim yesterday.|قدّمت مطالبة تأمين أمس.
+g7|B1|The storm caused serious damage to the roof.|تسببت العاصفة في ضرر كبير للسقف.
+g8|A2|Safety always comes before speed.|السلامة تأتي دائمًا قبل السرعة.
+g8|B2|Take every precaution you possibly can.|اتخذ كل احتياط ممكن.
+g8|B1|Driving fast on wet roads is a risk.|القيادة بسرعة على الطرق المبللة مخاطرة.
+g8|A2|Lock the door before you go to bed.|اقفل الباب قبل أن تنام.
+g8|B1|We stored enough food and water supplies.|خزّنّا ما يكفي من الطعام والماء.
+g8|B1|Keep a flashlight near your bed.|احتفظ بكشّاف بالقرب من سريرك.
+g8|B2|The fire extinguisher is by the entrance.|طفاية الحريق بجوار المدخل.
+g8|A2|Always wear a helmet when you ride.|ارتدِ خوذة دائمًا عندما تركب.
+g8|B1|Please follow the safety instructions carefully.|اتبع تعليمات السلامة بعناية من فضلك.
+g8|B2|Be cautious when you walk near water.|كن حذرًا عندما تمشي قرب الماء.
+g8|B2|Stay alert, especially at night.|ابقَ منتبهًا خصوصًا في الليل.
+g8|B2|A wet floor is a serious hazard.|الأرضية المبللة خطر كبير.
+g8|B1|The guard checked everyone's bags.|فحص الحارس حقائب الجميع.

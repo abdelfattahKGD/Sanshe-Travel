@@ -12,8 +12,19 @@ android {
         applicationId = "com.microforge.wordforge"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 5
+        versionName = "0.5.0"
+    }
+
+    // Fixed debug key, so every GitHub build is signed the same way and installs OVER the previous one
+    // (without it each CI run generates a new random key and Android refuses the update).
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
     }
 
     buildTypes {

@@ -1,0 +1,211 @@
+# Topic 7 - Technology & Internet
+@group g1|الأجهزة|Devices
+@group g2|الإنترنت والواي فاي|Internet & Wi-Fi
+@group g3|البرامج والتطبيقات|Software & Apps
+@group g4|الحسابات والأمان|Accounts & Security
+@group g5|وسائل التواصل|Social Media
+@group g6|الملفات والبيانات|Files & Data
+@group g7|المشاكل التقنية|Tech Problems
+@group g8|التقنية الحديثة|Modern Tech
+@words
+g1|A1|computer|n|كمبيوتر|My computer is very fast.
+g1|A1|laptop|n|لابتوب|She carries her laptop everywhere.
+g1|A1|phone|n|تليفون / هاتف|Where is my phone?
+g1|A2|smartphone|n|هاتف ذكي|Most people own a smartphone.
+g1|A2|tablet|n|تابلت|The kids play on the tablet.
+g1|A2|screen|n|شاشة|The screen is too bright.
+g1|A2|keyboard|n|لوحة مفاتيح|This keyboard is very quiet.
+g1|A2|mouse|n|ماوس|My mouse stopped working.
+g1|A2|charger|n|شاحن|Do you have a phone charger?
+g1|A2|battery|n|بطارية|My battery is almost dead.
+g1|A2|headphones|n|سمّاعات رأس|I forgot my headphones.
+g1|A2|speaker|n|سمّاعة / مكبّر صوت|This speaker sounds amazing.
+g1|B1|device|n|جهاز|Turn off every device, please.
+g2|A1|internet|n|إنترنت|The internet is very slow.
+g2|A1|website|n|موقع إلكتروني|Visit our website for details.
+g2|A1|online|adj|أونلاين|I shop online mostly.
+g2|B1|offline|adj|بدون إنترنت|This app works offline.
+g2|A1|wifi|n|واي فاي|What's the wifi password?
+g2|A2|network|n|شبكة|The network is down again.
+g2|A2|connect|v|يتصل / يربط|Connect to the wifi first.
+g2|B1|browser|n|متصفّح|Open the browser and search.
+g2|A2|link|n|رابط|Click the link below.
+g2|A1|search|v|يبحث|I'll search for it online.
+g2|A2|download|v|ينزّل|Download the app for free.
+g2|B1|upload|v|يرفع (ملفات)|Upload the photo to the website.
+g3|A1|app|n|تطبيق|I use this app daily.
+g3|A2|software|n|برنامج / برمجيات|The software needs an update.
+g3|A2|program|n|برنامج (كمبيوتر)|Close the program and restart.
+g3|A2|install|v|يثبّت|Install the app first.
+g3|B1|version|n|إصدار|This is the latest version.
+g3|A2|setting|n|إعداد|Change this setting to dark mode.
+g3|A2|icon|n|أيقونة|Tap the small blue icon.
+g3|A1|button|n|زرار|Press the red button.
+g3|A2|click|v|ينقر بالماوس|Click on this link.
+g3|A2|tap|v|يلمس / ينقر (شاشة)|Tap the screen twice.
+g3|B1|feature|n|ميزة|This feature is really useful.
+g3|A2|tool|n|أداة|It's a handy little tool.
+g3|A2|user|n|مستخدم|Every user gets a free account.
+g4|A2|account|n|حساب|I created a new account.
+g4|A1|password|n|كلمة السر|Never share your password.
+g4|A2|username|n|اسم المستخدم|Choose a unique username.
+g4|A2|login|n|تسجيل الدخول|Your login failed again.
+g4|A2|log out|phrase|يسجّل الخروج|Always log out on public computers.
+g4|A2|sign up|phrase|يشترك / يسجّل حساب|Sign up for free today.
+g4|B1|secure|adj|آمن (محمي)|Is this website secure?
+g4|B1|privacy|n|خصوصية|Privacy matters to everyone.
+g4|B1|hacker|n|هاكر|A hacker stole my password.
+g4|A2|virus|n|فيروس|My computer has a virus.
+g4|B1|protect|v|يحمي|Protect your account with a password.
+g4|B2|verify|v|يتحقق من|Please verify your email address.
+g5|A2|social media|n|وسائل التواصل الاجتماعي|She works in social media.
+g5|A2|post|n|منشور|I liked your latest post.
+g5|A2|comment|n|تعليق|Leave a comment below.
+g5|A2|like|n|إعجاب / لايك|Thanks for the like!
+g5|A2|follow|v|يتابع|Follow us for updates.
+g5|B1|follower|n|متابع|She has ten thousand followers.
+g5|B1|profile|n|الملف الشخصي|Update your profile picture.
+g5|A1|message|n|رسالة|I'll send you a message.
+g5|A1|video|n|فيديو|Watch this funny video.
+g5|B1|podcast|n|بودكاست|I listen to a podcast daily.
+g5|B1|notification|n|إشعار|I got a new notification.
+g5|B1|trend|n|ترند / اتجاه رائج|That's the latest online trend.
+g5|B2|viral|adj|منتشر بسرعة|The video went viral overnight.
+g6|A2|data|n|بيانات|Your data is safe here.
+g6|A1|save|v|يحفظ|Save your work often.
+g6|A2|delete|v|يمسح|Don't delete that file.
+g6|B1|backup|n|نسخة احتياطية|Make a backup before updating.
+g6|B1|storage|n|مساحة تخزين|I'm running out of storage.
+g6|A2|memory|n|ذاكرة|This phone has plenty of memory.
+g6|A2|document|n|مستند|Open the document, please.
+g6|A2|image|n|صورة (رقمية)|Upload this image, please.
+g6|B1|screenshot|n|لقطة شاشة|Send me a screenshot.
+g6|B1|format|n|صيغة|Which file format do you need?
+g6|B2|restore|v|يستعيد|Restore the deleted files.
+g6|B1|transfer|v|ينقل (ملفات)|Transfer the photos to your laptop.
+g7|A2|error|n|خطأ (برمجي)|An error message appeared.
+g7|B1|bug|n|عيب برمجي|We found a serious bug.
+g7|B1|crash|v|ينهار / يتوقف فجأة|The app keeps crashing.
+g7|B1|freeze|v|يهنّج / يتجمّد|My screen froze again.
+g7|A1|slow|adj|بطيء|This laptop is too slow.
+g7|A1|fast|adj|سريع|The new phone is fast.
+g7|B1|restart|v|يعيد التشغيل|Restart your computer, please.
+g7|B1|reset|v|يعيد الضبط|Reset your password online.
+g7|A2|fix|v|يصلّح (مشكلة)|Can you fix this bug?
+g7|B1|signal|n|إشارة / شبكة|I have no signal here.
+g7|B2|glitch|n|خلل بسيط|It was just a glitch.
+g7|B1|technician|n|فنّي|The technician arrives at noon.
+g7|B1|issue|n|مشكلة / قضية|I have a login issue.
+g8|A2|technology|n|تكنولوجيا|Technology changes very quickly.
+g8|B1|digital|adj|رقمي|Everything is becoming digital now.
+g8|A2|smart|adj|ذكي|I bought a smart watch.
+g8|A2|robot|n|روبوت|A robot cleans our floor.
+g8|B1|artificial intelligence|phrase|الذكاء الاصطناعي|Artificial intelligence is changing everything.
+g8|A2|machine|n|آلة / ماكينة|The machine stopped working.
+g8|B1|invent|v|يخترع|Who invented the telephone?
+g8|B2|innovation|n|ابتكار|Innovation drives every successful company.
+g8|B1|code|n|كود برمجي|He writes clean code.
+g8|B1|drone|n|درون / طائرة مسيّرة|The drone filmed the village.
+g8|B1|cloud|n|التخزين السحابي|I keep my photos in the cloud.
+g8|B1|automatic|adj|تلقائي|The door is fully automatic.
+@sentences
+g1|A1|My computer is much faster now.|حاسوبي أسرع بكثير الآن.
+g1|A2|She carries her laptop everywhere she goes.|تحمل لابتوبها أينما ذهبت.
+g1|A1|Where did I leave my phone?|أين تركت هاتفي؟
+g1|A2|Most people own a smartphone these days.|معظم الناس يملكون هاتفًا ذكيًا هذه الأيام.
+g1|A2|The kids love playing games on the tablet.|الأطفال يحبون اللعب على التابلت.
+g1|A2|The screen is too bright at night.|الشاشة ساطعة جدًا ليلًا.
+g1|A2|This keyboard is quiet and comfortable.|لوحة المفاتيح هذه هادئة ومريحة.
+g1|A2|My mouse stopped working this morning.|توقف الماوس عن العمل هذا الصباح.
+g1|A2|Do you have a charger I can borrow?|هل لديك شاحن يمكنني استعارته؟
+g1|A2|My battery is almost dead again.|بطاريتي على وشك النفاد مرة أخرى.
+g1|A2|I always listen to music with headphones.|أستمع دائمًا إلى الموسيقى بسماعات الرأس.
+g1|A2|This speaker sounds amazing for its size.|هذه السماعة صوتها رائع بالنسبة لحجمها.
+g1|B1|Please turn off every device before takeoff.|أطفئ كل الأجهزة قبل الإقلاع من فضلك.
+g2|A1|The internet is very slow today.|الإنترنت بطيء جدًا اليوم.
+g2|A1|Visit our website for more details.|زر موقعنا الإلكتروني لمزيد من التفاصيل.
+g2|A1|I mostly shop online these days.|أتسوق أونلاين في الغالب هذه الأيام.
+g2|B1|This app works even when you're offline.|هذا التطبيق يعمل حتى بدون إنترنت.
+g2|A1|What's the wifi password here?|ما كلمة سر الواي فاي هنا؟
+g2|A2|The whole network is down again.|الشبكة كلها متوقفة مرة أخرى.
+g2|A2|I can't connect to the internet.|لا أستطيع الاتصال بالإنترنت.
+g2|B1|Open your browser and search for it.|افتح المتصفح وابحث عنه.
+g2|A2|Click the link below to continue.|انقر على الرابط أدناه للمتابعة.
+g2|A2|I'll search online for a better price.|سأبحث أونلاين عن سعر أفضل.
+g2|A2|You can download the file for free.|يمكنك تنزيل الملف مجانًا.
+g2|B1|Please upload your photo to the website.|ارفع صورتك إلى الموقع من فضلك.
+g3|A1|I use this app every single day.|أستخدم هذا التطبيق كل يوم.
+g3|A2|The software needs to be updated.|البرنامج يحتاج إلى تحديث.
+g3|A2|Close the program and open it again.|أغلق البرنامج وافتحه مرة أخرى.
+g3|A2|Install the app, then create an account.|ثبّت التطبيق ثم أنشئ حسابًا.
+g3|B1|This is the latest version of the app.|هذه أحدث نسخة من التطبيق.
+g3|A2|Change this setting to dark mode.|غيّر هذا الإعداد إلى الوضع الداكن.
+g3|A2|Tap the small blue icon on the screen.|المس الأيقونة الزرقاء الصغيرة على الشاشة.
+g3|A1|Press the red button to start recording.|اضغط الزر الأحمر لبدء التسجيل.
+g3|A2|Click on the link to open it.|انقر على الرابط لفتحه.
+g3|A2|Tap twice to zoom in.|المس مرتين للتكبير.
+g3|B1|This new feature is really useful.|هذه الميزة الجديدة مفيدة جدًا.
+g3|A2|It's a simple tool for everyday tasks.|إنها أداة بسيطة للمهام اليومية.
+g3|A2|Every user gets a free account.|كل مستخدم يحصل على حساب مجاني.
+g4|A2|I created a new account yesterday.|أنشأت حسابًا جديدًا أمس.
+g4|A1|Never share your password with anyone.|لا تشارك كلمة سرك مع أي شخص.
+g4|A2|Choose a unique username, please.|اختر اسم مستخدم فريدًا من فضلك.
+g4|A2|My login failed three times today.|فشل تسجيل دخولي ثلاث مرات اليوم.
+g4|A2|Always log out on public computers.|سجّل الخروج دائمًا على الحواسيب العامة.
+g4|A2|You can sign up for free today.|يمكنك التسجيل مجانًا اليوم.
+g4|B1|Is this website safe and secure?|هل هذا الموقع آمن ومحمي؟
+g4|B1|Online privacy matters to everyone.|الخصوصية على الإنترنت تهم الجميع.
+g4|B1|A hacker stole my old password.|سرق هاكر كلمة سري القديمة.
+g4|A2|My computer caught a nasty virus.|أصاب حاسوبي فيروس خبيث.
+g4|B1|Protect your data with a strong password.|احمِ بياناتك بكلمة سر قوية.
+g4|B2|Please verify your email address first.|تحقق من عنوان بريدك الإلكتروني أولًا.
+g5|A2|She works in social media marketing.|تعمل في التسويق عبر وسائل التواصل.
+g5|A2|I liked your latest post.|أعجبني آخر منشور لك.
+g5|A2|Please leave a comment below.|اترك تعليقًا أدناه من فضلك.
+g5|A2|Thanks for the like on my photo!|شكرًا على الإعجاب بصورتي!
+g5|A2|Follow us to get daily updates.|تابعنا لتحصل على تحديثات يومية.
+g5|B1|She has over ten thousand followers.|لديها أكثر من عشرة آلاف متابع.
+g5|B1|Update your profile picture, please.|حدّث صورة ملفك الشخصي من فضلك.
+g5|A1|I got a message from an old friend.|وصلتني رسالة من صديق قديم.
+g5|A1|Watch this funny video with me.|شاهد هذا الفيديو المضحك معي.
+g5|B1|I listen to a podcast every morning.|أستمع إلى بودكاست كل صباح.
+g5|B1|Turn off notifications while you study.|أوقف الإشعارات أثناء المذاكرة.
+g5|B1|That's the biggest online trend right now.|هذا أكبر ترند على الإنترنت الآن.
+g5|B2|The video went viral overnight.|انتشر الفيديو بسرعة بين ليلة وضحاها.
+g6|A2|Your data is safe with us.|بياناتك آمنة معنا.
+g6|A1|Save your work every few minutes.|احفظ عملك كل بضع دقائق.
+g6|A2|Please don't delete that important file.|من فضلك لا تمسح ذلك الملف المهم.
+g6|B1|Make a backup before you update.|اعمل نسخة احتياطية قبل أن تحدّث.
+g6|B1|I'm running out of storage space.|مساحة التخزين عندي تنفد.
+g6|A2|This phone has plenty of memory.|هذا الهاتف فيه ذاكرة كثيرة.
+g6|A2|Please open the document I sent.|افتح المستند الذي أرسلته من فضلك.
+g6|A2|This image is too large to upload.|هذه الصورة كبيرة جدًا للرفع.
+g6|B1|Send me a screenshot of the error.|أرسل لي لقطة شاشة للخطأ.
+g6|B1|Which file format do you need?|ما صيغة الملف التي تحتاجها؟
+g6|B2|Can you restore the deleted files?|هل يمكنك استعادة الملفات المحذوفة؟
+g6|B1|Transfer the photos to your laptop.|انقل الصور إلى لابتوبك.
+g7|A2|An error message keeps appearing.|تظهر رسالة خطأ باستمرار.
+g7|B1|We found a serious bug in the code.|وجدنا عيبًا خطيرًا في الكود.
+g7|B1|The app keeps crashing on my phone.|التطبيق يتعطل باستمرار على هاتفي.
+g7|B1|My screen froze in the middle of work.|تجمّدت شاشتي في منتصف العمل.
+g7|A1|This laptop has become very slow.|أصبح هذا اللابتوب بطيئًا جدًا.
+g7|A1|The new phone is incredibly fast.|الهاتف الجديد سريع بشكل لا يصدق.
+g7|B1|Try restarting your computer first.|جرّب إعادة تشغيل حاسوبك أولًا.
+g7|B1|Reset your password using this link.|أعد ضبط كلمة سرك باستخدام هذا الرابط.
+g7|A2|Can you fix this problem for me?|هل يمكنك إصلاح هذه المشكلة لي؟
+g7|B1|I have no signal in this building.|ليس عندي إشارة في هذا المبنى.
+g7|B2|It was just a small glitch.|كان مجرد خلل بسيط.
+g7|B1|The technician will arrive at noon.|سيصل الفني عند الظهر.
+g7|B1|I'm having a problem with my login.|أواجه مشكلة في تسجيل الدخول.
+g8|A2|Technology changes faster than ever before.|التكنولوجيا تتغير أسرع من أي وقت مضى.
+g8|B1|Everything is becoming digital these days.|كل شيء أصبح رقميًا هذه الأيام.
+g8|A2|I just bought a new smart watch.|اشتريت للتو ساعة ذكية جديدة.
+g8|A2|A small robot cleans our floor.|روبوت صغير ينظّف أرضيتنا.
+g8|B1|Artificial intelligence is changing everything quickly.|الذكاء الاصطناعي يغيّر كل شيء بسرعة.
+g8|A2|The machine stopped working suddenly.|توقفت الآلة عن العمل فجأة.
+g8|B1|Who invented the telephone first?|من اخترع الهاتف أولًا؟
+g8|B2|Innovation is the key to success.|الابتكار هو مفتاح النجاح.
+g8|B1|He writes clean and simple code.|هو يكتب كودًا نظيفًا وبسيطًا.
+g8|B1|The drone filmed the whole village.|صوّرت الطائرة المسيّرة القرية كلها.
+g8|B1|I keep all my photos in the cloud.|أحتفظ بكل صوري في التخزين السحابي.
+g8|B1|The door opens automatically when you approach.|يفتح الباب تلقائيًا عندما تقترب.
