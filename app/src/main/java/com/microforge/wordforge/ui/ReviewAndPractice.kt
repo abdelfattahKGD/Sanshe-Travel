@@ -301,16 +301,16 @@ private fun makeQuestions(pool: List<Item>, count: Int): List<Question> {
         val toArabic = (0..1).random() == 0
         fun text(i: Item) = if (toArabic) i.ar else i.en
         val correct = text(item)
-        val wrong = pool.map { text(it) }.distinct().filter { it != correct }.shuffled().take(3)
+        val wrong = pool.filter { it.id != item.id && !item.conflictsWith(it) }.map { text(it) }.distinct().filter { it != correct }.shuffled().take(3)
         val options = (wrong + correct).shuffled()
         Question(item, toArabic, options, options.indexOf(correct))
     }
 }
 
-private enum class OptState { IDLE, CORRECT, WRONG }
+internal enum class OptState { IDLE, CORRECT, WRONG }
 
 @Composable
-private fun OptionTile(letter: String, text: String, english: Boolean, state: OptState, enabled: Boolean, onClick: () -> Unit) {
+internal fun OptionTile(letter: String, text: String, english: Boolean, state: OptState, enabled: Boolean, onClick: () -> Unit) {
     val surface = MaterialTheme.colorScheme.surface
     val bg by animateColorAsState(
         when (state) {

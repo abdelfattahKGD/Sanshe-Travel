@@ -28,6 +28,38 @@ data class Item(
     val ar: String,
     val pos: String = "",
     val example: String = "",
+) {
+    /** The separate Arabic meanings of a word ("بيت / منزل" -> {"بيت","منزل"}), used to avoid ambiguous multiple choice. */
+    val meanings: Set<String> by lazy {
+        ar.replace(Regex("\\(.*?\\)"), "")
+            .replace(Regex("[\\u064B-\\u0652\\u0640]"), "")
+            .split("/", "،")
+            .map { it.trim() }
+            .filter { it.isNotEmpty() }
+            .toSet()
+    }
+
+    /** True when two different words can both be translated with the same Arabic (house / home, fix / repair...). */
+    fun conflictsWith(o: Item): Boolean =
+        kind == Kind.WORD && o.kind == Kind.WORD && meanings.any { it in o.meanings }
+}
+
+data class GrammarQ(val q: String, val answer: String, val wrong: List<String>)
+
+data class GrammarMistake(val wrong: String, val right: String, val note: String)
+
+data class GrammarLesson(
+    val id: String,
+    val num: Int,
+    val level: String,
+    val en: String,
+    val ar: String,
+    val explain: List<String>,
+    val formulas: List<Pair<String, String>>,
+    val examples: List<Pair<String, String>>,
+    val mistakes: List<GrammarMistake>,
+    val quiz: List<GrammarQ>,
+    val pattern: String,
 )
 
 /** All content, loaded once from assets/data. Adding a topic = adding a JSON file, no code change. */
@@ -36,7 +68,11 @@ object Library {
         private set
     var items: List<Item> = emptyList()
         private set
+    var lessons: List<GrammarLesson> = emptyList()
+        private set
     private var byId: Map<String, Item> = emptyMap()
+
+    fun lesson(id: String): GrammarLesson? = lessons.firstOrNull { it.id == id }
 
     fun item(id: String): Item? = byId[id]
 
@@ -97,6 +133,46 @@ object Library {
         topics = topicList
         items = all
         byId = all.associateBy { it.id }
+        loadGrammar(ctx)
+    }
+
+    private fun strings(a: org.json.JSONArray): List<String> = (0 until a.length()).map { a.getString(it) }
+
+    private fun pairs(a: org.json.JSONArray): List<Pair<String, String>> =
+        (0 until a.length()).map { Pair(a.getJSONArray(it).getString(0), a.getJSONArray(it).getString(1)) }
+
+    private fun loadGrammar(ctx: Context) {
+        val files = ctx.assets.list("data") ?: emptyArray()
+        if (!files.contains("grammar.json")) return
+        val arr = JSONObject(read(ctx, "data/grammar.json")).getJSONArray("lessons")
+        val out = ArrayList<GrammarLesson>()
+        for (i in 0 until arr.length()) {
+            val o = arr.getJSONObject(i)
+            val ms = o.getJSONArray("mistakes")
+            val qs = o.getJSONArray("quiz")
+            out.add(
+                GrammarLesson(
+                    id = o.getString("id"),
+                    num = o.getInt("num"),
+                    level = o.getString("lv"),
+                    en = o.getString("en"),
+                    ar = o.getString("ar"),
+                    explain = strings(o.getJSONArray("explain")),
+                    formulas = pairs(o.getJSONArray("formulas")),
+                    examples = pairs(o.getJSONArray("examples")),
+                    mistakes = (0 until ms.length()).map {
+                        val m = ms.getJSONObject(it)
+                        GrammarMistake(m.getString("w"), m.getString("r"), m.getString("n"))
+                    },
+                    quiz = (0 until qs.length()).map {
+                        val q = qs.getJSONObject(it)
+                        GrammarQ(q.getString("q"), q.getString("a"), strings(q.getJSONArray("w")))
+                    },
+                    pattern = o.optString("p", ""),
+                )
+            )
+        }
+        lessons = out
     }
 
     private fun read(ctx: Context, path: String): String =

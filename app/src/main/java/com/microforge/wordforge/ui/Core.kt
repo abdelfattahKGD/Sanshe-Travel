@@ -181,12 +181,8 @@ object Registry {
         DrawerEntry("💬", "الجمل") { BrowseScreen(Kind.SENTENCE) },
         DrawerEntry("🧠", "مراجعة البطاقات") { ReviewScreen(null, null) },
         DrawerEntry("✏️", "التدريب") { PracticeScreen },
-        DrawerEntry("📖", "الجرامر") {
-            SoonScreen("soon-grammar", "الجرامر", "دروس الجرامر بشرح بسيط وأمثلة من جمل التطبيق، مع تمارين لكل درس.")
-        },
-        DrawerEntry("📝", "الامتحانات") {
-            SoonScreen("soon-exams", "الامتحانات", "امتحانات كاملة بوقت ودرجة، وامتحان نهاية كل مستوى.")
-        },
+        DrawerEntry("📖", "الجرامر") { GrammarListScreen },
+        DrawerEntry("📝", "الامتحانات") { ExamListScreen },
         DrawerEntry("📊", "الإحصائيات") { StatsScreen },
         DrawerEntry("🔎", "بحث") { SearchScreen },
         DrawerEntry("⚙️", "الإعدادات") { SettingsScreen },

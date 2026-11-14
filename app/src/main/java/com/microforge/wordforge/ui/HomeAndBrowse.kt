@@ -123,6 +123,18 @@ object HomeScreen : Screen {
                                 shape = RoundedCornerShape(14.dp),
                             ) { Text("✏️ تدريب") }
                         }
+                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                            OutlinedButton(
+                                onClick = { env.nav.push(GrammarListScreen) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(14.dp),
+                            ) { Text("📖 جرامر") }
+                            OutlinedButton(
+                                onClick = { env.nav.push(ExamListScreen) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(14.dp),
+                            ) { Text("📝 امتحانات") }
+                        }
                     }
                 }
             }

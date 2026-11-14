@@ -282,7 +282,7 @@ object SettingsScreen : Screen {
 
             Appear(2) {
                 SectionCard("ℹ️ عن التطبيق") {
-                    Text("Sanshe Turtle 🐢 — نسخة 0.2")
+                    Text("Sanshe Turtle 🐢 — نسخة 0.6")
                     Text(
                         "شغّال أوفلاين بالكامل، وتقدّمك محفوظ على الموبايل بس.",
                         color = MaterialTheme.colorScheme.onSurfaceVariant,

@@ -1,0 +1,301 @@
+# Grammar lessons. Tags:
+#   @lesson id|level|English title|Arabic title
+#   E: explanation line (Arabic)      F: pattern | meaning
+#   X: english example | arabic       M: wrong -> right | note
+#   Q: sentence with ___ | answer | wrong1 | wrong2 | wrong3
+#   P: regex used to pull matching sentences from the app content
+
+@lesson g01|A1|The verb "to be"|الفعل to be (am / is / are)
+E: بنستخدم am / is / are بمعنى "يكون" عشان نقول مين الشخص أو حالته أو مكانه.
+E: I مع am، و he / she / it مع is، و we / you / they مع are.
+E: في المنفي بنزوّد not بعد الفعل: She is not tired. وفي السؤال بنقدّم الفعل: Are you ready?
+F: I am | أنا ...
+F: He / She / It is | هو / هي ...
+F: We / You / They are | إحنا / إنتو / هم ...
+X: I am a student.|أنا طالب.
+X: She is at home.|هي في البيت.
+X: They are very happy.|هم سعداء جدًا.
+X: Are you ready?|إنت جاهز؟
+M: I is happy. → I am happy.|مع I بنستخدم am دايمًا.
+M: He are my brother. → He is my brother.|مع He بنستخدم is دايمًا.
+Q: She ___ a doctor.|is|am|are|be
+Q: I ___ from Egypt.|am|is|are|be
+Q: They ___ at the park.|are|is|am|be
+Q: ___ you ready?|Are|Is|Am|Do
+Q: My brother ___ not at home.|is|are|am|do
+Q: We ___ good friends.|are|is|am|be
+P: \b(I am|I'm|He is|She is|They are|We are|Are you|Is it)\b
+
+@lesson g02|A1|Articles: a / an / the|أدوات التعريف: a / an / the
+E: a / an معناها "واحد" وبنستخدمهم لما نذكر حاجة لأول مرة أو حاجة عامة.
+E: a قبل الكلمة اللي بتبدأ بصوت ساكن (a book)، و an قبل الصوت المتحرك (an apple).
+E: the بنستخدمها لما اللي بنكلمه عارف إحنا بنتكلم عن إيه: The book on the table.
+F: a + صوت ساكن | a car, a house
+F: an + صوت متحرك | an egg, an hour
+F: the + حاجة معروفة | the sun, the door
+X: I have a car.|عندي عربية.
+X: She eats an apple every day.|هي بتاكل تفاحة كل يوم.
+X: Close the door, please.|اقفل الباب من فضلك.
+X: He is an engineer.|هو مهندس.
+M: She is a engineer. → She is an engineer.|engineer بتبدأ بصوت متحرك فنستخدم an.
+M: I want to visit a Cairo. → I want to visit Cairo.|مفيش أداة قبل أسماء المدن.
+Q: I have ___ umbrella.|an|a|many|those
+Q: She is ___ teacher.|a|an|many|those
+Q: He has ___ orange car.|an|a|many|those
+Q: Please close ___ window.|the|an|many|those
+Q: I waited for ___ hour.|an|a|many|those
+Q: ___ sun rises in the east.|The|A|An|Some
+P: \ban\s+[aeiou]\w+
+
+@lesson g03|A1|Plural nouns|جمع الأسماء
+E: غالبًا بنزوّد s للجمع: book → books.
+E: لو الكلمة بتنتهي بـ s أو sh أو ch أو x بنزوّد es: box → boxes.
+E: لو بتنتهي بحرف y بعد حرف ساكن بنبدّل y بـ ies: baby → babies.
+E: فيه كلمات شاذة لازم تتحفظ: man → men, child → children, foot → feet.
+F: + s | cat → cats
+F: s / sh / ch / x + es | bus → buses
+F: consonant + y → ies | city → cities
+X: I have two brothers.|عندي أخين.
+X: There are three boxes here.|فيه تلات صناديق هنا.
+X: The babies are sleeping.|الأطفال الرضع نايمين.
+X: Many children play outside.|أطفال كتير بيلعبوا بره.
+M: two childs → two children|child جمعها شاذ: children.
+M: three boxs → three boxes|بعد x بنزوّد es.
+Q: One city, two ___.|cities|citys|cityes|city
+Q: I have three ___.|boxes|boxs|boxies|box
+Q: The ___ are playing outside.|children|childs|childes|child
+Q: Two ___ are standing there.|men|mans|mens|man
+Q: My ___ hurt after walking.|feet|foots|feets|foot
+Q: She bought five ___.|books|bookes|bookies|book
+P: \b(children|men|feet|people|babies|boxes|tickets)\b
+
+@lesson g04|A1|Present simple|المضارع البسيط
+E: بنستخدمه للعادات والحقايق: I work every day. / The sun rises in the east.
+E: مع he / she / it بنزوّد s على الفعل: She works. وبعد s و sh و ch و x نزوّد es: He watches TV.
+E: كلمات بتدل عليه: always, usually, often, sometimes, never, every day.
+F: I / You / We / They + verb | I work
+F: He / She / It + verb + s | She works
+F: always / usually / never | قبل الفعل الأساسي
+X: I drink tea every morning.|بشرب شاي كل صباح.
+X: She works in a bank.|هي بتشتغل في بنك.
+X: He watches the news at night.|هو بيتفرج على الأخبار بالليل.
+X: We usually eat at home.|إحنا غالبًا بنأكل في البيت.
+M: She work in a bank. → She works in a bank.|مع she بنزوّد s.
+M: He go to school. → He goes to school.|go بتبقى goes مع he / she / it.
+Q: She ___ to work by bus.|goes|go|going|gone
+Q: They ___ football on Fridays.|play|plays|playing|to play
+Q: He ___ tea every morning.|drinks|drink|drinking|to drink
+Q: My mother ___ in a hospital every day.|works|work|working|to work
+Q: I usually ___ breakfast at seven.|have|has|having|to have
+Q: The sun ___ in the east.|rises|rise|rising|to rise
+P: \b(She|He) (?!is\b|was\b|has\b|does\b|as\b)\w+s\b
+
+@lesson g05|A1|Present simple: negatives & questions|المضارع البسيط: النفي والسؤال
+E: عشان ننفي بنستخدم don't مع I / you / we / they، و doesn't مع he / she / it، والفعل يرجع للأصل من غير s.
+E: عشان نسأل بنحط Do / Does في أول الجملة: Do you like tea? Does she work here?
+E: بعد does الفعل بيفضل في الأصل: Does he play? (مش plays).
+F: I don't + verb | I don't know
+F: She doesn't + verb | She doesn't know
+F: Do / Does + subject + verb? | Does he know?
+X: I don't like coffee.|أنا مش بحب القهوة.
+X: She doesn't live here.|هي مش بتسكن هنا.
+X: Do you speak English?|بتتكلم إنجليزي؟
+X: Does he work on Fridays?|هو بيشتغل أيام الجمعة؟
+M: He doesn't likes tea. → He doesn't like tea.|بعد doesn't الفعل في الأصل.
+M: Do she work here? → Does she work here?|مع she بنستخدم Does.
+Q: She ___ like spicy food.|doesn't|don't|isn't|not
+Q: ___ you play football?|Do|Does|Are|Is
+Q: ___ he work here?|Does|Do|Is|Are
+Q: I ___ know the answer.|don't|doesn't|not|isn't
+Q: Does she ___ English?|speak|speaks|speaking|spoke
+Q: They ___ live in Cairo.|don't|doesn't|isn't|aren't
+P: \b(doesn't|don't|Do you|Does)\b
+
+@lesson g06|A1|There is / There are|There is / There are
+E: there is مع المفرد وغير المعدود، و there are مع الجمع.
+E: للنفي: there isn't / there aren't. وللسؤال: Is there...? / Are there...?
+E: بنستخدمها نقول إن حاجة موجودة في مكان.
+F: There is + singular | There is a park.
+F: There are + plural | There are two parks.
+F: Is / Are there ...? | Is there a bank?
+X: There is a bank near here.|فيه بنك قريب من هنا.
+X: There are three rooms.|فيه تلات أوض.
+X: There isn't any milk.|مفيش لبن.
+X: Are there any shops?|فيه محلات؟
+M: There is two chairs. → There are two chairs.|chairs جمع فنستخدم are.
+M: Is there any shops? → Are there any shops?|shops جمع فنستخدم Are.
+Q: There ___ a cat in the garden.|is|are|am|be
+Q: There ___ four people here.|are|is|am|be
+Q: ___ there a bank near here?|Is|Are|Do|Does
+Q: There ___ any milk left.|isn't|aren't|don't|doesn't
+Q: ___ there any questions?|Are|Is|Do|Does
+Q: There ___ a lot of traffic today.|is|are|have|has
+P: \bThere('s| is| are)\b
+
+@lesson g07|A1|Prepositions: in / on / at|حروف الجر: in / on / at
+E: at للوقت المحدد والأماكن الصغيرة: at 5 o'clock, at the door.
+E: on للأيام والتواريخ والأسطح: on Monday, on the table.
+E: in للشهور والسنين والأماكن الكبيرة: in May, in 2020, in Cairo.
+F: at + exact time / point | at 8, at the station
+F: on + day / surface | on Friday, on the wall
+F: in + month / year / city | in July, in Egypt
+X: The meeting is at nine.|الاجتماع الساعة تسعة.
+X: I'll see you on Friday.|هشوفك يوم الجمعة.
+X: She was born in 1998.|هي اتولدت سنة 1998.
+X: The keys are on the table.|المفاتيح على الترابيزة.
+M: I wake up in 6 o'clock. → I wake up at 6 o'clock.|الساعة المحددة مع at.
+M: See you in Monday. → See you on Monday.|الأيام مع on.
+Q: The class starts ___ nine.|at|on|in|to
+Q: We meet ___ Sundays.|on|at|in|to
+Q: I was born ___ June.|in|on|at|by
+Q: He lives ___ Alexandria.|in|on|at|to
+Q: The book is ___ the table.|on|in|at|from
+Q: She arrives ___ noon.|at|on|in|to
+P: \b(on|at) (the|\w+day|noon|night|nine|ten|six|eight)\b
+
+@lesson g08|A2|Present continuous|المضارع المستمر
+E: بنستخدمه للحاجة اللي بتحصل دلوقتي أو في الفترة الحالية: I am studying now.
+E: الصيغة: am / is / are + الفعل + ing.
+E: كلمات بتدل عليه: now, right now, at the moment, today.
+F: I am + verb-ing | I am reading
+F: He / She / It is + verb-ing | She is cooking
+F: We / You / They are + verb-ing | They are playing
+X: I am studying English now.|أنا بذاكر إنجليزي دلوقتي.
+X: She is cooking dinner.|هي بتطبخ العشا.
+X: They are waiting outside.|هم مستنيين بره.
+X: Are you listening to me?|إنت بتسمعني؟
+M: She cooking now. → She is cooking now.|لازم is قبل الفعل + ing.
+M: I am go to school. → I am going to school.|بعد am لازم الفعل + ing.
+Q: She ___ dinner right now.|is cooking|cooks|cook|cooked
+Q: They ___ outside at the moment.|are waiting|waits|wait|waited
+Q: I ___ to music now.|am listening|listen|listens|listened
+Q: ___ you studying today?|Are|Do|Does|Is
+Q: He is ___ a book.|reading|reads|read|to read
+Q: We ___ for the bus right now.|are waiting|is waiting|waiting|wait
+P: \b(am|is|are) \w+ing\b
+
+@lesson g09|A2|Past simple|الماضي البسيط
+E: بنستخدمه لحاجة حصلت وخلصت في الماضي: I visited Cairo last year.
+E: الأفعال المنتظمة بنزوّد ed: work → worked. وفيه أفعال شاذة لازم تتحفظ: go → went, see → saw, eat → ate.
+E: في المنفي بنستخدم didn't + الفعل الأصلي، وفي السؤال Did + الفاعل + الفعل الأصلي.
+F: verb + ed | worked, played
+F: irregular verbs | go → went, have → had
+F: didn't / Did + base verb | I didn't go. / Did you go?
+X: I visited my uncle yesterday.|زرت عمي امبارح.
+X: She went to the market.|هي راحت السوق.
+X: We didn't see the movie.|إحنا ماشفناش الفيلم.
+X: Did you finish the report?|خلصت التقرير؟
+M: I goed to school. → I went to school.|go فعل شاذ ماضيه went.
+M: Did you went there? → Did you go there?|بعد Did الفعل في الأصل.
+Q: I ___ my friend yesterday.|visited|visit|visits|visiting
+Q: She ___ to the market last week.|went|go|goes|gone
+Q: We ___ the film. It was boring.|didn't enjoy|don't enjoy|didn't enjoyed|not enjoy
+Q: ___ you finish the work?|Did|Do|Does|Were
+Q: He ___ a new phone last month.|bought|buy|buys|buyed
+Q: They ___ dinner at eight yesterday.|had|have|has|haved
+P: \b(went|bought|had|visited|stayed|spent|decided|started|finished|received)\b
+
+@lesson g10|A2|Future: will / going to|المستقبل: will و going to
+E: will بنستخدمها للقرار اللحظي والوعود والتوقعات: I'll help you.
+E: going to بنستخدمها للخطط اللي قررناها قبل كده: I'm going to travel next month.
+E: بعد will الفعل في الأصل، وبعد going to الفعل كمان في الأصل.
+F: will + base verb | I will call you.
+F: am / is / are going to + base verb | She is going to study.
+F: will not = won't | I won't be late.
+X: I'll carry your bag.|هشيل شنطتك.
+X: We are going to visit Aswan.|إحنا هنزور أسوان.
+X: It will rain tomorrow.|هتمطر بكرة.
+X: I won't be late.|مش هتأخر.
+M: She will goes tomorrow. → She will go tomorrow.|بعد will الفعل في الأصل.
+M: I going to travel. → I am going to travel.|لازم am قبل going to.
+Q: It's cold. I ___ close the window.|will|am going|going to|would
+Q: We ___ visit Luxor next month. We booked tickets.|are going to|would|won't|going
+Q: She ___ be late. She promised.|won't|doesn't|isn't|don't
+Q: I think it ___ rain tomorrow.|will|going|is|does
+Q: Look at those clouds! It ___ rain.|is going to|will to|going to|does
+Q: He ___ call you tonight.|will|will to|wills|going
+P: \b(will|won't|going to)\b
+
+@lesson g11|A2|Comparatives & superlatives|المقارنة والتفضيل
+E: عشان نقارن بين اتنين بنزوّد er للكلمات القصيرة (taller)، وبنستخدم more للكلمات الطويلة (more expensive)، وبعدها than.
+E: عشان نقول "الأكثر" بنستخدم the + est أو the most: the tallest, the most beautiful.
+E: كلمات شاذة: good → better → the best، و bad → worse → the worst.
+F: short adj + er + than | taller than
+F: more + long adj + than | more expensive than
+F: the + est / the most | the tallest, the most popular
+X: My brother is taller than me.|أخويا أطول مني.
+X: This phone is more expensive than that one.|التليفون ده أغلى من ده.
+X: She is the best student in class.|هي أحسن طالبة في الفصل.
+X: Today is the hottest day.|النهاردة أحر يوم.
+M: more taller → taller|مش بنجمع more مع er.
+M: the most good → the best|good ليها شكل خاص: the best.
+Q: Cairo is ___ than Alexandria.|bigger|more big|biggest|big
+Q: This book is ___ than that one.|more interesting|interestinger|most interesting|interesting
+Q: She is the ___ student in class.|best|good|better|goodest
+Q: Today is the ___ day of the year.|hottest|hotter|more hot|hot
+Q: This road is ___ than the other.|longer|more long|longest|long
+Q: He is ___ than his brother.|taller|more tall|tallest|tall
+P: \b(more|most|better|best|\w+er than|the \w+est)\b
+
+@lesson g12|A2|Modals: can / must / should|الأفعال المساعدة: can / must / should
+E: can للقدرة والإمكانية: I can swim. وللإذن: Can I come in?
+E: must للإلزام القوي: You must wear a seatbelt. و should للنصيحة: You should rest.
+E: بعد المودالز الفعل في الأصل من غير to ومن غير s: She can swim (مش can swims).
+F: can + base verb | can swim
+F: must / mustn't + base verb | must go / mustn't talk
+F: should + base verb | should sleep
+X: I can speak three languages.|أقدر أتكلم تلات لغات.
+X: You must stop at the red light.|لازم تقف عند الإشارة الحمرا.
+X: You should drink more water.|المفروض تشرب مياه أكتر.
+X: Can I use your phone?|ينفع أستخدم تليفونك؟
+M: She can swims. → She can swim.|بعد can الفعل في الأصل.
+M: You should to rest. → You should rest.|من غير to بعد should.
+Q: She ___ speak three languages.|can|cans|can to|is can
+Q: You ___ wear a seatbelt. It's the law.|must|should to|can to|may to
+Q: You look tired. You ___ rest.|should|must to|can to|shoulds
+Q: ___ I use your phone, please?|Can|Do|Am|Must to
+Q: He ___ swim, so he stayed away.|can't|don't|isn't|not
+Q: You ___ talk during the exam.|mustn't|don't must|mustn't to|not must
+P: \b(can|can't|must|should|mustn't)\b
+
+@lesson g13|B1|Present perfect|المضارع التام
+E: بنستخدمه للحاجة اللي حصلت في الماضي ولها علاقة بالحاضر، أو للخبرات: I have visited Rome.
+E: الصيغة: have / has + التصريف التالت للفعل (past participle): done, seen, been.
+E: كلمات بتدل عليه: ever, never, already, yet, just, since, for.
+F: have / has + V3 | I have finished
+F: since + point in time | since 2020
+F: for + duration | for two years
+X: I have already eaten.|أنا أكلت بالفعل.
+X: She has lived here for five years.|هي ساكنة هنا من خمس سنين.
+X: Have you ever been to Italy?|عمرك رحت إيطاليا؟
+X: We haven't finished yet.|لسه ماخلصناش.
+M: I have saw this film. → I have seen this film.|بعد have لازم V3: seen.
+M: She has lived here since five years. → She has lived here for five years.|المدة مع for، ونقطة البداية مع since.
+Q: I ___ already eaten lunch.|have|has|having|am
+Q: She ___ lived here for five years.|has|have|is|did
+Q: ___ you ever been to Italy?|Have|Did|Has|Do
+Q: We haven't finished ___.|yet|already|ever|since
+Q: He has worked here ___ 2019.|since|for|from|at
+Q: They have ___ the report.|written|wrote|write|writing
+P: \b(have|has|haven't|hasn't) (\w+ed|been|seen|had|lost|met|gone)\b
+
+@lesson g14|B1|First conditional|الشرط الأول
+E: بنستخدمه للحاجة الممكن تحصل في المستقبل: If it rains, we will stay home.
+E: الصيغة: If + المضارع البسيط، will + الفعل الأصلي.
+E: ممكن نبدأ بـ will الأول من غير فاصلة: We will stay home if it rains.
+F: If + present simple | If you study
+F: ..., will + base verb | you will pass
+F: unless = if ... not | Unless you hurry = If you don't hurry
+X: If it rains, we will stay home.|لو مطرت هنقعد في البيت.
+X: If you study, you will pass.|لو ذاكرت هتنجح.
+X: I will call you if I have time.|هكلمك لو معايا وقت.
+X: If she comes, I will tell her.|لو جت هقولها.
+M: If it will rain, we stay home. → If it rains, we will stay home.|بعد if بنستخدم المضارع البسيط مش will.
+M: If you will study, you pass. → If you study, you will pass.|will في النتيجة بس.
+Q: If it ___ tomorrow, we will stay home.|rains|will rain|rain|rained
+Q: If you study hard, you ___ pass.|will|would|did|are
+Q: I ___ call you if I have time.|will|would|am|did
+Q: If she ___ late, we will leave.|is|will be|would be|be
+Q: We will miss the bus ___ we hurry.|unless|if|when|because
+Q: If he ___ the keys, he will open the door.|finds|will find|found|find
+P: (\bIf\b.*\b(will|won't)\b|\b(will|won't|'ll)\b.*\bif\b)
