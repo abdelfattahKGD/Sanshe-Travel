@@ -81,6 +81,7 @@ class Speaker(ctx: Context) : TextToSpeech.OnInitListener {
     private val main = Handler(Looper.getMainLooper())
     private var tts: TextToSpeech? = null
     private var rate = 1.0f
+    private var accentUk = false
 
     var ready by mutableStateOf(false)
         private set
@@ -111,8 +112,8 @@ class Speaker(ctx: Context) : TextToSpeech.OnInitListener {
             )
         } catch (e: Exception) {
         }
-        var r = t.setLanguage(Locale.US)
-        if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) r = t.setLanguage(Locale.UK)
+        var r = t.setLanguage(if (accentUk) Locale.UK else Locale.US)
+        if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) r = t.setLanguage(if (accentUk) Locale.US else Locale.UK)
         if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) r = t.setLanguage(Locale.ENGLISH)
         if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) {
             ready = false
@@ -124,18 +125,32 @@ class Speaker(ctx: Context) : TextToSpeech.OnInitListener {
         status = "الصوت شغّال ✅"
     }
 
+    /** Switches the voice between American (US) and British (UK) English, if the phone's voice data has it. */
+    fun setAccent(uk: Boolean) {
+        accentUk = uk
+        val t = tts ?: return
+        if (!ready) return
+        val r = t.setLanguage(if (uk) Locale.UK else Locale.US)
+        if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) {
+            accentUk = false
+            t.setLanguage(Locale.US)
+            toast("اللهجة البريطانية مش متاحة على الموبايل، هنستخدم الأمريكي. نزّل بيانات الصوت من الإعدادات.")
+        }
+    }
+
     fun setRate(r: Float) {
         rate = r
         tts?.setSpeechRate(r)
     }
 
     /** [auto] = spoken automatically (stay silent when sound is unavailable instead of nagging with a toast). */
-    fun say(text: String, auto: Boolean = false) {
+    fun say(text: String, auto: Boolean = false, slow: Boolean = false) {
         val t = tts
         if (t == null || !ready) {
             if (!auto) toast(status)
             return
         }
+        t.setSpeechRate(if (slow) 0.6f else rate)
         val result = t.speak(text, TextToSpeech.QUEUE_FLUSH, null, "sanshe")
         if (result != TextToSpeech.SUCCESS && !auto) toast("تعذّر تشغيل الصوت — اتأكد إن صوت الوسائط مش صفر")
     }
@@ -181,6 +196,8 @@ object Registry {
         DrawerEntry("💬", "الجمل") { BrowseScreen(Kind.SENTENCE) },
         DrawerEntry("🧠", "مراجعة البطاقات") { ReviewScreen(null, null) },
         DrawerEntry("✏️", "التدريب") { PracticeScreen },
+        DrawerEntry("🎧", "إملاء") { DictationScreen },
+        DrawerEntry("🧩", "ترتيب الجمل") { SentenceBuilderScreen },
         DrawerEntry("📖", "الجرامر") { GrammarListScreen },
         DrawerEntry("📝", "الامتحانات") { ExamListScreen },
         DrawerEntry("📊", "الإحصائيات") { StatsScreen },

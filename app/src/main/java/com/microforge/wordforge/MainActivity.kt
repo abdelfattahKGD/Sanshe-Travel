@@ -78,6 +78,7 @@ class AppVm(app: Application) : AndroidViewModel(app) {
         val speaker = Speaker(app)
         val rates = floatArrayOf(0.7f, 1.0f, 1.25f)
         speaker.setRate(rates[repo.getInt(Repo.TTS_RATE, 1).coerceIn(0, 2)])
+        speaker.setAccent(repo.getInt(Repo.TTS_ACCENT, 0) == 1)
         env = Env(repo, Nav(HomeScreen), speaker)
     }
 

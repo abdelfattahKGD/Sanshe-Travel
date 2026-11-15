@@ -312,6 +312,102 @@ class Repo(ctx: Context) {
         tick++
     }
 
+    /** Everything the user has done (progress, daily stats, settings) as one JSON text, for the backup file. */
+    fun exportJson(): String {
+        val root = org.json.JSONObject()
+        root.put("app", "SansheTurtle")
+        root.put("format", 1)
+        root.put("exported", System.currentTimeMillis())
+        val prog = org.json.JSONArray()
+        for (p in progress.values) {
+            val o = org.json.JSONObject()
+            o.put("id", p.id)
+            o.put("box", p.box)
+            o.put("due", p.due)
+            o.put("correct", p.correct)
+            o.put("wrong", p.wrong)
+            o.put("last", p.last)
+            o.put("starred", if (p.starred) 1 else 0)
+            prog.put(o)
+        }
+        root.put("progress", prog)
+        val daily = org.json.JSONArray()
+        db.rawQuery("SELECT day, newWords, newSentences, answers, correct, wrong FROM daily", null).use { c ->
+            while (c.moveToNext()) {
+                val o = org.json.JSONObject()
+                o.put("day", c.getString(0))
+                o.put("newWords", c.getInt(1))
+                o.put("newSentences", c.getInt(2))
+                o.put("answers", c.getInt(3))
+                o.put("correct", c.getInt(4))
+                o.put("wrong", c.getInt(5))
+                daily.put(o)
+            }
+        }
+        root.put("daily", daily)
+        val kv = org.json.JSONObject()
+        db.rawQuery("SELECT k, v FROM kv", null).use { c ->
+            while (c.moveToNext()) kv.put(c.getString(0), c.getString(1))
+        }
+        root.put("kv", kv)
+        return root.toString()
+    }
+
+    /** Replaces the current progress with a backup made by [exportJson]. Returns false (and changes nothing) if the file is not valid. */
+    fun importJson(text: String): Boolean {
+        try {
+            val root = org.json.JSONObject(text)
+            if (root.optString("app") != "SansheTurtle") return false
+            val prog = root.getJSONArray("progress")
+            val daily = root.getJSONArray("daily")
+            val kv = root.getJSONObject("kv")
+            val rows = ArrayList<Progress>()
+            for (i in 0 until prog.length()) {
+                val o = prog.getJSONObject(i)
+                rows.add(
+                    Progress(
+                        o.getString("id"), o.getInt("box"), o.getLong("due"), o.getInt("correct"),
+                        o.getInt("wrong"), o.getLong("last"), o.getInt("starred") == 1,
+                    )
+                )
+            }
+            db.beginTransaction()
+            try {
+                db.execSQL("DELETE FROM progress")
+                db.execSQL("DELETE FROM daily")
+                db.execSQL("DELETE FROM kv")
+                progress.clear()
+                for (r in rows) save(r)
+                for (i in 0 until daily.length()) {
+                    val o = daily.getJSONObject(i)
+                    val cv = ContentValues()
+                    cv.put("day", o.getString("day"))
+                    cv.put("newWords", o.getInt("newWords"))
+                    cv.put("newSentences", o.getInt("newSentences"))
+                    cv.put("answers", o.getInt("answers"))
+                    cv.put("correct", o.getInt("correct"))
+                    cv.put("wrong", o.getInt("wrong"))
+                    db.insertWithOnConflict("daily", null, cv, SQLiteDatabase.CONFLICT_REPLACE)
+                }
+                val keys = kv.keys()
+                while (keys.hasNext()) {
+                    val k = keys.next()
+                    val cv = ContentValues()
+                    cv.put("k", k)
+                    cv.put("v", kv.getString(k))
+                    db.insertWithOnConflict("kv", null, cv, SQLiteDatabase.CONFLICT_REPLACE)
+                }
+                db.setTransactionSuccessful()
+            } finally {
+                db.endTransaction()
+            }
+            tick++
+            return true
+        } catch (e: Exception) {
+            return false
+        }
+    }
+
     fun resetProgress() {
         db.execSQL("DELETE FROM progress")
         db.execSQL("DELETE FROM daily")
@@ -325,5 +421,6 @@ class Repo(ctx: Context) {
         const val GOAL_ANSWERS = "goal_answers"
         const val TTS_RATE = "tts_rate"
         const val TTS_AUTO = "tts_auto"
+        const val TTS_ACCENT = "tts_accent"
     }
 }

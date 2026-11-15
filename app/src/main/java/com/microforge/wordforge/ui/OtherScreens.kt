@@ -1,5 +1,7 @@
 package com.microforge.wordforge.ui
 
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -40,6 +42,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
@@ -193,6 +196,30 @@ object SettingsScreen : Screen {
         val speaker = env.speaker
         @Suppress("UNUSED_VARIABLE") val tick = repo.tick
         var confirmReset by remember { mutableStateOf(false) }
+        val context = LocalContext.current
+        var pendingImport by remember { mutableStateOf<String?>(null) }
+        val accent = repo.getInt(Repo.TTS_ACCENT, 0)
+        val exportLauncher = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+            if (uri != null) {
+                val ok = try {
+                    context.contentResolver.openOutputStream(uri)?.use { it.write(repo.exportJson().toByteArray(Charsets.UTF_8)) }
+                    true
+                } catch (e: Exception) {
+                    false
+                }
+                speaker.toast(if (ok) "اتحفظت النسخة الاحتياطية ✅" else "تعذّر حفظ الملف")
+            }
+        }
+        val importLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+            if (uri != null) {
+                val text = try {
+                    context.contentResolver.openInputStream(uri)?.bufferedReader(Charsets.UTF_8)?.use { it.readText() }
+                } catch (e: Exception) {
+                    null
+                }
+                if (text == null) speaker.toast("تعذّر قراءة الملف") else pendingImport = text
+            }
+        }
         val rateIdx = repo.getInt(Repo.TTS_RATE, 1).coerceIn(0, 2)
         val auto = repo.getInt(Repo.TTS_AUTO, 1) == 1
         val primary = MaterialTheme.colorScheme.primary
@@ -242,6 +269,21 @@ object SettingsScreen : Screen {
                             shape = RoundedCornerShape(14.dp),
                         ) { Text("🛒 تثبيت Google Text-to-Speech") }
                     }
+                    Text("اللهجة", fontWeight = FontWeight.Bold)
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        listOf("🇺🇸 أمريكي", "🇬🇧 بريطاني").forEachIndexed { i, label ->
+                            Pill(
+                                label,
+                                primary,
+                                filled = i == accent,
+                                onClick = {
+                                    repo.setInt(Repo.TTS_ACCENT, i)
+                                    speaker.setAccent(i == 1)
+                                    speaker.say("Good morning. It's nice to meet you.")
+                                },
+                            )
+                        }
+                    }
                     Text("سرعة النطق", fontWeight = FontWeight.Bold)
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         rateLabels.forEachIndexed { i, label ->
@@ -281,8 +323,27 @@ object SettingsScreen : Screen {
             }
 
             Appear(2) {
+                SectionCard("💾 نسخة احتياطية") {
+                    Text(
+                        "احفظ تقدّمك في ملف، واستورده لو مسحت التطبيق أو غيّرت الموبايل.",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Button(
+                        onClick = { exportLauncher.launch("sanshe-turtle-backup.json") },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(14.dp),
+                    ) { Text("📤 حفظ نسخة احتياطية") }
+                    OutlinedButton(
+                        onClick = { importLauncher.launch(arrayOf("application/json", "text/plain", "*/*")) },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(14.dp),
+                    ) { Text("📥 استعادة من ملف") }
+                }
+            }
+
+            Appear(3) {
                 SectionCard("ℹ️ عن التطبيق") {
-                    Text("Sanshe Turtle 🐢 — نسخة 0.6")
+                    Text("Sanshe Turtle 🐢 — نسخة 0.7")
                     Text(
                         "شغّال أوفلاين بالكامل، وتقدّمك محفوظ على الموبايل بس.",
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -296,6 +357,23 @@ object SettingsScreen : Screen {
                 shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Bad),
             ) { Text("🗑️ مسح كل التقدّم", color = Color.White) }
+        }
+
+        val pending = pendingImport
+        if (pending != null) {
+            AlertDialog(
+                onDismissRequest = { pendingImport = null },
+                title = { Text("استعادة النسخة؟") },
+                text = { Text("هيتم استبدال تقدّمك الحالي بالنسخة اللي في الملف.") },
+                confirmButton = {
+                    TextButton(onClick = {
+                        val ok = repo.importJson(pending)
+                        pendingImport = null
+                        speaker.toast(if (ok) "اتسترجع تقدّمك ✅" else "الملف ده مش نسخة احتياطية صالحة")
+                    }) { Text("استعادة") }
+                },
+                dismissButton = { TextButton(onClick = { pendingImport = null }) { Text("إلغاء") } },
+            )
         }
 
         if (confirmReset) {

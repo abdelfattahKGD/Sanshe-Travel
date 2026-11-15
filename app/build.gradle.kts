@@ -12,8 +12,8 @@ android {
         applicationId = "com.microforge.wordforge"
         minSdk = 26
         targetSdk = 34
-        versionCode = 7
-        versionName = "0.6.1"
+        versionCode = 8
+        versionName = "0.7.0"
     }
 
     // Fixed debug key, so every GitHub build is signed the same way and installs OVER the previous one
