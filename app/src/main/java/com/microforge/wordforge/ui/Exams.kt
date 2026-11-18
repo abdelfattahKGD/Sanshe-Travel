@@ -97,13 +97,13 @@ private class ExQ(
     val label: String,
 )
 
-private fun makeExam(def: ExamDef): List<ExQ> {
+private fun makeExam(repo: com.microforge.wordforge.data.Repo, def: ExamDef): List<ExQ> {
     val out = ArrayList<ExQ>()
     val grammar = def.grammar.flatMap { it.quiz }.shuffled()
     val gCount = if (grammar.isEmpty()) 0 else minOf(grammar.size, def.questions / 3)
     val vCount = def.questions - gCount
     val pool = def.pool
-    for (item in pool.shuffled().take(vCount + 6)) {
+    for (item in repo.pickFrom(pool, vCount + 6, "exam_${def.id}")) {
         if (out.size >= vCount) break
         val toArabic = (0..1).random() == 0
         fun text(i: Item) = if (toArabic) i.ar else i.en
@@ -233,7 +233,7 @@ class ExamRunScreen(private val examId: String) : Screen {
 
     @Composable
     private fun Body(env: Env, def: ExamDef, onRestart: () -> Unit) {
-        val qs = remember { makeExam(def) }
+        val qs = remember { makeExam(env.repo, def) }
         if (qs.isEmpty()) {
             Column(Modifier.fillMaxSize().padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
                 Text("مفيش أسئلة كفاية للامتحان ده.")

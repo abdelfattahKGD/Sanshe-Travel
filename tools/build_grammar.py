@@ -73,6 +73,15 @@ def parse():
                 err(f"{where}: unknown tag '{tag}'")
         except ValueError:
             err(f"{where}: malformed '{tag}' line")
+    order = {"A1": 0, "A2": 1, "B1": 2, "B2": 3}
+    lessons.sort(key=lambda l: order.get(l["lv"], 9))
+    for i, l in enumerate(lessons, 1):
+        l["num"] = i
+        seen_q = set()
+        for q in l["quiz"]:
+            if q["q"] in seen_q:
+                err(f"{l['id']}: duplicate question '{q['q']}'")
+            seen_q.add(q["q"])
     return lessons
 
 
@@ -80,6 +89,11 @@ def sentences():
     out = []
     for f in sorted((OUT).glob("topic[0-9]*.json")):
         out += [s["en"] for s in json.loads(f.read_text(encoding="utf-8"))["sentences"]]
+    rd = OUT / "reading.json"
+    if rd.exists():
+        data = json.loads(rd.read_text(encoding="utf-8"))
+        passages = list(data["paragraphs"]) + [c for b in data["books"] for c in b["ch"]]
+        out += [en for p in passages for en, _ in p["s"]]
     return out
 
 
@@ -91,7 +105,7 @@ def main():
         if l["id"] in ids:
             err(f"duplicate lesson id {l['id']}")
         ids.add(l["id"])
-        for key, minimum in (("explain", 3), ("formulas", 2), ("examples", 3), ("mistakes", 1), ("quiz", 5)):
+        for key, minimum in (("explain", 3), ("formulas", 2), ("examples", 3), ("mistakes", 1), ("quiz", 8)):
             if len(l[key]) < minimum:
                 err(f"{l['id']}: needs at least {minimum} '{key}' entries")
         matches = 0

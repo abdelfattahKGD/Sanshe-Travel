@@ -295,8 +295,8 @@ private fun BackFace(item: Item) {
 
 private class Question(val item: Item, val toArabic: Boolean, val options: List<String>, val correctIndex: Int)
 
-private fun makeQuestions(pool: List<Item>, count: Int): List<Question> {
-    val picked = pool.shuffled().take(count)
+private fun makeQuestions(repo: com.microforge.wordforge.data.Repo, pool: List<Item>, count: Int): List<Question> {
+    val picked = repo.pickFrom(pool, count, "mcq_" + (pool.firstOrNull()?.kind?.name ?: "x"))
     return picked.map { item ->
         val toArabic = (0..1).random() == 0
         fun text(i: Item) = if (toArabic) i.ar else i.en
@@ -400,7 +400,7 @@ object PracticeScreen : Screen {
 
     @Composable
     private fun Round(env: Env, pool: List<Item>, onNewRound: () -> Unit) {
-        val questions = remember { makeQuestions(pool, 10) }
+        val questions = remember { makeQuestions(env.repo, pool, 10) }
         var index by remember { mutableIntStateOf(0) }
         var score by remember { mutableIntStateOf(0) }
         var selected by remember { mutableIntStateOf(-1) }

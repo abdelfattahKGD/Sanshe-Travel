@@ -144,8 +144,14 @@ class GrammarLessonScreen(private val lessonId: String) : Screen {
             } catch (e: Exception) {
                 null
             }
-            if (rx == null || l.pattern.isEmpty()) emptyList()
-            else Library.items.filter { it.kind == Kind.SENTENCE && rx.containsMatchIn(it.en) }.take(5)
+            if (rx == null || l.pattern.isEmpty()) {
+                emptyList()
+            } else {
+                val fromTopics = Library.items.filter { it.kind == Kind.SENTENCE }.map { LinkedSentence(it.en, it.ar) }
+                val fromReading = (Library.paragraphs + Library.books.flatMap { it.chapters })
+                    .flatMap { it.sentences }.map { LinkedSentence(it.first, it.second) }
+                (fromTopics + fromReading).filter { rx.containsMatchIn(it.en) }.shuffled().take(5)
+            }
         }
 
         Column(
@@ -249,10 +255,12 @@ class GrammarLessonScreen(private val lessonId: String) : Screen {
                     .fillMaxWidth()
                     .height(56.dp),
                 shape = RoundedCornerShape(16.dp),
-            ) { Text("✏️ ابدأ التمرين (${l.quiz.size} أسئلة)", fontWeight = FontWeight.Bold) }
+            ) { Text("✏️ ابدأ التمرين (${minOf(8, l.quiz.size)} أسئلة من ${l.quiz.size})", fontWeight = FontWeight.Bold) }
         }
     }
 }
+
+private class LinkedSentence(val en: String, val ar: String)
 
 private class GQ(val q: GrammarQ, val options: List<String>, val correctIndex: Int)
 
@@ -271,7 +279,7 @@ class GrammarQuizScreen(private val lessonId: String) : Screen {
     @Composable
     private fun Body(env: Env, lesson: GrammarLesson, onRestart: () -> Unit) {
         val qs = remember {
-            lesson.quiz.shuffled().map { q ->
+            lesson.quiz.shuffled().take(8).map { q ->
                 val opts = (q.wrong + q.answer).shuffled()
                 GQ(q, opts, opts.indexOf(q.answer))
             }

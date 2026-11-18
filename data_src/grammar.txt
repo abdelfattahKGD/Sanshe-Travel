@@ -24,6 +24,12 @@ Q: They ___ at the park.|are|is|am|be
 Q: ___ you ready?|Are|Is|Am|Do
 Q: My brother ___ not at home.|is|are|am|do
 Q: We ___ good friends.|are|is|am|be
+Q: He ___ twelve years old.|is|am|are|be
+Q: You ___ my best friend.|are|is|am|be
+Q: ___ she at work today?|Is|Are|Am|Do
+Q: We ___ not late.|are|is|am|be
+Q: It ___ a sunny day.|is|are|am|be
+Q: I ___ not tired.|am|is|are|be
 P: \b(I am|I'm|He is|She is|They are|We are|Are you|Is it)\b
 
 @lesson g02|A1|Articles: a / an / the|أدوات التعريف: a / an / the
@@ -45,6 +51,12 @@ Q: He has ___ orange car.|an|a|many|those
 Q: Please close ___ window.|the|an|many|those
 Q: I waited for ___ hour.|an|a|many|those
 Q: ___ sun rises in the east.|The|A|An|Some
+Q: She wants ___ apple.|an|a|many|those
+Q: I need ___ new phone.|a|an|many|those
+Q: ___ moon is bright tonight.|The|A|An|Many
+Q: He is ___ honest man.|an|a|many|those
+Q: Can you open ___ door, please?|the|an|many|those
+Q: My father is ___ engineer.|an|a|many|those
 P: \ban\s+[aeiou]\w+
 
 @lesson g03|A1|Plural nouns|جمع الأسماء
@@ -67,6 +79,12 @@ Q: The ___ are playing outside.|children|childs|childes|child
 Q: Two ___ are standing there.|men|mans|mens|man
 Q: My ___ hurt after walking.|feet|foots|feets|foot
 Q: She bought five ___.|books|bookes|bookies|book
+Q: I saw two ___ in the park.|mice|mouses|mices|mouse
+Q: There are many ___ in the garden.|flowers|floweres|flowery|flower
+Q: She has three ___.|dresses|dresss|dressies|dress
+Q: The ___ are sleeping now.|babies|babys|babyes|baby
+Q: He washed his ___.|hands|handes|handies|hand
+Q: I bought two ___ of bread.|loaves|loafs|loafes|loaf
 P: \b(children|men|feet|people|babies|boxes|tickets)\b
 
 @lesson g04|A1|Present simple|المضارع البسيط
@@ -88,6 +106,12 @@ Q: He ___ tea every morning.|drinks|drink|drinking|to drink
 Q: My mother ___ in a hospital every day.|works|work|working|to work
 Q: I usually ___ breakfast at seven.|have|has|having|to have
 Q: The sun ___ in the east.|rises|rise|rising|to rise
+Q: My brother ___ football every weekend.|plays|play|playing|to play
+Q: She ___ English very well.|speaks|speak|speaking|to speak
+Q: We ___ lunch at two.|have|has|having|to have
+Q: He always ___ his teeth after breakfast.|brushes|brush|brushing|to brush
+Q: The train ___ at nine every day.|leaves|leave|leaving|to leave
+Q: They ___ in a small village.|live|lives|living|to live
 P: \b(She|He) (?!is\b|was\b|has\b|does\b|as\b)\w+s\b
 
 @lesson g05|A1|Present simple: negatives & questions|المضارع البسيط: النفي والسؤال
@@ -109,6 +133,12 @@ Q: ___ he work here?|Does|Do|Is|Are
 Q: I ___ know the answer.|don't|doesn't|not|isn't
 Q: Does she ___ English?|speak|speaks|speaking|spoke
 Q: They ___ live in Cairo.|don't|doesn't|isn't|aren't
+Q: He ___ drink coffee at night.|doesn't|don't|isn't|not
+Q: ___ they live near here?|Do|Does|Are|Is
+Q: Where ___ she work?|does|do|is|are
+Q: I ___ understand this word.|don't|doesn't|isn't|not
+Q: What time ___ the shop open?|does|do|is|are
+Q: My parents ___ watch TV much.|don't|doesn't|isn't|aren't
 P: \b(doesn't|don't|Do you|Does)\b
 
 @lesson g06|A1|There is / There are|There is / There are
@@ -130,6 +160,12 @@ Q: ___ there a bank near here?|Is|Are|Do|Does
 Q: There ___ any milk left.|isn't|aren't|don't|doesn't
 Q: ___ there any questions?|Are|Is|Do|Does
 Q: There ___ a lot of traffic today.|is|are|have|has
+Q: There ___ two windows in this room.|are|is|am|be
+Q: ___ there a restaurant near the hotel?|Is|Are|Do|Does
+Q: There ___ any sugar in the kitchen.|isn't|aren't|don't|doesn't
+Q: There ___ a lot of people at the party.|are|is|has|have
+Q: How many students ___ there in your class?|are|is|do|does
+Q: There ___ no time to waste.|is|are|am|be
 P: \bThere('s| is| are)\b
 
 @lesson g07|A1|Prepositions: in / on / at|حروف الجر: in / on / at
@@ -151,6 +187,12 @@ Q: I was born ___ June.|in|on|at|by
 Q: He lives ___ Alexandria.|in|on|at|to
 Q: The book is ___ the table.|on|in|at|from
 Q: She arrives ___ noon.|at|on|in|to
+Q: My birthday is ___ March.|in|on|at|to
+Q: See you ___ Saturday!|on|at|in|by
+Q: The plane lands ___ 6:30.|at|on|in|to
+Q: She lives ___ Cairo.|in|on|at|to
+Q: There is a picture ___ the wall.|on|in|at|from
+Q: We have lunch ___ noon.|at|on|in|to
 P: \b(on|at) (the|\w+day|noon|night|nine|ten|six|eight)\b
 
 @lesson g08|A2|Present continuous|المضارع المستمر
@@ -172,6 +214,12 @@ Q: I ___ to music now.|am listening|listen|listens|listened
 Q: ___ you studying today?|Are|Do|Does|Is
 Q: He is ___ a book.|reading|reads|read|to read
 Q: We ___ for the bus right now.|are waiting|is waiting|waiting|wait
+Q: Look! It ___ now.|is raining|rains|rain|rained
+Q: What ___ you doing right now?|are|do|is|did
+Q: My sister ___ a letter at the moment.|is writing|writes|write|wrote
+Q: The children ___ in the garden now.|are playing|plays|play|played
+Q: I ___ for my keys.|am looking|look|looks|looked
+Q: He ___ TV right now.|is watching|watches|watch|watched
 P: \b(am|is|are) \w+ing\b
 
 @lesson g09|A2|Past simple|الماضي البسيط
@@ -193,6 +241,12 @@ Q: We ___ the film. It was boring.|didn't enjoy|don't enjoy|didn't enjoyed|not e
 Q: ___ you finish the work?|Did|Do|Does|Were
 Q: He ___ a new phone last month.|bought|buy|buys|buyed
 Q: They ___ dinner at eight yesterday.|had|have|has|haved
+Q: We ___ a great film last night.|watched|watch|watches|watching
+Q: She ___ me a message yesterday.|sent|send|sends|sending
+Q: I ___ breakfast this morning.|didn't have|don't have|didn't had|not have
+Q: ___ they arrive on time?|Did|Do|Does|Were
+Q: He ___ his keys at the office.|left|leave|leaves|leaving
+Q: They ___ to Alexandria last summer.|went|go|goes|going
 P: \b(went|bought|had|visited|stayed|spent|decided|started|finished|received)\b
 
 @lesson g10|A2|Future: will / going to|المستقبل: will و going to
@@ -214,6 +268,12 @@ Q: She ___ be late. She promised.|won't|doesn't|isn't|don't
 Q: I think it ___ rain tomorrow.|will|going|is|does
 Q: Look at those clouds! It ___ rain.|is going to|will to|going to|does
 Q: He ___ call you tonight.|will|will to|wills|going
+Q: Wait! I ___ help you with that bag.|will|am going|going to|would
+Q: She has bought a ticket. She ___ travel tomorrow.|is going to|would|won't|going
+Q: I'm sure he ___ pass the exam.|will|going|does|is
+Q: Don't worry. I ___ forget.|won't|am not|don't|not
+Q: They ___ build a new school next year. It's planned.|are going to|would|won't|going
+Q: Perhaps it ___ be sunny tomorrow.|will|is going|going|does
 P: \b(will|won't|going to)\b
 
 @lesson g11|A2|Comparatives & superlatives|المقارنة والتفضيل
@@ -235,6 +295,12 @@ Q: She is the ___ student in class.|best|good|better|goodest
 Q: Today is the ___ day of the year.|hottest|hotter|more hot|hot
 Q: This road is ___ than the other.|longer|more long|longest|long
 Q: He is ___ than his brother.|taller|more tall|tallest|tall
+Q: My car is ___ than yours.|faster|more fast|fastest|fast
+Q: This is the ___ film I have ever seen.|best|good|better|goodest
+Q: She is ___ than her sister.|more careful|carefuller|most careful|careful
+Q: It is the ___ building in the city.|tallest|taller|more tall|tall
+Q: Today is ___ than yesterday.|colder|more cold|coldest|cold
+Q: This exercise is ___ than the first one.|easier|more easy|easiest|easy
 P: \b(more|most|better|best|\w+er than|the \w+est)\b
 
 @lesson g12|A2|Modals: can / must / should|الأفعال المساعدة: can / must / should
@@ -256,6 +322,12 @@ Q: You look tired. You ___ rest.|should|must to|can to|shoulds
 Q: ___ I use your phone, please?|Can|Do|Am|Must to
 Q: He ___ swim, so he stayed away.|can't|don't|isn't|not
 Q: You ___ talk during the exam.|mustn't|don't must|mustn't to|not must
+Q: ___ you help me, please?|Can|Do|Are|Must
+Q: You ___ smoke in the hospital.|mustn't|don't must|mustn't to|not must
+Q: He ___ run very fast. He's a champion.|can|cans|can to|is can
+Q: I have a headache. I ___ see a doctor.|should|must to|can to|shoulds
+Q: We ___ be late for the exam.|mustn't|don't must|mustn't to|not must
+Q: ___ I open the window?|Can|Do|Am|Must to
 P: \b(can|can't|must|should|mustn't)\b
 
 @lesson g13|B1|Present perfect|المضارع التام
@@ -277,6 +349,12 @@ Q: ___ you ever been to Italy?|Have|Did|Has|Do
 Q: We haven't finished ___.|yet|already|ever|since
 Q: He has worked here ___ 2019.|since|for|from|at
 Q: They have ___ the report.|written|wrote|write|writing
+Q: She ___ finished her homework.|has|have|is|did
+Q: ___ he ever visited Paris?|Has|Have|Did|Does
+Q: I ___ lived here since 2020.|have|has|am|did
+Q: They haven't called ___.|yet|already|ever|since
+Q: We have known each other ___ ten years.|for|since|from|at
+Q: He has just ___ home.|arrived|arrive|arriving|arrives
 P: \b(have|has|haven't|hasn't) (\w+ed|been|seen|had|lost|met|gone)\b
 
 @lesson g14|B1|First conditional|الشرط الأول
@@ -298,4 +376,284 @@ Q: I ___ call you if I have time.|will|would|am|did
 Q: If she ___ late, we will leave.|is|will be|would be|be
 Q: We will miss the bus ___ we hurry.|unless|if|when|because
 Q: If he ___ the keys, he will open the door.|finds|will find|found|find
+Q: If I see him, I ___ tell him.|will|would|did|am
+Q: If you ___ the bus, you will be late.|miss|will miss|missed|missing
+Q: She will be happy if you ___ her.|call|will call|called|calling
+Q: If it ___ cold, we will wear coats.|is|will be|would be|be
+Q: We will cancel the picnic ___ it rains.|if|unless|and|because
+Q: If they ___ early, they will get good seats.|arrive|will arrive|arrived|arriving
 P: (\bIf\b.*\b(will|won't)\b|\b(will|won't|'ll)\b.*\bif\b)
+
+@lesson g15|A1|Possessives: my / your / his / her|صفات الملكية: my / your / his / her
+E: صفات الملكية بتقول الحاجة بتاعة مين: my, your, his, her, its, our, their.
+E: بنحطها قبل الاسم مباشرة: my book, her phone. ومبنحطش the معاها.
+E: 's بتدل على الملكية مع الأسماء: Sara's bag = شنطة سارة.
+F: my / your / his / her + noun | my car, her bag
+F: our / their + noun | our house, their garden
+F: name + 's + noun | Ali's phone
+X: This is my phone.|ده تليفوني.
+X: She loves her job.|هي بتحب شغلها.
+X: Ali's car is new.|عربية علي جديدة.
+X: Their house is near the park.|بيتهم قريب من الحديقة.
+M: Sara loves she mother. → Sara loves her mother.|قبل الاسم بنستخدم her مش she.
+M: This is the my book. → This is my book.|مفيش the مع my.
+Q: This is ___ bag. It belongs to me.|my|me|I|mine
+Q: She loves ___ job.|her|she|hers|him
+Q: Ali and Sara love ___ parents.|their|they|them|theirs
+Q: ___ car is very fast.|Ahmed's|Ahmeds|Ahmed|Ahmeds'
+Q: We clean ___ room every week.|our|we|us|ours
+Q: Is this ___ pen?|your|you|yours|yourself
+Q: The dog is eating ___ food.|its|it's|it|itself
+Q: He is washing ___ hands.|his|he|him|hers
+P: \b(my|your|his|her|our|their) \w+
+
+@lesson g16|A1|Question words|كلمات الاستفهام
+E: بنستخدم كلمات الاستفهام في أول السؤال: What (إيه)، Where (فين)، When (إمتى)، Why (ليه)، Who (مين)، How (إزاي).
+E: بعد كلمة السؤال بنستخدم am / is / are أو do / does: Where is the bank? / Where do you live?
+E: How much للسعر وغير المعدود، و How many للعدد، و How old للعمر.
+F: What / Where / When / Why / Who / How | What is this?
+F: Question word + do / does + subject + verb | Where do you live?
+F: How much / How many / How old | How many books?
+X: What is your name?|اسمك إيه؟
+X: Where do you live?|بتسكن فين؟
+X: Why are you late?|ليه إنت متأخر؟
+X: How many brothers do you have?|عندك كام أخ؟
+M: Where you live? → Where do you live?|لازم do قبل الفاعل.
+M: How many money? → How much money?|المال غير معدود فنستخدم much.
+Q: ___ is your birthday? It's in May.|When|Where|Who|Why
+Q: ___ do you live? In Giza.|Where|When|Who|How much
+Q: ___ is that man? He's my uncle.|Who|What|Where|Why
+Q: ___ are you crying? Because I'm sad.|Why|When|Who|How
+Q: ___ does this book cost?|How much|How many|How old|What time
+Q: ___ students are in your class?|How many|How much|How old|Who
+Q: ___ is your sister? She's ten.|How old|How much|How many|What
+Q: ___ time does the film start?|What|Who|Where|How
+P: ^(What|Where|When|Why|Who|How|Which)\b
+
+@lesson g17|A1|Imperatives|الأمر والنهي
+E: الأمر بنستخدمه عشان نطلب أو ننصح أو نوجّه: الفعل في الأصل من غير فاعل: Open the door.
+E: للنهي بنزوّد don't في الأول: Don't run!
+E: بنزوّد please عشان الأمر يبقى مؤدب: Please sit down.
+F: base verb | Open your book.
+F: Don't + base verb | Don't be late.
+F: Please + base verb | Please wait here.
+X: Close the window, please.|اقفل الشباك لو سمحت.
+X: Don't touch that!|ماتلمسش ده!
+X: Turn left at the corner.|لف شمال عند الناصية.
+X: Let's go home.|يلا نروح.
+M: Don't to run. → Don't run.|بعد don't الفعل في الأصل من غير to.
+M: You open the door. → Open the door.|الأمر من غير فاعل.
+Q: ___ the door, please. It's cold.|Close|Closing|To close|Closes
+Q: ___ late for class!|Don't be|Not be|Aren't|Don't being
+Q: ___ here and wait for me.|Stay|Staying|To stay|Stays
+Q: ___ your phone in the exam.|Don't use|Not use|Doesn't use|Using
+Q: ___ me your name, please.|Tell|Telling|To tell|Tells
+Q: Please ___ quiet in the library.|be|are|is|being
+Q: ___ eat in the lab!|Don't|Not|Doesn't|Isn't
+Q: ___ go to the park!|Let's|Lets to|Let|Letting
+P: ^(Please, )?(Open|Close|Put|Take|Turn|Wash|Come|Wait|Let's|Don't|Stay|Keep|Read|Write|Press|Lock|Look|Try|Listen|Tell|Be|Give|Call|Send)\b
+
+@lesson g20|A1|Object pronouns|ضمائر المفعول
+E: ضمائر المفعول: me, you, him, her, it, us, them. بنستخدمها بعد الفعل أو بعد حرف الجر.
+E: لو الشخص هو اللي بيعمل الفعل بنستخدم I / he / she، ولو هو اللي بيقع عليه الفعل بنستخدم me / him / her.
+E: Help me. / She loves him. / Come with us.
+F: I → me, you → you | Help me.
+F: he → him, she → her, it → it | I know him.
+F: we → us, they → them | Call them.
+X: Please help me.|ساعدني لو سمحت.
+X: I see him every day.|بشوفه كل يوم.
+X: She gave us a gift.|هي ادّتنا هدية.
+X: Can you call them?|ينفع تكلّمهم؟
+M: She loves he. → She loves him.|بعد الفعل بنستخدم him مش he.
+M: Give I the book. → Give me the book.|بعد الفعل بنستخدم me.
+Q: Please call ___ tomorrow.|me|I|my|mine
+Q: Sara is nice. I like ___.|her|she|hers|he
+Q: We are friends. Ali often visits ___.|us|we|our|ours
+Q: The kids are noisy. Please ask ___ to stop.|them|they|their|theirs
+Q: This is a gift for ___.|you|your|yours|yourself
+Q: I can't find my keys. Can you help ___?|me|I|my|myself
+Q: Tom is late. Call ___.|him|he|his|himself
+Q: The cat is hungry. Give ___ some food.|it|its|it's|itself
+P: \b(me|him|her|us|them)\b
+
+@lesson g18|A2|Countable & uncountable nouns|المعدود وغير المعدود
+E: الأسماء المعدودة ليها جمع (apple → apples) وبنعدّها: two apples. وغير المعدودة مالهاش جمع زي water, milk, money, advice.
+E: many مع المعدود، و much مع غير المعدود، و a lot of مع الاتنين.
+E: some في الإثبات، و any في النفي والسؤال: I have some milk. / Do you have any milk?
+F: many + plural countable | many books
+F: much + uncountable | much water
+F: some (+) / any (− ?) | some tea / any tea?
+X: There are many cars on the road.|فيه عربيات كتير على الطريق.
+X: I don't have much time.|معنديش وقت كتير.
+X: Would you like some tea?|تحب شاي؟
+X: We don't have any eggs.|معندناش بيض.
+M: I have many money. → I have a lot of money.|money غير معدودة فمنستخدمش many.
+M: Do you have some questions? → Do you have any questions?|في السؤال بنستخدم any.
+Q: There isn't ___ milk in the fridge.|any|some|many|a
+Q: How ___ water do you drink every day?|much|many|few|some
+Q: How ___ books did you read?|many|much|any|little
+Q: I'd like ___ coffee, please.|some|many|a few|any
+Q: She has ___ friends in Cairo.|many|much|a little|any
+Q: We don't have ___ time. Hurry!|much|many|a few|some
+Q: There are ___ people in the park today.|a lot of|much|a little|any
+Q: Is there ___ bread left?|any|many|a few|few
+P: \b(some|any|much|many|a lot of|plenty of|a few|a little)\b
+
+@lesson g19|A2|Past continuous|الماضي المستمر
+E: بنستخدمه لحاجة كانت شغّالة وبتحصل في وقت معين في الماضي: I was reading at nine.
+E: الصيغة: was / were + الفعل + ing. (I / he / she / it → was) و (we / you / they → were)
+E: بنستخدمه مع when / while لما حاجة قاطعت حاجة تانية: I was walking when it started to rain.
+F: I / He / She / It was + verb-ing | She was cooking
+F: We / You / They were + verb-ing | They were playing
+F: wasn't / weren't + verb-ing | I wasn't sleeping
+X: I was reading when you called.|كنت بقرا لما كلمتني.
+X: They were playing football at five.|كانوا بيلعبوا كورة الساعة خمسة.
+X: It was raining all day.|كانت بتمطر طول اليوم.
+X: Were you sleeping?|كنت نايم؟
+M: She was cook dinner. → She was cooking dinner.|بعد was لازم الفعل + ing.
+M: They was playing. → They were playing.|مع they بنستخدم were.
+Q: I ___ TV when the phone rang.|was watching|watched|am watching|watch
+Q: They ___ dinner at eight o'clock last night.|were having|was having|have|had having
+Q: ___ you sleeping when I called?|Were|Was|Did|Are
+Q: She ___ a book while he was cooking.|was reading|reads|is reading|were reading
+Q: It ___ raining, so we stayed inside.|was|were|is|did
+Q: What ___ you doing at nine yesterday?|were|was|did|are
+Q: He ___ listening to music at that time.|wasn't|weren't|didn't|isn't
+Q: We ___ walking home when it started to rain.|were|was|did|are
+P: \b(was|were|wasn't|weren't) \w+ing\b
+
+@lesson g21|A2|Have to / must|have to و must
+E: have to معناها "لازم" بسبب ظروف أو قواعد: I have to wake up early.
+E: don't have to معناها "مش لازم": You don't have to come. لكن mustn't معناها "ممنوع".
+E: مع he / she / it بنقول has to، وفي الماضي had to، والسؤال بـ Do / Does: Do you have to go?
+F: have / has to + base verb | I have to work
+F: don't / doesn't have to + base verb | She doesn't have to come
+F: had to (past) | We had to wait
+X: I have to leave now.|لازم أمشي دلوقتي.
+X: She has to study tonight.|لازم تذاكر الليلة.
+X: You don't have to pay.|مش لازم تدفع.
+X: Did you have to wait long?|اضطريت تستنى كتير؟
+M: She have to go. → She has to go.|مع she بنقول has to.
+M: He must to work. → He has to work.|بعد must من غير to.
+Q: I ___ finish this report today.|have to|has to|must to|having to
+Q: She ___ wake up early on Mondays.|has to|have to|must to|having to
+Q: You ___ come with me. It's optional.|don't have to|mustn't|doesn't have to|not have to
+Q: Yesterday we ___ stay late at work.|had to|have to|has to|must
+Q: ___ you have to leave so early?|Do|Does|Are|Have
+Q: He ___ wear a uniform at school.|has to|have to|must to|having to
+Q: Passengers ___ show their tickets. It's a rule.|have to|has to|having to|must to
+Q: We ___ hurry. We have plenty of time.|don't have to|doesn't have to|mustn't to|not have to
+P: \b(have to|has to|had to|don't have to|doesn't have to)\b
+
+@lesson g22|B1|Relative clauses|الجمل الموصولة: who / which / that
+E: بنستخدم who للأشخاص، و which للأشياء، و that للاتنين، عشان نوصف أو نحدد حاجة: The man who lives next door is a doctor.
+E: where للأماكن، و whose للملكية: This is the school where I studied.
+E: الجملة اللي بعد who / which / that بتكمّل الاسم اللي قبلها وبتحدده.
+F: person + who | the woman who called
+F: thing + which / that | the book which I read
+F: place + where | the city where I live
+X: The man who called is my uncle.|الراجل اللي اتصل ده عمي.
+X: This is the book that I told you about.|ده الكتاب اللي كلمتك عنه.
+X: That is the hotel where we stayed.|ده الفندق اللي أقمنا فيه.
+X: She has a friend who speaks four languages.|عندها صاحبة بتتكلم أربع لغات.
+M: The girl which sings is my sister. → The girl who sings is my sister.|للأشخاص بنستخدم who.
+M: This is the city which I was born. → This is the city where I was born.|للأماكن بنستخدم where.
+Q: The woman ___ lives next door is a nurse.|who|which|where|whose
+Q: I lost the phone ___ my father gave me.|that|who|where|whose
+Q: This is the restaurant ___ we had dinner.|where|who|which|whose
+Q: He is a boy ___ father is a pilot.|whose|who|which|where
+Q: The car ___ broke down is very old.|which|who|where|whose
+Q: People ___ work hard usually succeed.|who|which|where|whose
+Q: Cairo is the city ___ I was born.|where|who|which|whose
+Q: A pen is a thing ___ you write with.|that|who|where|whose
+P: \b(who|which|that|where|whose) \w+
+
+@lesson g23|B1|Passive voice|المبني للمجهول
+E: بنستخدم المبني للمجهول لما الفاعل مش مهم أو مش معروف، ونركّز على اللي وقع عليه الفعل: The window was broken.
+E: الصيغة: am / is / are / was / were + التصريف التالت للفعل. المضارع: is made. الماضي: was made.
+E: لو عايزين نذكر الفاعل بنستخدم by: The book was written by Ali.
+F: is / are + V3 (present) | English is spoken here.
+F: was / were + V3 (past) | The room was cleaned.
+F: ... by + agent | written by a student
+X: Breakfast is served until ten.|الفطار بيتقدّم لحد العاشرة.
+X: The window was broken yesterday.|الشباك اتكسر امبارح.
+X: These cars are made in Egypt.|العربيات دي بتتصنّع في مصر.
+X: The letter was sent by Sara.|الجواب اتبعت من سارة.
+M: The window broke by the boy. → The window was broken by the boy.|لازم was + V3.
+M: English speaks here. → English is spoken here.|اللغة بتتتكلم (مبني للمجهول) فنستخدم is spoken.
+Q: This bridge ___ in 1990.|was built|built|is building|was build
+Q: Cars ___ in this factory every day.|are made|make|made|are making
+Q: The thieves ___ by the police yesterday.|were caught|caught|are caught|were catching
+Q: English ___ all over the world.|is spoken|speaks|is speaking|spoke
+Q: The report ___ by our manager last week.|was written|wrote|is written|was writing
+Q: These rooms ___ every day.|are cleaned|clean|cleaned|are cleaning
+Q: My phone ___ yesterday!|was stolen|stole|is stolen|was stealing
+Q: The cake ___ by my mother.|was made|made|is making|was make
+P: \b(is|are|was|were) (\w+ed|made|written|built|sold|given|taken|stolen|spoken|served|known|found|seen)\b
+
+@lesson g24|B1|Second conditional|الشرط الثاني
+E: الشرط الثاني بنستخدمه لحاجة مش حقيقية أو مستبعدة في الحاضر أو المستقبل: If I had a million dollars, I would travel the world.
+E: الصيغة: If + الماضي البسيط، would + الفعل الأصلي.
+E: مع be بنقول if I were (حتى مع I): If I were you, I would apologize.
+F: If + past simple | If I had time
+F: ..., would + base verb | I would help
+F: If I were you, ... | نصيحة
+X: If I were rich, I would buy a big house.|لو كنت غني كنت اشتريت بيت كبير.
+X: If she knew the answer, she would tell us.|لو كانت تعرف الإجابة كانت قالتلنا.
+X: What would you do if you won the lottery?|هتعمل إيه لو كسبت اليانصيب؟
+X: If I were you, I would study more.|لو كنت مكانك كنت ذاكرت أكتر.
+M: If I would have time, I would help. → If I had time, I would help.|بعد if بنستخدم الماضي البسيط مش would.
+M: If I was you, I would go. → If I were you, I would go.|في النصيحة بنستخدم were.
+Q: If I ___ a bird, I would fly to you.|were|am|will be|would be
+Q: If she ___ more time, she would learn French.|had|has|would have|have
+Q: I ___ buy a new car if I had enough money.|would|will|am going to|can
+Q: If I ___ you, I would take that job.|were|am|will be|be
+Q: What ___ you do if you lost your keys?|would|will|do|did
+Q: If they ___ earlier, they wouldn't be late.|left|leave|will leave|would leave
+Q: He ___ help us if he knew the answer.|would|will|did|is
+Q: If it ___ warmer, we would go swimming.|were|is|will be|would be
+
+@lesson g25|B1|Used to|used to (كان زمان)
+E: used to + الفعل الأصلي معناها "كان زمان" عادة أو حالة في الماضي واتغيّرت: I used to play football.
+E: النفي: didn't use to، والسؤال: Did you use to...? (من غير d).
+E: be used to + ing معناها "متعوّد على" وده معنى تاني: I am used to waking up early.
+F: used to + base verb | I used to smoke
+F: didn't use to + base verb | She didn't use to like tea
+F: be used to + verb-ing | I'm used to driving
+X: I used to live in Alexandria.|كنت أسكن في إسكندرية زمان.
+X: She used to be shy.|كانت خجولة زمان.
+X: We didn't use to have a car.|ماكانش عندنا عربية زمان.
+X: Did you use to play chess?|كنت بتلعب شطرنج زمان؟
+M: I use to play football. → I used to play football.|الماضي لازم used.
+M: Did you used to live here? → Did you use to live here?|بعد did من غير d.
+Q: When I was a child, I ___ play outside every day.|used to|use to|am used to|was used to
+Q: She ___ be very shy, but now she is confident.|used to|uses to|is used to|using to
+Q: We ___ have a TV when I was young.|didn't use to|didn't used to|don't use to|not used to
+Q: ___ you use to live in Cairo?|Did|Do|Are|Were
+Q: I'm ___ waking up early now.|used to|use to|used|using to
+Q: He ___ smoke, but he stopped five years ago.|used to|is used to|uses to|use to
+Q: People ___ write letters, but now they send emails.|used to|use to|are used to|using to
+Q: My grandfather ___ tell us stories every night.|used to|use to|is used to|uses to
+
+@lesson g26|B1|Gerunds & infinitives|الفعل + ing أو to
+E: بعد أفعال زي enjoy / avoid / finish / keep بنستخدم الفعل + ing: I enjoy swimming.
+E: بعد want / need / hope / decide / plan / learn بنستخدم to + الفعل: I want to learn English.
+E: بعض الأفعال زي like / love / start بتقبل الاتنين من غير فرق كبير: I like reading / to read.
+F: enjoy / avoid / finish + verb-ing | enjoy cooking
+F: want / need / decide + to + verb | want to go
+F: like / love / start + ing / to | like swimming / to swim
+X: I enjoy reading in the evening.|بستمتع بالقراءة بالليل.
+X: She wants to learn Spanish.|هي عايزة تتعلم إسباني.
+X: He decided to travel alone.|قرر يسافر لوحده.
+X: They finished cleaning the house.|خلّصوا تنضيف البيت.
+M: I enjoy to swim. → I enjoy swimming.|بعد enjoy بنستخدم ing.
+M: She wants going home. → She wants to go home.|بعد want بنستخدم to + الفعل.
+Q: I enjoy ___ music.|listening to|to listen to|listen to|listened to
+Q: She wants ___ a doctor.|to be|being|be|been
+Q: He avoided ___ the question.|answering|to answer|answer|answered
+Q: We decided ___ early.|to leave|leaving|leave|left
+Q: They finished ___ the report.|writing|to write|write|written
+Q: I need ___ some water.|to drink|drinking|drink|drank
+Q: She keeps ___ about her exam.|talking|to talk|talk|talked
+Q: I hope ___ you again soon.|to see|seeing|see|saw
+P: \b(enjoy|love|like|hate|avoid|keep|stop|finish) \w+ing\b|\b(want|need|hope|decide|plan|learn|would like) to \w+

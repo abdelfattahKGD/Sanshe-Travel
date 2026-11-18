@@ -62,6 +62,31 @@ data class GrammarLesson(
     val pattern: String,
 )
 
+data class Gloss(val word: String, val pos: String, val ar: String)
+
+/** A paragraph or one chapter of a book: sentences with translations, new words, and comprehension questions. */
+data class Passage(
+    val id: String,
+    val level: String,
+    val en: String,
+    val ar: String,
+    val emoji: String,
+    val sentences: List<Pair<String, String>>,
+    val glossary: List<Gloss>,
+    val quiz: List<GrammarQ>,
+)
+
+data class Book(
+    val id: String,
+    val level: String,
+    val en: String,
+    val ar: String,
+    val emoji: String,
+    val author: String,
+    val desc: String,
+    val chapters: List<Passage>,
+)
+
 /** All content, loaded once from assets/data. Adding a topic = adding a JSON file, no code change. */
 object Library {
     var topics: List<Topic> = emptyList()
@@ -70,7 +95,67 @@ object Library {
         private set
     var lessons: List<GrammarLesson> = emptyList()
         private set
+    var paragraphs: List<Passage> = emptyList()
+        private set
+    var books: List<Book> = emptyList()
+        private set
+    private var baseTopics: List<Topic> = emptyList()
+    private var baseItems: List<Item> = emptyList()
+    private var custom: List<Item> = emptyList()
     private var byId: Map<String, Item> = emptyMap()
+    private var wordByEn: Map<String, Item> = emptyMap()
+
+    fun passage(id: String): Passage? =
+        paragraphs.firstOrNull { it.id == id } ?: books.firstNotNullOfOrNull { b -> b.chapters.firstOrNull { it.id == id } }
+
+    fun book(id: String): Book? = books.firstOrNull { it.id == id }
+
+    /** Looks a word up in the app's vocabulary, also by its base form ("begged" -> "beg", "shelves" -> "shelf"). */
+    fun findWord(raw: String): Item? = variants(raw).firstNotNullOfOrNull { wordByEn[it] }
+
+    private val irregular = mapOf(
+        "geese" to "goose", "mice" to "mouse", "men" to "man", "women" to "woman", "children" to "child",
+        "feet" to "foot", "teeth" to "tooth", "fell" to "fall", "went" to "go", "saw" to "see", "took" to "take",
+        "gave" to "give", "ran" to "run", "was" to "be", "were" to "be", "had" to "have", "said" to "say",
+        "bought" to "buy", "found" to "find", "knew" to "know", "thought" to "think", "told" to "tell",
+        "became" to "become", "woke" to "wake", "flew" to "fly", "sat" to "sit",
+    )
+
+    /** Possible base forms of a word as it appears in a text (keep in sync with tools/build_reading.py). */
+    fun variants(raw: String): List<String> {
+        val t = raw.lowercase().replace('’', '\'').trim { !it.isLetter() && it != '\'' && it != '-' }
+        if (t.isEmpty()) return emptyList()
+        val out = LinkedHashSet<String>()
+        out.add(t)
+        fun add(x: String) {
+            if (x.length >= 2) out.add(x)
+        }
+        irregular[t]?.let { add(it) }
+        if (t.endsWith("'s")) add(t.dropLast(2))
+        if (t.endsWith("ies")) add(t.dropLast(3) + "y")
+        if (t.endsWith("ves")) {
+            add(t.dropLast(3) + "f")
+            add(t.dropLast(3) + "fe")
+        }
+        if (t.endsWith("es")) add(t.dropLast(2))
+        if (t.endsWith("s")) add(t.dropLast(1))
+        if (t.endsWith("ied")) add(t.dropLast(3) + "y")
+        if (t.endsWith("ed")) {
+            add(t.dropLast(2))
+            add(t.dropLast(1))
+            if (t.length > 4 && t[t.length - 3] == t[t.length - 4]) add(t.dropLast(3))
+        }
+        if (t.endsWith("ing")) {
+            add(t.dropLast(3))
+            add(t.dropLast(3) + "e")
+            if (t.length > 5 && t[t.length - 4] == t[t.length - 5]) add(t.dropLast(4))
+        }
+        if (t.endsWith("iest")) add(t.dropLast(4) + "y")
+        if (t.endsWith("est")) add(t.dropLast(3))
+        if (t.endsWith("er")) add(t.dropLast(2))
+        if (t.endsWith("ly")) add(t.dropLast(2))
+        return out.toList()
+    }
 
     fun lesson(id: String): GrammarLesson? = lessons.firstOrNull { it.id == id }
 
@@ -130,10 +215,78 @@ object Library {
                 )
             )
         }
-        topics = topicList
-        items = all
-        byId = all.associateBy { it.id }
+        baseTopics = topicList
+        baseItems = all
+        rebuild()
         loadGrammar(ctx)
+        loadReading(ctx)
+    }
+
+    /** "كلماتي": words the user added. Replaces the whole list (used at startup and after restoring a backup). */
+    fun setCustom(list: List<Item>) {
+        custom = list
+        rebuild()
+    }
+
+    fun addCustom(item: Item) {
+        custom = custom + item
+        rebuild()
+    }
+
+    fun removeCustom(id: String) {
+        custom = custom.filter { it.id != id }
+        rebuild()
+    }
+
+    private fun rebuild() {
+        items = baseItems + custom
+        byId = items.associateBy { it.id }
+        wordByEn = items.filter { it.kind == Kind.WORD }.associateBy { it.en.lowercase() }
+        topics = if (custom.isEmpty()) baseTopics
+        else baseTopics + Topic("t12", 12, "كلماتي", "My Words", "⭐", true, listOf(Group("my", "كلمات أضفتها", "Added by me")))
+    }
+
+    private fun passagesOf(arr: org.json.JSONArray): List<Passage> = (0 until arr.length()).map { i ->
+        val o = arr.getJSONObject(i)
+        val s = o.getJSONArray("s")
+        val w = o.getJSONArray("w")
+        val q = o.getJSONArray("q")
+        Passage(
+            id = o.getString("id"),
+            level = o.getString("lv"),
+            en = o.getString("en"),
+            ar = o.getString("ar"),
+            emoji = o.optString("e", "📖"),
+            sentences = (0 until s.length()).map { Pair(s.getJSONArray(it).getString(0), s.getJSONArray(it).getString(1)) },
+            glossary = (0 until w.length()).map {
+                val g = w.getJSONArray(it)
+                Gloss(g.getString(0), g.getString(1), g.getString(2))
+            },
+            quiz = (0 until q.length()).map {
+                val x = q.getJSONObject(it)
+                GrammarQ(x.getString("q"), x.getString("a"), strings(x.getJSONArray("w")))
+            },
+        )
+    }
+
+    private fun loadReading(ctx: Context) {
+        val files = ctx.assets.list("data") ?: emptyArray()
+        if (!files.contains("reading.json")) return
+        val root = JSONObject(read(ctx, "data/reading.json"))
+        paragraphs = passagesOf(root.getJSONArray("paragraphs"))
+        val bs = root.getJSONArray("books")
+        val list = ArrayList<Book>()
+        for (i in 0 until bs.length()) {
+            val b = bs.getJSONObject(i)
+            list.add(
+                Book(
+                    id = b.getString("id"), level = b.getString("lv"), en = b.getString("en"), ar = b.getString("ar"),
+                    emoji = b.getString("e"), author = b.getString("au"), desc = b.getString("d"),
+                    chapters = passagesOf(b.getJSONArray("ch")),
+                )
+            )
+        }
+        books = list
     }
 
     private fun strings(a: org.json.JSONArray): List<String> = (0 until a.length()).map { a.getString(it) }

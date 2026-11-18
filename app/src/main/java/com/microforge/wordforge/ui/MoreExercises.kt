@@ -96,13 +96,9 @@ private fun diff(target: List<String>, typed: List<String>): Diff {
     return Diff(mt, my)
 }
 
-/** Items the user already met come first, so these exercises reinforce what was learned. */
-private fun pickItems(env: Env, kind: Kind, n: Int, maxWords: Int = 99): List<Item> {
-    val pool = Library.items.filter { it.kind == kind && it.en.split(" ").size <= maxWords }
-    val seen = pool.filter { env.repo.statusOf(it.id) != Status.NEW }.shuffled()
-    val fresh = pool.filter { env.repo.statusOf(it.id) == Status.NEW }.shuffled()
-    return (seen + fresh).take(n)
-}
+/** Fresh, varied items every round (see Repo.pickFrom). */
+private fun pickItems(env: Env, kind: Kind, n: Int, key: String, maxWords: Int = 99): List<Item> =
+    env.repo.pick(kind, n, key, maxWords)
 
 @Composable
 private fun ResultView(score: Int, total: Int, onNew: () -> Unit, env: Env) {
@@ -175,7 +171,7 @@ object DictationScreen : Screen {
 
 @Composable
 private fun DictationRound(env: Env, kind: Kind, onNew: () -> Unit) {
-    val items = remember { pickItems(env, kind, 8) }
+    val items = remember { pickItems(env, kind, 8, "dict_${kind.name}") }
     var index by remember { mutableIntStateOf(0) }
     var score by remember { mutableIntStateOf(0) }
     var input by remember { mutableStateOf("") }
@@ -366,7 +362,7 @@ private fun Chip(text: String, tint: Color, onClick: () -> Unit) {
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun BuilderRound(env: Env, onNew: () -> Unit) {
-    val items = remember { pickItems(env, Kind.SENTENCE, 8, 10) }
+    val items = remember { pickItems(env, Kind.SENTENCE, 8, "build", 10) }
     var index by remember { mutableIntStateOf(0) }
     var score by remember { mutableIntStateOf(0) }
     var checked by remember { mutableStateOf(false) }

@@ -135,6 +135,18 @@ object HomeScreen : Screen {
                                 shape = RoundedCornerShape(14.dp),
                             ) { Text("📝 امتحانات") }
                         }
+                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                            OutlinedButton(
+                                onClick = { env.nav.push(ParagraphsScreen) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(14.dp),
+                            ) { Text("📰 فقرات") }
+                            OutlinedButton(
+                                onClick = { env.nav.push(BooksScreen) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(14.dp),
+                            ) { Text("📕 كتب") }
+                        }
                     }
                 }
             }
@@ -260,10 +272,10 @@ fun TopicTile(t: Topic, kind: Kind, env: Env, modifier: Modifier = Modifier) {
     val known = env.repo.memorized(kind, t.id)
     Box(
         modifier
-            .graphicsLayer { alpha = if (t.available) 1f else 0.55f }
+            .graphicsLayer { alpha = if (t.available && total > 0) 1f else 0.55f }
             .clip(RoundedCornerShape(22.dp))
             .background(Brush.verticalGradient(listOf(c, c.copy(alpha = 0.72f))))
-            .clickable(enabled = t.available) { env.nav.push(TopicScreen(t.id, kind)) }
+            .clickable(enabled = t.available && total > 0) { env.nav.push(TopicScreen(t.id, kind)) }
             .padding(14.dp)
     ) {
         Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.SpaceBetween) {
@@ -280,7 +292,7 @@ fun TopicTile(t: Topic, kind: Kind, env: Env, modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.ExtraBold,
                     maxLines = 2,
                 )
-                if (t.available) {
+                if (t.available && total > 0) {
                     ProgressBar(if (total == 0) 0f else known.toFloat() / total, color = Color.White, height = 6.dp)
                     Text("🟢 $known / $total", color = Color.White, style = MaterialTheme.typography.labelMedium)
                 }

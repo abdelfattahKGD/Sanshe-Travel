@@ -382,6 +382,15 @@ fun ItemRow(item: Item, env: Env, index: Int = 0) {
                             .padding(6.dp),
                         fontSize = 20.sp,
                     )
+                    if (item.topicId == "t12") {
+                        Text(
+                            "🗑",
+                            Modifier
+                                .clickable { env.repo.deleteCustomWord(item.id) }
+                                .padding(6.dp),
+                            fontSize = 18.sp,
+                        )
+                    }
                 }
                 Spacer(Modifier.width(8.dp))
             }

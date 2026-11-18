@@ -8,6 +8,7 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.speech.tts.TextToSpeech
+import android.speech.tts.UtteranceProgressListener
 import android.widget.Toast
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -82,6 +83,9 @@ class Speaker(ctx: Context) : TextToSpeech.OnInitListener {
     private var tts: TextToSpeech? = null
     private var rate = 1.0f
     private var accentUk = false
+    private var batchLast = -1
+    private var batchOnIndex: ((Int) -> Unit)? = null
+    private var batchOnFinish: (() -> Unit)? = null
 
     var ready by mutableStateOf(false)
         private set
@@ -155,11 +159,66 @@ class Speaker(ctx: Context) : TextToSpeech.OnInitListener {
         if (result != TextToSpeech.SUCCESS && !auto) toast("تعذّر تشغيل الصوت — اتأكد إن صوت الوسائط مش صفر")
     }
 
+    /** Reads [lines] one after another; [onIndex] says which line is being read now, [onFinish] when everything is done or interrupted. */
+    fun speakAll(lines: List<String>, onIndex: (Int) -> Unit, onFinish: () -> Unit) {
+        val t = tts
+        if (t == null || !ready || lines.isEmpty()) {
+            toast(status)
+            onFinish()
+            return
+        }
+        batchOnIndex = onIndex
+        batchOnFinish = onFinish
+        batchLast = lines.size - 1
+        t.setSpeechRate(rate)
+        t.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
+            override fun onStart(utteranceId: String?) {
+                val i = utteranceId?.removePrefix("line")?.toIntOrNull() ?: return
+                main.post { batchOnIndex?.invoke(i) }
+            }
+
+            override fun onDone(utteranceId: String?) {
+                val i = utteranceId?.removePrefix("line")?.toIntOrNull() ?: return
+                if (i == batchLast) main.post { finishBatch() }
+            }
+
+            override fun onError(utteranceId: String?) {
+                main.post { finishBatch() }
+            }
+
+            override fun onStop(utteranceId: String?, interrupted: Boolean) {
+                if (utteranceId?.startsWith("line") == true) main.post { finishBatch() }
+            }
+        })
+        lines.forEachIndexed { i, text ->
+            t.speak(text, if (i == 0) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD, null, "line$i")
+        }
+    }
+
+    private fun finishBatch() {
+        val f = batchOnFinish
+        batchOnIndex = null
+        batchOnFinish = null
+        f?.invoke()
+    }
+
+    fun stopSpeaking() {
+        batchOnIndex = null
+        batchOnFinish = null
+        tts?.stop()
+    }
+
     fun toast(msg: String) {
         main.post { Toast.makeText(app, msg, Toast.LENGTH_LONG).show() }
     }
 
     /** Opens Android's "download voice data" screen. */
+    /** Opens an online translation (English -> Arabic) of [text] in the browser. */
+    fun openTranslate(text: String) {
+        val url = "https://translate.google.com/?sl=en&tl=ar&op=translate&text=" + Uri.encode(text)
+        if (!launch(Intent(Intent.ACTION_VIEW, Uri.parse(url)))) toast("مفيش متصفح لفتح الترجمة")
+    }
+
     fun installVoiceData() = launch(Intent(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA))
 
     fun openTtsSettings() {
@@ -198,6 +257,8 @@ object Registry {
         DrawerEntry("✏️", "التدريب") { PracticeScreen },
         DrawerEntry("🎧", "إملاء") { DictationScreen },
         DrawerEntry("🧩", "ترتيب الجمل") { SentenceBuilderScreen },
+        DrawerEntry("📰", "الفقرات") { ParagraphsScreen },
+        DrawerEntry("📕", "الكتب") { BooksScreen },
         DrawerEntry("📖", "الجرامر") { GrammarListScreen },
         DrawerEntry("📝", "الامتحانات") { ExamListScreen },
         DrawerEntry("📊", "الإحصائيات") { StatsScreen },

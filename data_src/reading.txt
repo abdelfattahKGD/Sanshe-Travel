@@ -1,0 +1,481 @@
+# Reading content (all texts are original retellings / original paragraphs written for this app).
+# Tags:
+#   @text id|level|English title|Arabic title|emoji             a stand-alone paragraph
+#   @book id|level|English title|Arabic title|emoji|author|description   a book, followed by @chapter blocks
+#   @chapter English title|Arabic title
+#   S: english sentence|arabic translation
+#   W: word (base form)|pos|arabic meaning        glossary (becomes vocabulary in "Words from Reading")
+#   Q: question|right answer|wrong1|wrong2|wrong3  comprehension question
+
+@text p01|A1|My Daily Routine|روتيني اليومي|🌅
+S: I wake up at seven o'clock.|أستيقظ في الساعة السابعة.
+S: I wash my face and brush my teeth.|أغسل وجهي وأنظّف أسناني.
+S: Then I have breakfast with my family.|ثم أتناول الفطور مع عائلتي.
+S: I eat bread, cheese, and eggs.|آكل خبزًا وجبنة وبيضًا.
+S: At eight, I take the bus to school.|في الثامنة أركب الأتوبيس إلى المدرسة.
+S: I study until two in the afternoon.|أذاكر حتى الثانية بعد الظهر.
+S: In the evening, I do my homework.|في المساء أحلّ واجبي.
+S: I go to bed at ten.|أنام في العاشرة.
+W: o'clock|adv|الساعة (تمامًا)
+W: brush|v|يفرّش
+W: until|prep|حتى
+Q: When does he wake up?|At seven|At six|At eight|At ten
+Q: How does he go to school?|By bus|By car|On foot|By train
+Q: What time does he go to bed?|At ten|At nine|At eleven|At eight
+
+@text p02|A1|My Family|عائلتي|👨‍👩‍👧
+S: There are five people in my family.|هناك خمسة أشخاص في عائلتي.
+S: My father is a doctor.|أبي طبيب.
+S: My mother is a teacher.|أمي مدرّسة.
+S: I have one brother and one sister.|عندي أخ واحد وأخت واحدة.
+S: My brother is older than me.|أخي أكبر مني.
+S: My sister is only five years old.|أختي عمرها خمس سنوات فقط.
+S: We eat dinner together every evening.|نتناول العشاء معًا كل مساء.
+S: I love my family very much.|أحب عائلتي كثيرًا.
+W: older|adj|أكبر سنًا
+W: together|adv|معًا
+W: only|adv|فقط
+Q: What is his father's job?|A doctor|A teacher|A driver|An engineer
+Q: How old is his sister?|Five|Ten|Three|Eight
+Q: When does the family eat dinner together?|Every evening|Every morning|On Fridays only|Never
+
+@text p03|A1|At the Market|في السوق|🛒
+S: Today I go to the market with my mother.|اليوم أذهب إلى السوق مع أمي.
+S: The market is busy and noisy.|السوق مزدحم وصاخب.
+S: We buy tomatoes, onions, and potatoes.|نشتري طماطم وبصل وبطاطس.
+S: The tomatoes are fresh and cheap.|الطماطم طازجة ورخيصة.
+S: My mother asks the seller about the price.|تسأل أمي البائع عن السعر.
+S: He says, "Ten pounds for one kilo."|يقول: "عشرة جنيهات للكيلو".
+S: She pays and puts the bags in the basket.|تدفع وتضع الأكياس في السلة.
+S: Then we walk home together.|ثم نمشي إلى البيت معًا.
+W: busy|adj|مزدحم / مشغول
+W: noisy|adj|صاخب
+W: kilo|n|كيلو
+W: pound|n|جنيه
+Q: Who goes to the market with him?|His mother|His father|His sister|His friend
+Q: How much is one kilo of tomatoes?|Ten pounds|Five pounds|Twenty pounds|One pound
+Q: How do they go home?|They walk|They take a taxi|They take a bus|They ride bikes
+
+@text p04|A1|The Weather in Cairo|الطقس في القاهرة|☀️
+S: Cairo is hot in the summer.|القاهرة حارة في الصيف.
+S: The sun shines every day.|الشمس تسطع كل يوم.
+S: People drink cold water and juice.|الناس يشربون ماءً باردًا وعصيرًا.
+S: In the winter, the weather is cooler.|في الشتاء يكون الطقس أبرد.
+S: Sometimes it is cloudy in the morning.|أحيانًا يكون غائمًا في الصباح.
+S: It does not rain much in Cairo.|لا تمطر كثيرًا في القاهرة.
+S: Spring and autumn are my favorite seasons.|الربيع والخريف هما فصليّ المفضلان.
+S: The weather is warm and beautiful then.|يكون الطقس دافئًا وجميلًا حينها.
+W: shine|v|يسطع / يلمع
+W: spring|n|الربيع
+W: autumn|n|الخريف
+W: season|n|فصل
+Q: What is Cairo like in summer?|Hot|Cold|Rainy|Snowy
+Q: Which seasons does the writer like best?|Spring and autumn|Summer and winter|Only summer|Only winter
+Q: Does it rain much in Cairo?|No, not much|Yes, every day|Yes, every night|Only in summer
+
+@text p05|A2|A Visit to the Doctor|زيارة للطبيب|🩺
+S: Last Monday, Sara felt very tired.|يوم الإثنين الماضي شعرت سارة بتعب شديد.
+S: She had a headache and a high fever.|كان عندها صداع وحمّى شديدة.
+S: Her mother took her to the clinic.|أخذتها أمها إلى العيادة.
+S: The doctor checked her temperature and her throat.|فحص الطبيب حرارتها وحلقها.
+S: "You have the flu," he said.|قال: "عندك إنفلونزا".
+S: He gave her some medicine and told her to rest.|أعطاها بعض الدواء وطلب منها أن ترتاح.
+S: She also had to drink a lot of water.|كان عليها أيضًا أن تشرب ماءً كثيرًا.
+S: After three days, Sara felt much better.|بعد ثلاثة أيام شعرت سارة بتحسن كبير.
+W: throat|n|حلق
+W: temperature|n|درجة الحرارة
+W: check|v|يفحص
+W: flu|n|إنفلونزا
+Q: What was Sara's problem?|She had the flu|She broke her leg|She lost her voice|She had an allergy
+Q: Who took Sara to the clinic?|Her mother|Her father|Her friend|Her teacher
+Q: How long did it take her to feel better?|Three days|One day|Two weeks|One month
+
+@text p06|A2|A Trip by Train|رحلة بالقطار|🚆
+S: Ahmed wanted to visit his uncle in Aswan.|أراد أحمد أن يزور عمه في أسوان.
+S: He bought a ticket at the station.|اشترى تذكرة من المحطة.
+S: The train was supposed to leave at nine.|كان من المفترض أن يغادر القطار في التاسعة.
+S: But it was late, so he waited for an hour.|لكنه تأخر فانتظر ساعة.
+S: Finally, the train arrived and he found his seat.|أخيرًا وصل القطار ووجد مقعده.
+S: Next to him sat an old man who loved to talk.|بجانبه جلس رجل عجوز يحب الكلام.
+S: They talked about their cities and their families.|تحدثا عن مدنهما وعائلتيهما.
+S: The journey was long, but it did not feel boring.|كانت الرحلة طويلة لكنها لم تبدُ مملة.
+W: supposed|adj|من المفترض
+W: seat|n|مقعد
+W: boring|adj|ممل
+W: finally|adv|أخيرًا
+Q: Where was Ahmed going?|To Aswan|To Alexandria|To Luxor|To Cairo
+Q: Why did he wait for an hour?|The train was late|He lost his ticket|He missed the bus|He was hungry
+Q: Who sat next to him?|An old man|A young girl|A teacher|His uncle
+
+@text p07|A2|Learning English|تعلّم الإنجليزية|📖
+S: Learning a new language takes time and patience.|تعلّم لغة جديدة يتطلب وقتًا وصبرًا.
+S: Many people give up after a few weeks.|كثير من الناس يستسلمون بعد بضعة أسابيع.
+S: The secret is to practice a little every day.|السر هو أن تتدرب قليلًا كل يوم.
+S: You can listen to songs and watch short videos.|يمكنك الاستماع إلى الأغاني ومشاهدة فيديوهات قصيرة.
+S: Reading simple stories also helps a lot.|قراءة قصص بسيطة تساعد كثيرًا أيضًا.
+S: Do not be afraid of making mistakes.|لا تخف من ارتكاب الأخطاء.
+S: Every mistake teaches you something new.|كل خطأ يعلّمك شيئًا جديدًا.
+S: After a few months, you will see real progress.|بعد بضعة أشهر سترى تقدمًا حقيقيًا.
+W: give up|phrase|يستسلم / يتوقف
+W: simple|adj|بسيط
+W: real|adj|حقيقي
+Q: What is the secret to learning?|Practice a little every day|Study only on weekends|Memorize a dictionary|Avoid mistakes
+Q: What can help you learn?|Reading simple stories|Sleeping more|Playing only games|Staying silent
+Q: What do mistakes do?|Teach you something new|Make you stop|Waste your time|Make you angry
+
+@text p08|B1|My First Job|أول وظيفة ليا|💼
+S: When I was nineteen, I got my first job at a small bookshop.|لما كان عمري تسعة عشر عامًا حصلت على أول وظيفة في مكتبة صغيرة.
+S: I was nervous on the first day because I knew nobody there.|كنت متوترًا في اليوم الأول لأنني لم أكن أعرف أحدًا هناك.
+S: The owner, Mr. Hassan, showed me how to organize the shelves.|أراني السيد حسن، المالك، كيف أنظّم الرفوف.
+S: He was strict, but he was also very patient with beginners.|كان صارمًا لكنه كان صبورًا جدًا مع المبتدئين.
+S: Slowly, I learned how to deal with customers politely.|ببطء تعلمت كيف أتعامل مع الزبائن بأدب.
+S: Some of them asked difficult questions that I could not answer.|بعضهم سأل أسئلة صعبة لم أستطع الإجابة عنها.
+S: Instead of pretending, I learned to say, "Let me check for you."|بدل التظاهر تعلمت أن أقول: "دعني أتحقق لك".
+S: That small habit earned me everyone's trust.|تلك العادة الصغيرة كسبت لي ثقة الجميع.
+S: Looking back, that job taught me more than any class.|عند النظر للخلف علّمتني تلك الوظيفة أكثر من أي فصل دراسي.
+W: strict|adj|صارم
+W: shelf|n|رف
+W: politely|adv|بأدب
+W: pretend|v|يتظاهر
+W: trust|n|ثقة
+W: beginner|n|مبتدئ
+Q: Where did he get his first job?|In a small bookshop|In a bank|In a restaurant|In a hospital
+Q: What did he learn to say when he did not know?|"Let me check for you."|"I don't know."|"Ask someone else."|"Come back tomorrow."
+Q: What did that habit give him?|People's trust|A higher salary|A new car|More free time
+
+@text p09|B1|Teenagers and Social Media|المراهقون ووسائل التواصل|📱
+S: Today, almost every teenager has a smartphone and a few social media accounts.|اليوم تقريبًا كل مراهق عنده هاتف ذكي وعدة حسابات على وسائل التواصل.
+S: These apps make it easy to stay in touch with friends.|هذه التطبيقات تجعل البقاء على تواصل مع الأصدقاء سهلًا.
+S: However, spending too many hours online can cause problems.|لكن قضاء ساعات كثيرة على الإنترنت قد يسبب مشاكل.
+S: Some teenagers sleep less because they keep scrolling at night.|بعض المراهقين ينامون أقل لأنهم يواصلون التصفح ليلًا.
+S: Others compare their lives with perfect pictures they see online.|وآخرون يقارنون حياتهم بالصور المثالية التي يرونها.
+S: Experts advise setting a time limit for using these apps.|ينصح الخبراء بتحديد حد زمني لاستخدام هذه التطبيقات.
+S: It also helps to turn off notifications while studying.|ومن المفيد أيضًا إيقاف الإشعارات أثناء المذاكرة.
+S: Used wisely, social media can be a great tool for learning.|إذا استُخدمت بحكمة يمكن أن تكون وسائل التواصل أداة رائعة للتعلم.
+W: teenager|n|مراهق
+W: scroll|v|يتصفح بالتمرير
+W: compare|v|يقارن
+W: expert|n|خبير
+W: limit|n|حد
+W: wisely|adv|بحكمة
+Q: Why do some teenagers sleep less?|They keep scrolling at night|They study too much|They work late|They play sports
+Q: What do experts advise?|Set a time limit|Delete all apps|Buy new phones|Stay online longer
+Q: What can social media be if used wisely?|A great tool for learning|Only a waste of time|A danger to health|A kind of homework
+
+@text p10|B1|The Story of Coffee|قصة القهوة|☕
+S: According to a famous legend, coffee was discovered by a shepherd in Ethiopia.|بحسب أسطورة مشهورة اكتشف القهوة راعٍ في إثيوبيا.
+S: He noticed that his goats became very energetic after eating red berries.|لاحظ أن ماعزه أصبحت نشيطة جدًا بعد أكل ثمار حمراء.
+S: Curious, he tried the berries himself and felt full of energy.|بدافع الفضول جرّب الثمار بنفسه وشعر بالنشاط.
+S: Over the centuries, coffee spread across the Arab world.|عبر القرون انتشرت القهوة في العالم العربي.
+S: The first coffee houses opened in cities like Mecca and Cairo.|فُتحت أول مقاهي في مدن مثل مكة والقاهرة.
+S: People went there to talk, play games, and listen to music.|كان الناس يذهبون هناك للحديث وللعب وللاستماع إلى الموسيقى.
+S: Later, merchants carried coffee to Europe, where it quickly became popular.|لاحقًا حمل التجار القهوة إلى أوروبا حيث أصبحت شائعة بسرعة.
+S: Today, millions of people begin their day with a cup of coffee.|اليوم يبدأ ملايين الناس يومهم بفنجان قهوة.
+W: legend|n|أسطورة
+W: shepherd|n|راعي غنم
+W: berry|n|ثمرة توت
+W: energetic|adj|نشيط
+W: merchant|n|تاجر
+W: spread|v|ينتشر
+Q: Who discovered coffee, according to the legend?|A shepherd|A king|A merchant|A doctor
+Q: Why did the goats seem different?|They were very energetic|They were sleepy|They were sick|They were hungry
+Q: Where did merchants take coffee later?|To Europe|To Asia only|To the moon|Nowhere
+
+@book b01|A1|Aesop's Fables|حكايات إيسوب|🦊|Aesop (retold)|حكايات قصيرة جدًا، وفي آخر كل حكاية حكمة بسيطة.
+@chapter The Fox and the Grapes|الثعلب والعنب
+S: One hot day, a fox was very hungry.|في يوم حار كان ثعلب جائعًا جدًا.
+S: He saw some grapes high on a vine.|رأى بعض العنب عاليًا على الكرمة.
+S: "They look sweet and juicy," he said.|قال: "يبدو حلوًا وعصيريًا".
+S: He jumped, but he could not reach them.|قفز لكنه لم يستطع الوصول إليه.
+S: He tried again and again, but it was no use.|حاول مرارًا وتكرارًا لكن بلا فائدة.
+S: At last, he walked away.|أخيرًا مشى مبتعدًا.
+S: "Those grapes are probably sour," he said.|قال: "ذلك العنب غالبًا حامض".
+S: It is easy to hate what you cannot have.|من السهل أن تكره ما لا تستطيع الحصول عليه.
+W: grape|n|عنب
+W: vine|n|كرمة
+W: juicy|adj|عصيري
+W: sour|adj|حامض
+W: reach|v|يصل إلى / يطال
+Q: Why did the fox leave?|He could not reach the grapes|He was full|He was afraid|He found food
+Q: What did the fox say about the grapes?|They are probably sour|They are very sweet|They are too small|They are dirty
+@chapter The Tortoise and the Hare|السلحفاة والأرنب
+S: A hare laughed at a slow tortoise.|ضحك أرنب على سلحفاة بطيئة.
+S: "I can run much faster than you," he said.|قال: "أستطيع الجري أسرع منك بكثير".
+S: "Let's have a race," said the tortoise.|قالت السلحفاة: "هيا نتسابق".
+S: The hare ran fast and soon he was far ahead.|ركض الأرنب بسرعة وسرعان ما صار بعيدًا في المقدمة.
+S: "I have plenty of time," he thought, and he fell asleep.|فكّر: "عندي وقت كثير" ونام.
+S: The tortoise walked slowly but never stopped.|مشت السلحفاة ببطء لكنها لم تتوقف أبدًا.
+S: When the hare woke up, the tortoise was at the finish line.|عندما استيقظ الأرنب كانت السلحفاة عند خط النهاية.
+S: Slow and steady wins the race.|البطيء المنتظم يفوز بالسباق.
+W: tortoise|n|سلحفاة برية
+W: hare|n|أرنب بري
+W: race|n|سباق
+W: ahead|adv|في المقدمة
+W: steady|adj|ثابت / منتظم
+Q: Who won the race?|The tortoise|The hare|Nobody|Both of them
+Q: Why did the hare lose?|He fell asleep|He was slow|He got lost|He was tired of running
+@chapter The Lion and the Mouse|الأسد والفأر
+S: A lion was sleeping in the forest.|كان أسد نائمًا في الغابة.
+S: A little mouse ran over his nose and woke him up.|ركض فأر صغير فوق أنفه فأيقظه.
+S: The lion was angry and caught the mouse.|غضب الأسد وأمسك الفأر.
+S: "Please let me go," cried the mouse. "One day I will help you."|صاح الفأر: "أرجوك دعني أذهب. يومًا ما سأساعدك".
+S: The lion laughed, but he let the mouse go.|ضحك الأسد لكنه ترك الفأر.
+S: Later, hunters caught the lion in a strong net.|لاحقًا أمسك صيادون بالأسد في شبكة قوية.
+S: The mouse heard him roar and quickly came.|سمع الفأر زئيره وجاء بسرعة.
+S: He cut the net with his small teeth, and the lion was free.|قطع الشبكة بأسنانه الصغيرة وصار الأسد حرًا.
+W: forest|n|غابة
+W: nose|n|أنف
+W: hunter|n|صياد
+W: net|n|شبكة
+W: roar|v|يزأر
+Q: How did the mouse help the lion?|He cut the net|He found food|He showed the way|He called the hunters
+Q: Why did the lion let the mouse go?|He laughed at his promise|He was afraid|He was full|He was tired
+@chapter The Boy Who Cried Wolf|الولد الذي صرخ "ذئب"
+S: A boy looked after sheep on a hill.|كان ولد يرعى الأغنام على تل.
+S: He was bored, so he shouted, "Wolf! Wolf!"|كان يشعر بالملل فصرخ: "ذئب! ذئب!"
+S: The villagers ran up the hill to help him.|ركض القرويون إلى التل لمساعدته.
+S: But there was no wolf, and the boy laughed.|لكن لم يكن هناك ذئب وضحك الولد.
+S: He did the same thing the next day.|فعل الشيء نفسه في اليوم التالي.
+S: Then a real wolf came, and the boy cried for help.|ثم جاء ذئب حقيقي وصرخ الولد طالبًا النجدة.
+S: This time, nobody came because nobody believed him.|هذه المرة لم يأتِ أحد لأن أحدًا لم يصدقه.
+S: Liars are not believed, even when they tell the truth.|لا يُصدَّق الكذّابون حتى عندما يقولون الحقيقة.
+W: sheep|n|أغنام
+W: villager|n|قروي
+W: wolf|n|ذئب
+W: liar|n|كذّاب
+W: truth|n|حقيقة
+Q: Why did nobody come at the end?|They did not believe him|They were asleep|They were far away|They were afraid
+Q: Why did the boy shout the first time?|He was bored|He was hungry|He was lost|He was sick
+
+@book b02|A2|Black Beauty|بلاك بيوتي|🐴|Anna Sewell (retold)|حصان أسود اسمه بلاك بيوتي يحكي رحلة حياته مع الناس: اللطيف منهم والقاسي.
+@chapter My First Home|بيتي الأول
+S: I was born in a big green field with a clear stream.|وُلدت في حقل أخضر كبير فيه جدول ماء صافٍ.
+S: My mother was a gentle horse, and she taught me many things.|كانت أمي حصانًا لطيفًا وعلّمتني أشياء كثيرة.
+S: "Always do your best and never bite or kick," she said.|قالت: "افعل دائمًا أفضل ما عندك ولا تعضّ ولا ترفس أبدًا".
+S: My coat was soft and black, and I had one white foot.|كان فرائي ناعمًا وأسود وكان لي قدم بيضاء واحدة.
+S: The farmer, Mr. Grey, was kind to all his animals.|كان المزارع السيد غراي لطيفًا مع كل حيواناته.
+S: When I was four years old, he began to train me.|عندما بلغت أربع سنوات بدأ يدرّبني.
+S: Soon a rich gentleman came and bought me.|سرعان ما جاء رجل ثري واشتراني.
+S: I said goodbye to my mother and left the field.|ودّعت أمي وغادرت الحقل.
+W: field|n|حقل
+W: stream|n|جدول ماء
+W: gentle|adj|لطيف / رقيق
+W: coat|n|فرو الحيوان / معطف
+W: train|v|يدرّب
+W: kick|v|يرفس
+Q: What did his mother teach him?|Never to bite or kick|To run away|To fear men|To eat quickly
+Q: What was special about his body?|One white foot|A white tail|Blue eyes|A long neck
+Q: Who bought him?|A rich gentleman|A farmer|A doctor|A soldier
+@chapter Birtwick Park|بيرتويك بارك
+S: My new home was a large house called Birtwick Park.|كان بيتي الجديد منزلًا كبيرًا اسمه بيرتويك بارك.
+S: The groom, John, was careful and always spoke gently.|كان السائس جون حذرًا ويتكلم دائمًا برفق.
+S: In the stable, I met a small fat pony named Merrylegs.|في الإسطبل قابلت حصانًا قزمًا سمينًا اسمه ميريليغز.
+S: He loved the children and often made them laugh.|أحب الأطفال وكان يضحكهم كثيرًا.
+S: There was also a tall chestnut mare called Ginger.|وكانت هناك أيضًا فرس كستنائية طويلة اسمها جينجر.
+S: Ginger had a sad past because a cruel man had hurt her.|كان لجينجر ماضٍ حزين لأن رجلًا قاسيًا آذاها.
+S: She was afraid of people at first, but we became friends.|كانت تخاف من البشر في البداية لكننا صرنا صديقين.
+S: Those were the happiest days of my young life.|كانت تلك أسعد أيام شبابي.
+W: groom|n|سائس خيل
+W: stable|n|إسطبل
+W: pony|n|حصان قزم
+W: mare|n|فرس
+W: cruel|adj|قاسٍ
+W: chestnut|adj|كستنائي اللون
+Q: Who was John?|The groom|The farmer|The doctor|The teacher
+Q: Why was Ginger afraid of people?|A cruel man had hurt her|She was very old|She was sick|She was new
+Q: What did Merrylegs love?|The children|Running|Eating apples|Water
+@chapter The Storm and the Bridge|العاصفة والكوبري
+S: One dark night, a terrible storm began.|في ليلة مظلمة بدأت عاصفة رهيبة.
+S: The master needed to ride to the town for a doctor.|احتاج السيد أن يذهب إلى البلدة لإحضار طبيب.
+S: I carried him through the wind and the heavy rain.|حملته وسط الرياح والمطر الغزير.
+S: Near the river, I stopped suddenly and refused to go on.|قرب النهر توقفت فجأة ورفضت أن أكمل.
+S: The master pulled the rope, but I would not move.|شدّ السيد الحبل لكنني لم أتحرك.
+S: Then we heard a loud crash. The bridge had fallen into the water!|ثم سمعنا صوت انهيار عاليًا. لقد سقط الكوبري في الماء!
+S: If I had gone forward, we would have died.|لو تقدمت لمتنا.
+S: The master patted my neck and said, "You saved our lives."|ربّت السيد على رقبتي وقال: "لقد أنقذت حياتنا".
+W: storm|n|عاصفة
+W: rope|n|حبل
+W: crash|n|صوت انهيار / تحطّم
+W: bridge|n|كوبري / جسر
+W: refuse|v|يرفض
+W: pat|v|يربّت
+Q: Why did Beauty stop near the river?|He sensed danger|He was tired|He was thirsty|He saw a dog
+Q: What had happened to the bridge?|It had fallen into the water|It was closed|It was new|It was on fire
+Q: What did the master say?|"You saved our lives."|"You are slow."|"Go home."|"Be quiet."
+@chapter The London Cab|سيارة الأجرة في لندن
+S: Years later, I was sold many times and my life became hard.|بعد سنوات بيعت مرات عديدة وصارت حياتي صعبة.
+S: One owner worked me too much and gave me little food.|أحد الملاك شغّلني كثيرًا وأعطاني طعامًا قليلًا.
+S: At last, I was sold to a London cab driver called Jerry.|أخيرًا بيعت لسائق عربة أجرة في لندن اسمه جيري.
+S: Jerry was a kind man who loved his horses.|كان جيري رجلًا طيبًا يحب خيوله.
+S: He fed me well, cleaned me every night, and never used a whip.|أطعمني جيدًا ونظّفني كل ليلة ولم يستخدم السوط أبدًا.
+S: Even on Sundays, he let me rest.|حتى أيام الأحد كان يتركني أرتاح.
+S: Working in the busy streets was tiring, but I felt respected.|كان العمل في الشوارع المزدحمة متعبًا لكنني شعرت بالاحترام.
+S: With Jerry, I was happy again.|مع جيري كنت سعيدًا من جديد.
+W: cab|n|عربة أجرة
+W: whip|n|سوط
+W: owner|n|مالك
+W: respect|v|يحترم
+W: tiring|adj|مُتعِب
+Q: Who was Jerry?|A kind cab driver|A cruel owner|A farmer|A doctor
+Q: How did Jerry treat his horses?|He treated them well|He used a whip|He gave little food|He sold them
+Q: How did Beauty feel with Jerry?|Happy again|Afraid|Angry|Lonely
+@chapter A Happy Home|بيت سعيد
+S: Time passed, and I grew old and tired.|مرّ الوقت وكبرت وتعبت.
+S: I was sold again, but this time to a poor farmer who worked me hard.|بيعت مرة أخرى لكن هذه المرة لمزارع فقير شغّلني بقسوة.
+S: One day, in a market, I saw a horse that looked like Ginger.|في يوم رأيت في السوق حصانًا يشبه جينجر.
+S: She looked thin and sick, and I felt very sad.|بدت نحيلة ومريضة وشعرت بحزن شديد.
+S: Not long after that, a kind groom noticed me in a field.|بعد وقت قصير لاحظني سائس طيب في حقل.
+S: He remembered my white foot and my gentle eyes.|تذكر قدمي البيضاء وعيوني اللطيفة.
+S: He bought me for three kind ladies who wanted a quiet horse.|اشتراني لثلاث سيدات طيبات أردن حصانًا هادئًا.
+S: Now I live in a beautiful meadow, and my troubles are over.|الآن أعيش في مرج جميل وانتهت متاعبي.
+W: thin|adj|نحيل
+W: meadow|n|مرج
+W: trouble|n|متاعب
+W: notice|v|يلاحظ
+W: remember|v|يتذكر
+Q: What did he see in the market?|A horse like Ginger|His mother|Mr. Grey|Merrylegs
+Q: Who bought him at last?|Three kind ladies|A rich gentleman|A cab driver|A soldier
+Q: Where does he live now?|In a beautiful meadow|In London|In a stable in the city|On a farm
+
+@book b03|A2|Alice in Wonderland|أليس في بلاد العجائب|🐇|Lewis Carroll (retold)|بنت اسمها أليس بتسقط في جحر أرنب وتدخل عالم غريب مليان مخلوقات عجيبة.
+@chapter Down the Rabbit Hole|داخل جحر الأرنب
+S: Alice was sitting by a river on a warm afternoon.|كانت أليس جالسة بجانب نهر بعد ظهر دافئ.
+S: Suddenly, a white rabbit with pink eyes ran past her.|فجأة ركض بجانبها أرنب أبيض بعينين ورديتين.
+S: "Oh dear! I shall be late!" he said, looking at his watch.|قال وهو ينظر إلى ساعته: "يا إلهي! سأتأخر!"
+S: Alice had never seen a rabbit with a watch, so she followed him.|لم ترَ أليس أرنبًا بساعة من قبل فتبعته.
+S: He jumped into a big hole under a tree.|قفز إلى جحر كبير تحت شجرة.
+S: Alice went in after him and began to fall down, down, down.|دخلت أليس وراءه وبدأت تسقط إلى الأسفل.
+S: She fell for a very long time, and she felt more curious than afraid.|سقطت لوقت طويل وشعرت بفضول أكثر من الخوف.
+S: At last, she landed softly on a pile of leaves.|أخيرًا هبطت برفق على كومة من الأوراق.
+W: rabbit|n|أرنب
+W: hole|n|جحر / حفرة
+W: pile|n|كومة
+W: land|v|يهبط
+W: follow|v|يتبع
+Q: What was unusual about the rabbit?|He had a watch|He was green|He could fly|He was very big
+Q: Why did Alice follow him?|She was curious|She was lost|She was angry|She was hungry
+Q: How did Alice land?|Softly on leaves|On the water|On a bed|On a rock
+@chapter The Pool of Tears|بحيرة الدموع
+S: Alice found a tiny door, but she was too big to go through it.|وجدت أليس بابًا صغيرًا لكنها كانت أكبر من أن تعبره.
+S: On a table, she saw a bottle with a note that said "DRINK ME."|على طاولة رأت زجاجة عليها ورقة مكتوب فيها "اشربني".
+S: She drank a little, and she began to shrink.|شربت قليلًا وبدأت تصغر.
+S: Soon she was only ten inches tall, but the door was locked.|سرعان ما صارت بطول عشر بوصات فقط لكن الباب كان مقفلًا.
+S: Then she ate a small cake and grew taller than a house!|ثم أكلت كعكة صغيرة وصارت أطول من بيت!
+S: She felt so frustrated that she began to cry.|شعرت بإحباط شديد حتى بدأت تبكي.
+S: Her tears made a big pool on the floor.|صنعت دموعها بركة كبيرة على الأرض.
+S: When she shrank again, she was swimming in her own tears!|وعندما صغرت مجددًا كانت تسبح في دموعها هي!
+W: tiny|adj|صغير جدًا
+W: shrink|v|يصغر / ينكمش
+W: locked|adj|مقفل
+W: frustrated|adj|محبَط
+W: tear|n|دمعة
+W: pool|n|بركة
+Q: What did the bottle say?|DRINK ME|EAT ME|OPEN ME|STOP
+Q: Why did Alice cry?|She was frustrated|She was hurt|She was cold|She was lost
+Q: What made the pool?|Her tears|The rain|A river|A broken bottle
+@chapter The Mad Tea Party|حفلة الشاي المجنونة
+S: Alice came to a house with a long table under a tree.|وصلت أليس إلى بيت وأمامه طاولة طويلة تحت شجرة.
+S: A Hatter and a March Hare were having tea with a sleepy mouse.|كان صانع القبعات وأرنب مارس يشربان الشاي مع فأر ناعس.
+S: "No room! No room!" they shouted when they saw her.|صاحوا عندما رأوها: "لا يوجد مكان! لا يوجد مكان!"
+S: Alice sat down anyway, because there was plenty of room.|جلست أليس على أي حال لأن المكان كان واسعًا.
+S: The Hatter asked her a strange riddle that had no answer.|سألها صانع القبعات لغزًا غريبًا بلا إجابة.
+S: They also changed seats all the time, so the cups were always dirty.|وغيّروا مقاعدهم طوال الوقت فكانت الأكواب دائمًا متسخة.
+S: The conversation made no sense to Alice at all.|لم يكن للحديث أي معنى بالنسبة لأليس.
+S: She left, thinking, "That was the silliest tea party ever!"|غادرت وهي تفكر: "كانت تلك أسخف حفلة شاي على الإطلاق!"
+W: hatter|n|صانع قبعات
+W: riddle|n|لغز
+W: strange|adj|غريب
+W: silly|adj|سخيف / أحمق
+W: anyway|adv|على أي حال
+Q: Who was at the tea party?|A Hatter, a Hare and a mouse|A king and a queen|Alice's family|Two doctors
+Q: What did Alice think at the end?|It was the silliest tea party|It was a nice party|It was too short|It was too quiet
+Q: Why were the cups dirty?|They changed seats all the time|Nobody washed them|They were old|They were broken
+@chapter The Queen of Hearts|ملكة القلوب
+S: Next, Alice entered a beautiful garden full of red roses.|بعد ذلك دخلت أليس حديقة جميلة مليئة بالورود الحمراء.
+S: Some playing cards were busy painting white roses red.|كانت بعض أوراق اللعب مشغولة بطلاء الورود البيضاء بالأحمر.
+S: Suddenly, the Queen of Hearts arrived with the King.|فجأة وصلت ملكة القلوب مع الملك.
+S: The Queen was very bad-tempered and shouted, "Off with her head!"|كانت الملكة سريعة الغضب وصاحت: "اقطعوا رأسها!"
+S: Alice was not afraid anymore, because she knew they were only cards.|لم تعد أليس خائفة لأنها عرفت أنهم مجرد أوراق.
+S: "You are nothing but a pack of cards!" she cried.|صاحت: "أنتم لستم سوى مجموعة أوراق!"
+S: All the cards flew up into the air and fell on her face.|طارت كل الأوراق في الهواء وسقطت على وجهها.
+S: Alice woke up and found herself lying by the river, with leaves on her face.|استيقظت أليس ووجدت نفسها مستلقية بجانب النهر وأوراق الشجر على وجهها.
+W: queen|n|ملكة
+W: rose|n|وردة
+W: bad-tempered|adj|سريع الغضب
+W: pack|n|مجموعة / رزمة
+W: leaf|n|ورقة شجر
+Q: What was the Queen like?|Bad-tempered|Kind|Shy|Sleepy
+Q: Why was Alice not afraid anymore?|They were only cards|The Queen left|She ran away|She had a sword
+Q: How does the story end?|Alice wakes up by the river|Alice becomes queen|Alice goes home by train|The Queen wins
+
+@book b04|B1|Sherlock Holmes: The Blue Carbuncle|شيرلوك هولمز: الحجر الأزرق|🔍|Arthur Conan Doyle (retold)|لغز في عيد الميلاد: قبعة قديمة وإوزة وحجر ثمين مفقود. شيرلوك هولمز بيحلها بالملاحظة والاستنتاج.
+@chapter The Hat and the Goose|القبعة والإوزة
+S: It was two days after Christmas when I visited my friend Sherlock Holmes.|كان بعد عيد الميلاد بيومين عندما زرت صديقي شيرلوك هولمز.
+S: He was sitting in his armchair, studying an old, battered hat.|كان جالسًا على مقعده يفحص قبعة قديمة ومهترئة.
+S: "A man named Peterson found it with a goose," he explained.|شرح: "رجل اسمه بيترسون وجدها مع إوزة".
+S: "Some rough men were fighting in the street, and they dropped both."|"كان بعض الرجال الخشنين يتشاجرون في الشارع وأوقعوا الاثنتين".
+S: Peterson took the goose home to cook it for his Christmas dinner.|أخذ بيترسون الإوزة إلى البيت ليطبخها في عشاء الميلاد.
+S: The hat had the initials "H. B." inside, but no address.|كان في القبعة الحرفان "H. B." بالداخل بدون عنوان.
+S: "From this hat, I can tell a great deal about its owner," said Holmes.|قال هولمز: "من هذه القبعة أستطيع أن أعرف الكثير عن صاحبها".
+S: "He is intelligent, but he has fallen on hard times."|"إنه ذكي لكنه تعرّض لأوقات عصيبة".
+W: battered|adj|مهترئ / متضرر
+W: goose|n|إوزة
+W: initials|n|الأحرف الأولى
+W: intelligent|adj|ذكي
+W: explain|v|يشرح
+Q: What did Holmes study?|An old hat|A letter|A map|A coin
+Q: What did Peterson find with the hat?|A goose|A dog|A bag|A watch
+Q: What does Holmes believe about the owner?|He is intelligent but poor now|He is rich and happy|He is young and silly|He is a doctor
+@chapter The Stone|الحجر
+S: That evening, Peterson ran in, breathless and excited.|في المساء دخل بيترسون ركضًا لاهثًا ومتحمسًا.
+S: "Mr. Holmes, look at what my wife found inside the goose!" he cried.|صاح: "سيد هولمز انظر ما وجدته زوجتي داخل الإوزة!"
+S: In his hand lay a small, blue stone that shone brilliantly.|في يده كان يوجد حجر أزرق صغير يلمع ببريق.
+S: "It is the famous Blue Carbuncle!" said Holmes.|قال هولمز: "إنه الحجر الأزرق الشهير!"
+S: "It was stolen from a hotel guest, the Countess of Morcar, last week."|"سُرق من نزيلة في فندق هي كونتيسة موركار الأسبوع الماضي".
+S: "A hotel worker, John Horner, has already been arrested for the theft."|"وقد اعتُقل عامل في الفندق اسمه جون هورنر بتهمة السرقة".
+S: "But I think the poor man is innocent," added Holmes.|وأضاف هولمز: "لكنني أظن أن الرجل المسكين بريء".
+S: "We must find out how the jewel ended up inside a goose."|"يجب أن نعرف كيف انتهى الحجر داخل إوزة".
+W: breathless|adj|لاهث
+W: brilliantly|adv|ببريق شديد
+W: stolen|adj|مسروق
+W: arrested|adj|معتقل
+W: theft|n|سرقة
+W: innocent|adj|بريء
+Q: What did Peterson's wife find?|A blue stone|A key|A ring|A letter
+Q: Who was arrested for the theft?|John Horner|Peterson|Holmes|The Countess
+Q: What does Holmes want to discover?|How the jewel got inside the goose|Where the hat was made|Who owns the hotel|Why it snowed
+@chapter Following the Goose|تتبّع الإوزة
+S: Holmes placed an advertisement in the newspaper to find the owner of the hat.|وضع هولمز إعلانًا في الجريدة ليجد صاحب القبعة.
+S: Soon a man named Henry Baker arrived to claim his hat and goose.|سرعان ما وصل رجل اسمه هنري بيكر ليسترد قبعته والإوزة.
+S: Since the goose was already eaten, Holmes gave him a new one.|وبما أن الإوزة كانت قد أُكلت أعطاه هولمز واحدة جديدة.
+S: Baker said he had bought his goose from the Alpha Inn.|قال بيكر إنه اشترى إوزته من حانة ألفا.
+S: At the inn, the owner told them the geese came from a market seller.|في الحانة قال المالك إن الإوز جاء من بائع في السوق.
+S: At the market, a seller named Breckinridge became angry at their questions.|في السوق غضب بائع اسمه بريكنريدج من أسئلتهم.
+S: "Why does everyone want my geese today?" he shouted.|صاح: "لماذا يريد الجميع إوزي اليوم؟"
+S: Then Holmes learned that another man had asked about the same geese: a man named Ryder.|ثم عرف هولمز أن رجلًا آخر سأل عن الإوز نفسه: رجل اسمه رايدر.
+W: advertisement|n|إعلان
+W: claim|v|يسترد / يطالب بـ
+W: inn|n|حانة / نُزُل
+W: seller|n|بائع
+W: geese|n|إوز (جمع إوزة)
+Q: How did Holmes find the hat's owner?|With a newspaper advertisement|By asking the police|By following a dog|By visiting the Countess
+Q: Where did Baker buy his goose?|At the Alpha Inn|At a hotel|At a farm|At a bank
+Q: Who else was asking about the geese?|A man named Ryder|The Countess|John Horner|Peterson
+@chapter The Thief|اللص
+S: Holmes and I returned to Baker Street and sent a note to James Ryder.|عدنا أنا وهولمز إلى شارع بيكر وأرسلنا رسالة إلى جيمس رايدر.
+S: Ryder arrived, pale and nervous, and sat in front of the fire.|وصل رايدر شاحبًا ومتوترًا وجلس أمام المدفأة.
+S: "I know everything," Holmes said calmly. "The stone was in the goose."|قال هولمز بهدوء: "أعرف كل شيء. كان الحجر في الإوزة".
+S: Ryder fell to his knees and begged for mercy.|سقط رايدر على ركبتيه وتوسل الرحمة.
+S: He confessed that he had stolen the stone and hidden it in his sister's goose.|اعترف بأنه سرق الحجر وأخفاه في إوزة أخته.
+S: But he had picked the wrong bird, and it was sold.|لكنه اختار الطائر الخطأ وقد بيع.
+S: Holmes decided not to call the police because Ryder was already frightened.|قرر هولمز ألا يستدعي الشرطة لأن رايدر كان خائفًا بالفعل.
+S: "It is Christmas, a time for forgiveness," he said, and the innocent Horner was soon freed.|قال: "إنه عيد الميلاد وقت المسامحة"، وسرعان ما أُطلق سراح هورنر البريء.
+W: pale|adj|شاحب
+W: beg|v|يتوسل
+W: mercy|n|رحمة
+W: confess|v|يعترف
+W: forgiveness|n|مسامحة
+W: frightened|adj|خائف
+Q: What did Ryder do when Holmes told him he knew everything?|He begged for mercy|He ran away|He laughed|He fought
+Q: Why did Holmes not call the police?|Ryder was already frightened|He was lazy|He was afraid|Ryder paid him
+Q: What happened to the innocent Horner?|He was freed|He was arrested again|He lost his job|He left the city

@@ -75,6 +75,7 @@ class AppVm(app: Application) : AndroidViewModel(app) {
     init {
         Library.load(app)
         val repo = Repo(app)
+        Library.setCustom(repo.loadCustomWords())
         val speaker = Speaker(app)
         val rates = floatArrayOf(0.7f, 1.0f, 1.25f)
         speaker.setRate(rates[repo.getInt(Repo.TTS_RATE, 1).coerceIn(0, 2)])

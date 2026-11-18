@@ -96,6 +96,9 @@ def main():
             total_s += len(data["sentences"])
             print(f"topic {t['num']:>2}: {len(data['words'])} words, "
                   f"{len(data['sentences'])} sentences, {len(data['groups'])} groups")
+        if fname is None and t.get("generated") and (OUT / t["generated"]).exists():
+            fname = t["generated"]
+            print(f"topic {t['num']:>2}: generated file {fname}")
         topics.append({"id": f"t{t['num']}", "num": t["num"], "ar": t["ar"],
                        "en": t["en"], "emoji": t["emoji"], "file": fname})
     (OUT / "topics.json").write_text(

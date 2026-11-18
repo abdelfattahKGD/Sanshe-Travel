@@ -108,7 +108,11 @@ object Srs {
     fun previewWrong(now: Long): String = dueText(now + RETRY_MS, now)
 }
 
-private class Db(ctx: Context) : SQLiteOpenHelper(ctx, "wordforge.db", null, 1) {
+private const val CUSTOM_TABLE =
+    "CREATE TABLE IF NOT EXISTS custom(id TEXT PRIMARY KEY, en TEXT NOT NULL, ar TEXT NOT NULL, " +
+        "ex TEXT NOT NULL DEFAULT '', added INTEGER NOT NULL DEFAULT 0)"
+
+private class Db(ctx: Context) : SQLiteOpenHelper(ctx, "wordforge.db", null, 2) {
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(
             "CREATE TABLE progress(id TEXT PRIMARY KEY, box INTEGER NOT NULL, due INTEGER NOT NULL, " +
@@ -121,10 +125,12 @@ private class Db(ctx: Context) : SQLiteOpenHelper(ctx, "wordforge.db", null, 1) 
                 "correct INTEGER NOT NULL DEFAULT 0, wrong INTEGER NOT NULL DEFAULT 0)"
         )
         db.execSQL("CREATE TABLE kv(k TEXT PRIMARY KEY, v TEXT NOT NULL)")
+        db.execSQL(CUSTOM_TABLE)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        // Future schema changes go here (keep user progress!).
+        // Schema changes go here (always keep the user's progress!).
+        if (oldVersion < 2) db.execSQL(CUSTOM_TABLE)
     }
 }
 
@@ -210,6 +216,7 @@ class Repo(ctx: Context) {
         val newKind = kind ?: Kind.WORD
         val fresh = Library.items
             .filter { matches(it) && it.kind == newKind && (progress[it.id]?.box ?: 0) == 0 }
+            .sortedBy { if (it.topicId == "t12") 0 else 1 }
             .take(newLimit)
         return due + fresh
     }
@@ -312,6 +319,135 @@ class Repo(ctx: Context) {
         tick++
     }
 
+    // ---------- "كلماتي": words the user adds (with their own meaning) ----------
+
+    private fun customItem(id: String, en: String, ar: String, ex: String) = Item(
+        id = id, kind = Kind.WORD, topicId = "t12", groupId = "my", level = "B1",
+        en = en, ar = ar, pos = "", example = ex,
+    )
+
+    fun loadCustomWords(): List<Item> {
+        val out = ArrayList<Item>()
+        db.rawQuery("SELECT id, en, ar, ex FROM custom ORDER BY added", null).use { c ->
+            while (c.moveToNext()) out.add(customItem(c.getString(0), c.getString(1), c.getString(2), c.getString(3)))
+        }
+        return out
+    }
+
+    /** Returns false if the word or meaning is empty or the word is already in "كلماتي". */
+    fun addCustomWord(en: String, ar: String, example: String): Boolean {
+        val e = en.trim()
+        val a = ar.trim()
+        if (e.isEmpty() || a.isEmpty()) return false
+        if (Library.items.any { it.topicId == "t12" && it.en.equals(e, ignoreCase = true) }) return false
+        val id = "cw" + System.currentTimeMillis()
+        val cv = ContentValues()
+        cv.put("id", id)
+        cv.put("en", e)
+        cv.put("ar", a)
+        cv.put("ex", example.trim())
+        cv.put("added", System.currentTimeMillis())
+        db.insertWithOnConflict("custom", null, cv, SQLiteDatabase.CONFLICT_REPLACE)
+        Library.addCustom(customItem(id, e, a, example.trim()))
+        tick++
+        return true
+    }
+
+    fun deleteCustomWord(id: String) {
+        db.execSQL("DELETE FROM custom WHERE id = ?", arrayOf<Any?>(id))
+        db.execSQL("DELETE FROM progress WHERE id = ?", arrayOf<Any?>(id))
+        progress.remove(id)
+        Library.removeCustom(id)
+        tick++
+    }
+
+    /** Words the user marked "I know this" while analyzing a book (hidden from the new-words list). */
+    fun knownWordSet(): Set<String> {
+        val out = HashSet<String>()
+        db.rawQuery("SELECT k FROM kv WHERE k LIKE 'kw_%'", null).use { c ->
+            while (c.moveToNext()) out.add(c.getString(0).removePrefix("kw_"))
+        }
+        return out
+    }
+
+    // ---------- variety: what each exercise shows next ----------
+
+    fun getStr(key: String, default: String = ""): String {
+        db.rawQuery("SELECT v FROM kv WHERE k = ?", arrayOf(key)).use { c ->
+            if (c.moveToFirst()) return c.getString(0)
+        }
+        return default
+    }
+
+    fun setStr(key: String, value: String) {
+        val cv = ContentValues()
+        cv.put("k", key)
+        cv.put("v", value)
+        db.insertWithOnConflict("kv", null, cv, SQLiteDatabase.CONFLICT_REPLACE)
+    }
+
+    /**
+     * Picks [n] items for one exercise ([key]) with variety:
+     *  - never repeats what this exercise showed recently (it remembers its own history),
+     *  - mixes ~30% items that are due for review, ~30% weak ones, and the rest brand-new items from the library,
+     *  - when the whole library has been cycled through, it starts a new cycle.
+     */
+    fun pickFrom(pool: List<Item>, n: Int, key: String): List<Item> {
+        if (pool.isEmpty()) return emptyList()
+        val now = System.currentTimeMillis()
+        val historyKey = "recent_$key"
+        val recent = getStr(historyKey).split(",").filter { it.isNotEmpty() }.toMutableList()
+        val lastRounds = recent.takeLast(n * 2).toSet()
+        val allRecent = recent.toSet()
+
+        fun isDue(x: Item): Boolean {
+            val pr = progress[x.id] ?: return false
+            return pr.box >= 1 && pr.due <= now
+        }
+
+        val due = pool.filter { isDue(it) && it.id !in lastRounds }.shuffled()
+        val dueIds = due.map { it.id }.toSet()
+        val weak = pool.filter {
+            val st = Srs.statusOf(progress[it.id])
+            it.id !in dueIds && it.id !in allRecent && (st == Status.HARD || st == Status.LEARNING)
+        }.shuffled()
+        val fresh = pool.filter {
+            it.id !in dueIds && it.id !in allRecent && Srs.statusOf(progress[it.id]) == Status.NEW
+        }.shuffled()
+
+        val chosen = LinkedHashMap<String, Item>()
+        fun take(src: List<Item>, limit: Int) {
+            var added = 0
+            for (x in src) {
+                if (added >= limit || chosen.size >= n) break
+                if (x.id !in chosen) {
+                    chosen[x.id] = x
+                    added++
+                }
+            }
+        }
+        take(due, (n * 3 + 9) / 10)
+        take(weak, (n * 3 + 9) / 10)
+        take(fresh, n)
+        if (chosen.size < n) take(pool.filter { it.id !in allRecent && it.id !in chosen }.shuffled(), n)
+        if (chosen.size < n) {
+            // The whole pool has been used: forget the old history and start a new cycle.
+            recent.clear()
+            take(pool.filter { it.id !in chosen && it.id !in lastRounds }.shuffled(), n)
+            take(pool.filter { it.id !in chosen }.shuffled(), n)
+        }
+
+        val result = chosen.values.toList().shuffled()
+        recent.addAll(result.map { it.id })
+        val cap = maxOf(40, pool.size * 6 / 10)
+        val kept = if (recent.size > cap) recent.takeLast(cap) else recent
+        setStr(historyKey, kept.joinToString(","))
+        return result
+    }
+
+    fun pick(kind: Kind, n: Int, key: String, maxWords: Int = 99): List<Item> =
+        pickFrom(Library.items.filter { it.kind == kind && it.en.trim().split(" ").size <= maxWords }, n, key)
+
     /** Everything the user has done (progress, daily stats, settings) as one JSON text, for the backup file. */
     fun exportJson(): String {
         val root = org.json.JSONObject()
@@ -350,6 +486,19 @@ class Repo(ctx: Context) {
             while (c.moveToNext()) kv.put(c.getString(0), c.getString(1))
         }
         root.put("kv", kv)
+        val customArr = org.json.JSONArray()
+        db.rawQuery("SELECT id, en, ar, ex, added FROM custom", null).use { c ->
+            while (c.moveToNext()) {
+                val o = org.json.JSONObject()
+                o.put("id", c.getString(0))
+                o.put("en", c.getString(1))
+                o.put("ar", c.getString(2))
+                o.put("ex", c.getString(3))
+                o.put("added", c.getLong(4))
+                customArr.put(o)
+            }
+        }
+        root.put("custom", customArr)
         return root.toString()
     }
 
@@ -361,6 +510,7 @@ class Repo(ctx: Context) {
             val prog = root.getJSONArray("progress")
             val daily = root.getJSONArray("daily")
             val kv = root.getJSONObject("kv")
+            val customArr = root.optJSONArray("custom")
             val rows = ArrayList<Progress>()
             for (i in 0 until prog.length()) {
                 val o = prog.getJSONObject(i)
@@ -376,7 +526,20 @@ class Repo(ctx: Context) {
                 db.execSQL("DELETE FROM progress")
                 db.execSQL("DELETE FROM daily")
                 db.execSQL("DELETE FROM kv")
+                db.execSQL("DELETE FROM custom")
                 progress.clear()
+                if (customArr != null) {
+                    for (i in 0 until customArr.length()) {
+                        val o = customArr.getJSONObject(i)
+                        val cv = ContentValues()
+                        cv.put("id", o.getString("id"))
+                        cv.put("en", o.getString("en"))
+                        cv.put("ar", o.getString("ar"))
+                        cv.put("ex", o.optString("ex", ""))
+                        cv.put("added", o.optLong("added", 0L))
+                        db.insertWithOnConflict("custom", null, cv, SQLiteDatabase.CONFLICT_REPLACE)
+                    }
+                }
                 for (r in rows) save(r)
                 for (i in 0 until daily.length()) {
                     val o = daily.getJSONObject(i)
@@ -401,6 +564,7 @@ class Repo(ctx: Context) {
             } finally {
                 db.endTransaction()
             }
+            Library.setCustom(loadCustomWords())
             tick++
             return true
         } catch (e: Exception) {
